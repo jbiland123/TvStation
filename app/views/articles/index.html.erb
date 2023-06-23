@@ -1,2 +1,94 @@
-<h1>Hello, Rails!</h1>
+<!DOCTYPE html>
 
+<html lang="de">
+   <head>
+      <meta charset="UTF-8">
+      <link href="css/Stylesheet.css" rel="Stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="icon" href="Bilder/Logo.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <title>TVStation</title>
+
+   </head>
+   <body>
+    <div class="header">
+        <h1>Zentrale Informatik</h1>
+        <h2 class="bold date"><%= Time.now.strftime("%A, %B %d, %H:%M") %></h2>
+    </div>
+    <div class="body">
+    <div class="parent">
+    <div class="div1"> 
+        <div class="inner-parent">
+        <div class="div1">
+            <div class="weather">
+                <p class="bold"><%= Date.today.strftime("%a, %b %d") %></p>
+                <img src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+                <p><%= @data["weather"].first["main"] %></p>
+                <p><%= @data["weather"].first["description"] %></p>
+                <p><%= @data["main"]["temp"] %> Grad</p>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="weatherprediction">
+                <p class="bold"><%= Date.parse(@days[1]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[1]["temp"] %> Grad</p>
+                <p><%= @days[1]["conditions"] %></p>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="weatherprediction">
+                <p class="bold"><%= Date.parse(@days[2]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[2]["temp"] %> Grad</p>
+                <p><%= @days[2]["conditions"] %></p>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="weatherprediction">
+                <p class="bold"><%= Date.parse(@days[3]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[3]["temp"] %> Grad</p>
+                <p><%= @days[3]["conditions"] %></p>
+            </div>
+        </div>
+        <div class="div5">
+            <div class="weatherpredictionUnder">
+                <p class="bold"><%= Date.parse(@days[4]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[4]["temp"] %> Grad</p>
+                <p><%= @days[4]["conditions"] %></p>
+            </div>
+        </div>
+        <div class="div6">
+            <div class="weatherpredictionUnder">
+                <p class="bold"><%= Date.parse(@days[5]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[5]["temp"] %> Grad</p>
+                <p><%= @days[5]["conditions"] %></p>
+            </div>
+        </div>
+        <div class="div7">
+            <div class="weatherpredictionUnder">
+                <p class="bold"><%= Date.parse(@days[6]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[6]["temp"] %> Grad</p>
+                <p><%= @days[6]["conditions"] %></p>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="div2"> 
+            <div class="news">
+            <% @news.first(6).each do |item| %>
+                <p><%= item["title"] %></p>
+              <% end %>
+            </div>
+        </div>
+        <div class="div3">
+            <%= image_tag "placeholder.png", alt: "Placeholder", class: "placeholder" %>
+        </div>
+        <div class="div4">
+            <%= image_tag "placeholder.png", alt: "Placeholder", class: "placeholder" %>
+        </div>
+    </div>
+    </div>
+   </body>
+</html>
