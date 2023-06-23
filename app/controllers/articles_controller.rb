@@ -1,4 +1,6 @@
 require 'net/http'
+require 'csv'
+require 'icalendar'
 
 class ArticlesController < ApplicationController
   def index
@@ -20,5 +22,11 @@ class ArticlesController < ApplicationController
     @data3 = JSON.parse(res3.body)
 
     @news = @data3["articles"]
+
+    file_path = Rails.public_path.join('calendar.txt')
+    calendar_file = File.read(file_path)
+    calendar = Icalendar::Calendar.parse(calendar_file).first
+    event = calendar.events.first
+    @location = event.location
   end
 end

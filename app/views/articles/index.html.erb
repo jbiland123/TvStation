@@ -26,9 +26,9 @@
             <div class="weather">
                 <p class="bold"><%= Date.today.strftime("%a, %b %d") %></p>
                 <img src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+                <p><%= @data["main"]["temp"] %> Grad</p>
                 <p><%= @data["weather"].first["main"] %></p>
                 <p><%= @data["weather"].first["description"] %></p>
-                <p><%= @data["main"]["temp"] %> Grad</p>
             </div>
         </div>
         <div class="div2">
@@ -77,16 +77,20 @@
     </div>
         <div class="div2"> 
             <div class="news">
-            <% @news.first(6).each do |item| %>
+            <% @news.first(4).each do |item| %>
                 <p><%= item["title"] %></p>
               <% end %>
             </div>
         </div>
         <div class="div3">
-            <%= image_tag "placeholder.png", alt: "Placeholder", class: "placeholder" %>
+            <div class="calendar">
+                <p><%= @location %></p>
+            </div>
         </div>
         <div class="div4">
-            <%= image_tag "placeholder.png", alt: "Placeholder", class: "placeholder" %>
+            <div class="calendar">
+                <p><%= @location %></p>
+            </div>
         </div>
     </div>
     </div>
