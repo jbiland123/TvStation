@@ -3,6 +3,8 @@ require 'csv'
 require 'icalendar'
 
 class ArticlesController < ApplicationController
+  helper_method :truncate_title
+
   def index
     url = 'https://api.openweathermap.org/data/2.5/weather?lat=47.486614&lon=7.733427&units=metric&appid=2cd6c916e89c89f156c3ee6332d5bd03'
     uri = URI(url)
@@ -23,6 +25,8 @@ class ArticlesController < ApplicationController
 
     @news = @data3["articles"]
 
+    @i_news = @news.select { |item| item["author"] == "SRF News" or item["author"] == "Polizei Basel-Landschaft" or item["author"] == "Tages-Anzeiger" or item["author"] == "Neue Zürcher Zeitung - NZZ" }
+
     file_path = Rails.public_path.join('calendar.txt')
     calendar_file = File.read(file_path)
     calendar = Icalendar::Calendar.parse(calendar_file).first
@@ -30,5 +34,22 @@ class ArticlesController < ApplicationController
     @events = calendar.events.select { |event| event.dtend >= DateTime.now }
     
     @location = @events.first.location
+
+    file_path2 = Rails.public_path.join('calendar2.txt')
+    calendar_file2 = File.read(file_path2)
+    calendar2 = Icalendar::Calendar.parse(calendar_file2).first
+    
+    @events2 = calendar2.events.select { |event2| event2.dtend >= DateTime.now }
+    
+    @location2 = @events2.first.location
+
+    def truncate_title(title, author, max_length = 110)
+      truncated_title = title[0, max_length].strip
+      truncated_title += "..." if truncated_title != title.strip
+      truncated_title.gsub!(author, '')
+      truncated_title.gsub!(/— Baselland\.ch/i, '')
+      truncated_title.gsub!(/-\s*\z/, '')
+      truncated_title.strip
+    end
   end
 end

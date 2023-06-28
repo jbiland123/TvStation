@@ -10,13 +10,16 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+
       <title>TVStation</title>
 
    </head>
    <body>
     <div class="header">
         <h1>Zentrale Informatik</h1>
-        <h2 class="bold date"><%= Time.now.strftime("%A, %B %d, %H:%M") %></h2>
+        <p class="date"><%= Time.now.strftime("%A, %B %d, %H:%M") %></p>
     </div>
     <div class="body">
     <div class="parent">
@@ -24,7 +27,7 @@
         <div class="inner-parent">
         <div class="div1">
             <div class="weather">
-                <p class="bold">Today</p>
+                <h2 class="bold">Today</h2>
                 <img src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
                 <p><%= @data["main"]["temp"] %> Grad</p>
                 <p><%= @data["weather"].first["main"] %></p>
@@ -77,17 +80,19 @@
     </div>
         <div class="div2"> 
             <div class="news">
-                <% @news.first(4).each do |item| %>
-                    <p><%= item["title"] %></p>
+                <% @i_news.first(6).each do |item| %>
+                    <div class="news-content">
+                        <p class="left max-characters"><%= item["author"] %>: <%= truncate_title(item["title"], item["author"]) %></p>
+                    </div>
                 <% end %>
             </div>
         </div>
         <div class="div3">
             <div class="calendar">
-                <p class="bold"><%= @location %></p>
+                <h2 class="bold">ZZZFKD Sitzungszimmer 310, Frenkendoerferstr. 17, 3. Stock</h2>
                 <% @events.each do |event| %>
                     <div class="calendar-content">
-                        <p class="left"><%= event.summary %></p>
+                        <p class="left max-characters"><%= event.summary %></p>
                         <p class="right"><%= event.dtstart.strftime("%B %d, %H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
                     </div>
                     <p></p>
@@ -96,7 +101,14 @@
         </div>
         <div class="div4">
             <div class="calendar">
-                <p><%= @location %></p>
+            <h2 class="bold">ZZZSID Schulungsraum 1, Frenkendoerferstr. 17, 3. Stock</h2>
+            <% @events2.each do |event2| %>
+                <div class="calendar-content">
+                    <p class="left max-characters"><%= event2.summary %></p>
+                    <p class="right"><%= event2.dtstart.strftime("%B %d, %H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                </div>
+                <p></p>
+            <% end %>
             </div>
         </div>
     </div>
