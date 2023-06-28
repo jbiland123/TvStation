@@ -26,7 +26,9 @@ class ArticlesController < ApplicationController
     file_path = Rails.public_path.join('calendar.txt')
     calendar_file = File.read(file_path)
     calendar = Icalendar::Calendar.parse(calendar_file).first
-    event = calendar.events.first
-    @location = event.location
+    
+    @events = calendar.events.select { |event| event.dtend >= DateTime.now }
+    
+    @location = @events.first.location
   end
 end

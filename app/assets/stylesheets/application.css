@@ -133,7 +133,7 @@ body {
   font-weight: 800;
 }
 
-.weather, .weatherprediction, .weatherpredictionUnder, .news, .calendar {
+.weather, .weatherprediction, .weatherpredictionUnder, .news, .calendar, .calendar-content {
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
@@ -143,9 +143,31 @@ body {
   margin-bottom: 10px;
 }
 
+.calendar-content {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: #FDF5E6;
+  padding: 5px 20px 5px 20px;
+  font-weight: 800;
+}
+
+.calendar p {
+  flex: 1;
+}
+
 .bold {
     font-weight: 800;
   }
+
+.left {
+  text-align: left;
+}
+
+.right {
+    text-align: right;
+}
 
   
   

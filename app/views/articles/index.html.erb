@@ -24,7 +24,7 @@
         <div class="inner-parent">
         <div class="div1">
             <div class="weather">
-                <p class="bold"><%= Date.today.strftime("%a, %b %d") %></p>
+                <p class="bold">Today</p>
                 <img src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
                 <p><%= @data["main"]["temp"] %> Grad</p>
                 <p><%= @data["weather"].first["main"] %></p>
@@ -77,14 +77,21 @@
     </div>
         <div class="div2"> 
             <div class="news">
-            <% @news.first(4).each do |item| %>
-                <p><%= item["title"] %></p>
-              <% end %>
+                <% @news.first(4).each do |item| %>
+                    <p><%= item["title"] %></p>
+                <% end %>
             </div>
         </div>
         <div class="div3">
             <div class="calendar">
-                <p><%= @location %></p>
+                <p class="bold"><%= @location %></p>
+                <% @events.each do |event| %>
+                    <div class="calendar-content">
+                        <p class="left"><%= event.summary %></p>
+                        <p class="right"><%= event.dtstart.strftime("%B %d, %H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+                    </div>
+                    <p></p>
+                <% end %>
             </div>
         </div>
         <div class="div4">
