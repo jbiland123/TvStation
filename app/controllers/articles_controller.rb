@@ -1,6 +1,8 @@
 require 'net/http'
 require 'csv'
 require 'icalendar'
+require 'open-uri'
+require 'nokogiri'
 
 class ArticlesController < ApplicationController
   helper_method :truncate_title
