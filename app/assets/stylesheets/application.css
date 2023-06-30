@@ -138,6 +138,10 @@ body {
   height: 100%;
 }
 
+.news .images {
+  float: right;
+}
+
 .calendar {
   border: 2px solid black;
   border-radius: 10px;

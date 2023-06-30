@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
 
     @news = @data3["articles"]
 
-    @i_news = @news.select { |item| item["author"] == "SRF News" or item["author"] == "Polizei Basel-Landschaft" or item["author"] == "Tages-Anzeiger" or item["author"] == "Neue Zürcher Zeitung - NZZ" }
+    @i_news = @news.select { |item| item["author"] == "SRF News" or item["author"] == "blue News" or item["author"] == "Polizei Basel-Landschaft" or item["author"] == "Tages-Anzeiger"}
 
     file_path = Rails.public_path.join('calendar.txt')
     calendar_file = File.read(file_path)
