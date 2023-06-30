@@ -45,9 +45,8 @@ class ArticlesController < ApplicationController
     
     @location2 = @events2.first.location
 
-    def truncate_title(title, author, max_length = 110)
-      truncated_title = title[0, max_length].strip
-      truncated_title += "..." if truncated_title != title.strip
+    def truncate_title(title, author)
+      truncated_title = title.strip
       truncated_title.gsub!(author, '')
       truncated_title.gsub!(/— Baselland\.ch/i, '')
       truncated_title.gsub!(/-\s*\z/, '')

@@ -106,6 +106,7 @@ body {
 }
 
 .weatherprediction {
+  white-space: nowrap;
   height: 134px;
   width: 134px;
   border: 2px solid black;
@@ -117,6 +118,7 @@ body {
 }
 
 .weatherpredictionUnder {
+  white-space: nowrap;
   height: 134px;
   width: 134px;
   border: 2px solid black;
@@ -131,14 +133,9 @@ body {
 .news {
   border: 2px solid black;
   border-radius: 10px;
-  background-color: white;
+  background-color: lightgray;
   padding: 5px 20px 5px 20px;
-}
-
-.news-content {
-  display: flex;
-  justify-content: space-between;
-  border-bottom: 1px solid black;
+  height: 100%;
 }
 
 .calendar {
@@ -147,6 +144,7 @@ body {
   background-color: lightgray;
   padding: 5px 20px 5px 20px;
   text-align: center;
+  height: 100%;
 }
 
 .weather,
@@ -159,12 +157,17 @@ body {
 }
 
 .calendar-content {
+  font-size: 18px;
   display: flex;
   justify-content: space-between;
   border: 2px solid black;
   border-radius: 10px;
   background-color: white;
   padding: 5px 20px 5px 20px;
+}
+
+.test {
+  align-content: end;
 }
 
 .bl-logo {
@@ -190,6 +193,10 @@ body {
   font-weight: bold;
 }
 
+.center {
+  text-align: center;
+}
+
 .left {
   text-align: left;
 }
@@ -201,6 +208,10 @@ body {
 h1 {
   color: #ff0000;
   font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
 }
 
 .header p {
