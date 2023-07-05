@@ -86,29 +86,26 @@
     </div>
         <div class="div2"> 
             <div class="news">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
                     <ol class="carousel-indicators">
                     <% @i_news.each_with_index do |_, index| %>
                         <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" <%= index == 0 ? 'class="active"' : '' %>></li>
                     <% end %>
                     </ol>
-                <div class="carousel-inner">
-                    <% @i_news.each_with_index do |item, index| %>
-                        <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
-                            <div class="news-slide">
-                                <img class="images" src="<%= asset_path(item["author"] + ".png") %>" alt="">
-                                <br>
-                                <h2 class="bold center"><%= item["author"] %></h2>
-                                <br>
-                                <h3 class="left"><%= truncate_title(item["title"], item["author"]) %></h3>
-                                <br><br><br><br>
+                    <div class="carousel-inner">
+                        <% @i_news.each_with_index do |item, index| %>
+                            <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+                                <div class="news-slide">
+                                    <img class="minheightimg" src="<%= asset_path(item["author"] + ".png") %>" alt="">
+                                    <p id="devider">- - - - - - - - - - - - - <> - <> - <> - - - - - - - - - - - - -</p>
+                                    <h3 class="minheight"><%= truncate_title(item["title"], item["author"]) %></h3>
+                                </div>
                             </div>
-                        </div>
-                    <% end %>
+                        <% end %>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
         <div class="div3">
             <div class="calendar">
                 <h2 class="bold">ZZZFKD Sitzungszimmer 310, 3. Stock</h2>
