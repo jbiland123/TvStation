@@ -131,3 +131,245 @@ ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
 ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
   
+Started GET "/" for 127.0.0.1 at 2023-07-06 13:04:32 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 848)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1677)
+Completed 200 OK in 1303ms (Views: 1.2ms | Allocations: 1837557)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 13:04:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 13:05:46 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 821)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1630)
+Completed 200 OK in 1228ms (Views: 1.1ms | Allocations: 1837264)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 13:05:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 13:06:26 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 821)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1641)
+Completed 200 OK in 1265ms (Views: 1.0ms | Allocations: 1837272)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 13:06:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 13:13:59 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 821)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1631)
+Completed 200 OK in 1745ms (Views: 1.3ms | Allocations: 1837178)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 13:14:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 13:16:10 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 821)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1638)
+Completed 200 OK in 2867ms (Views: 1.3ms | Allocations: 1837262)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 13:16:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 16:00:18 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 820)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 1621)
+Completed 200 OK in 1287ms (Views: 2.2ms | Allocations: 1837223)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 16:00:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 16:00:29 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2911)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5917)
+Completed 200 OK in 1629ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 1858534)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 16:00:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 16:01:10 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2912)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5918)
+Completed 200 OK in 1303ms (Views: 8.7ms | ActiveRecord: 0.0ms | Allocations: 1858514)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 16:01:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 16:01:41 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 847)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1688)
+Completed 200 OK in 1257ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1837623)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 16:01:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 16:03:43 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 820)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1642)
+Completed 200 OK in 1268ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1837282)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 16:03:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 16:04:05 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2422)
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | Allocations: 3573)
+Completed 200 OK in 1643ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 1840101)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 16:04:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 16:04:28 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2421)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 3576)
+Completed 200 OK in 1251ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 1840412)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 16:04:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 16:23:46 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 820)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1631)
+Completed 200 OK in 1296ms (Views: 1.2ms | Allocations: 1837489)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 16:23:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 16:40:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2911)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 5923)
+Completed 200 OK in 1462ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 1858522)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 16:40:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-06 16:40:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-06 16:42:53 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 854)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1675)
+Completed 200 OK in 1666ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1837618)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-06 16:42:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-06 16:42:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
