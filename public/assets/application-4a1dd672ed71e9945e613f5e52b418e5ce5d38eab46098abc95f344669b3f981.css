@@ -2,15 +2,22 @@
 
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Dot Matrix';
-  src: url('/assets/fonts/DOTMATRI.ttf') format('truetype');
+  src: url(/assets/fonts/DOTMATRI.ttf) format('ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Dat Dot';
+  src: url(/assets/fonts/DatdotLight-MVEKn.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -234,7 +241,7 @@ h3 {
 
 .dotted-text {
   text-align: right;
-  font-family: 'Dot Matrix', monospace;
+  font-family: 'Dat Dot', monospace;
   margin-top: -10px;
   font-size: 40px;
 }
