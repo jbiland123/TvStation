@@ -373,3 +373,1022 @@ Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-06 16:42:54 +0200
   
 ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
   
+Started GET "/" for 127.0.0.1 at 2023-07-07 08:07:07 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2834)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5838)
+Completed 200 OK in 1412ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 1858401)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-07 08:07:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-07 08:07:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-07 12:51:17 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 854)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 1687)
+Completed 200 OK in 1333ms (Views: 2.5ms | Allocations: 1837666)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-07 12:51:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-07 12:51:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-07 15:39:28 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 782)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1535)
+Completed 200 OK in 1343ms (Views: 1.1ms | Allocations: 1837202)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-07 15:39:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-07 15:39:29 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-07 15:40:26 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 782)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1607)
+Completed 200 OK in 1220ms (Views: 1.1ms | Allocations: 1837331)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-07 15:40:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-07 15:40:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:25:10 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 634)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 1374)
+Completed 200 OK in 2053ms (Views: 1.7ms | Allocations: 1837002)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:25:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:25:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:27:25 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 687)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1503)
+Completed 200 OK in 1811ms (Views: 1.2ms | Allocations: 1837153)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:27:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:27:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:30:45 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 91.0ms | Allocations: 72591)
+  Rendered layout layouts/application.html.erb (Duration: 92.0ms | Allocations: 73745)
+Completed 200 OK in 1853ms (Views: 95.2ms | Allocations: 1910275)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:30:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:30:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:31:05 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 3022)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 4178)
+Completed 200 OK in 1792ms (Views: 3.9ms | Allocations: 1840941)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:31:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:31:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:31:53 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 3024)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 4186)
+Completed 200 OK in 1625ms (Views: 4.2ms | Allocations: 1841043)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:31:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:31:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:33:12 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 3025)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 4179)
+Completed 200 OK in 2114ms (Views: 14.1ms | Allocations: 1841017)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:33:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:33:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:33:25 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2761)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 5771)
+Completed 200 OK in 1507ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 1858403)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:33:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:33:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:33:36 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1520)
+Completed 200 OK in 1419ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1837469)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:33:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:33:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:33:57 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2264)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3417)
+Completed 200 OK in 2157ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1839956)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:33:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:33:59 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:34:10 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 5776)
+Completed 200 OK in 1871ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 1858405)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:34:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:34:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:34:58 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1506)
+Completed 200 OK in 1582ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1837461)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:35:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:35:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:35:14 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 5762)
+Completed 200 OK in 1786ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 1858383)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:35:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:35:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:35:25 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1536)
+Completed 200 OK in 1527ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1837496)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:35:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:35:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:35:32 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5774)
+Completed 200 OK in 1628ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 1858408)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:35:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:35:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:36:18 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 1530)
+Completed 200 OK in 1701ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1837453)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:36:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:36:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:36:28 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 5768)
+Completed 200 OK in 1528ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 1858412)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:36:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:36:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:38:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 5782)
+Completed 200 OK in 1730ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 1858406)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:38:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:38:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:38:26 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 5766)
+Completed 200 OK in 1547ms (Views: 7.3ms | ActiveRecord: 0.0ms | Allocations: 1858392)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:38:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:38:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:38:45 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 5776)
+Completed 200 OK in 1990ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 1858411)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:38:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:38:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:39:32 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1510)
+Completed 200 OK in 1498ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1837437)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:39:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:39:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:39:44 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 5762)
+Completed 200 OK in 2188ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 1858398)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:39:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:39:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:40:05 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 5774)
+Completed 200 OK in 1616ms (Views: 8.9ms | ActiveRecord: 0.0ms | Allocations: 1858395)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:40:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:40:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:41:31 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5764)
+Completed 200 OK in 1736ms (Views: 8.6ms | ActiveRecord: 0.0ms | Allocations: 1858343)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:41:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:41:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:41:55 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2760)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5766)
+Completed 200 OK in 1678ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 1858389)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:41:57 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:41:57 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:42:07 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 691)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1518)
+Completed 200 OK in 1539ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1837450)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:42:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:42:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:43:25 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 2181)
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 2263)
+Completed 500 Internal Server Error in 1675ms (ActiveRecord: 0.0ms | Allocations: 1838793)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+
+<html lang="de">
+   <head>
+      <meta charset="UTF-8">
+      <link href="css/Stylesheet.css" rel="Stylesheet">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="icon" href="Bilder/Logo.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <title>TVStation</title>
+   </head>
+   <body>
+    <div class="header">
+        <h1>Zentrale Informatik</h1>
+        <p class="date"><%= Time.now.strftime("%A, %B %d, %H:%M") %></p>
+        <div class="bl-logo">
+            <%= image_tag("Baselland.png", size: "235x55") %>
+        </div>
+    </div>
+    <div class="body">
+    <div class="parent">
+    <div class="div1"> 
+        <div class="inner-parent">
+        <div class="div1">
+            <div class="weather">
+                <h2 class="bold">Today</h2>
+                <img src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+                <p><%= @data["main"]["temp"] %> Grad</p>
+                <p><%= @data["weather"].first["main"] %></p>
+                <p><%= @data["weather"].first["description"] %></p>
+            </div>
+        </div>
+        <div class="div2">
+            <div class="weatherprediction">
+                <p class="bold"><%= Date.parse(@days[1]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[1]["temp"] %> Grad</p>
+                <p><%= @days[1]["conditions"] %></p>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="weatherprediction">
+                <p class="bold"><%= Date.parse(@days[2]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[2]["temp"] %> Grad</p>
+                <p><%= @days[2]["conditions"] %></p>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="weatherprediction">
+                <p class="bold"><%= Date.parse(@days[3]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[3]["temp"] %> Grad</p>
+                <p><%= @days[3]["conditions"] %></p>
+            </div>
+        </div>
+        <div class="div5">
+            <div class="weatherpredictionUnder">
+                <p class="bold"><%= Date.parse(@days[4]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[4]["temp"] %> Grad</p>
+                <p><%= @days[4]["conditions"] %></p>
+            </div>
+        </div>
+        <div class="div6">
+            <div class="weatherpredictionUnder">
+                <p class="bold"><%= Date.parse(@days[5]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[5]["temp"] %> Grad</p>
+                <p><%= @days[5]["conditions"] %></p>
+            </div>
+        </div>
+        <div class="div7">
+            <div class="weatherpredictionUnder">
+                <p class="bold"><%= Date.parse(@days[6]["datetime"]).strftime("%a, %b %d") %></p>
+                <p><%= @days[6]["temp"] %> Grad</p>
+                <p><%= @days[6]["conditions"] %></p>
+            </div>
+        </div>
+    </div>
+    </div>
+        <div class="div2"> 
+            <div class="news">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
+                    <ol class="carousel-indicators">
+                    <% @i_news.each_with_index do |_, index| %>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" <%= index == 0 ? 'class="active"' : '' %>></li>
+                    <% end %>
+                    </ol>
+                    <div class="carousel-inner">
+                        <% @i_news.each_with_index do |item, index| %>
+                            <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+                                <div class="news-slide">
+                                    <img class="minheightimg" src="<%= asset_path(item["author"] + ".png") %>" alt="">
+                                    <p id="devider">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+                                    <h3 class="minheight"><%= truncate_title(item["title"], item["author"]) %></h3>
+                                </div>
+                            </div>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="div3">
+            <div class="calendar">
+                <% status = "Frei" %>
+                <% @events.each do |event| %>
+                    <% if event.dtstart <= Time.now && Time.now <= event.dtend %>
+                        <% status = "Besetzt" %>
+                    <% end %>
+                <% end %>
+                <div class="title">
+                    <h2 class="bold">ZZZFKD Sitzungszimmer 310, 3. Stock</h2>
+                    <% if status == "Besetzt" %>
+                        <p class="dotted-text" style="color: red;"><%= status %></p>
+                    <% else %>
+                        <img class="size" src="<%= asset_path(<%= status %> + ".png") %>" alt="">
+                    <% end %>
+                </div>
+                <% @events.each do |event| %>
+                    <div class="calendar-content">
+                        <p class="left max-characters"><%= event.summary %></p>
+                        <p class="right"><%= event.dtstart.strftime("%B %d, %H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+                    </div>
+                    <p></p>
+                <% end %>
+            </div>
+        </div>
+        <div class="div4">
+            <div class="calendar">
+            <% status2 = "Frei" %>
+                <% @events2.each do |event2| %>
+                    <% if event2.dtstart <= Time.now && Time.now <= event2.dtend %>
+                        <% status2 = "Besetzt" %>
+                    <% end %>
+                <% end %>
+                <div class="title">
+                    <h2 class="bold">ZZZSID Schulungsraum 1, 3. Stock</h2>
+                    <% if status2 == "Besetzt" %>
+                        <p class="dotted-text" style="color: red;"><%= status2 %></p>
+                    <% else %>
+                        <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                    <% end %>
+                </div>
+            <% @events2.each do |event2| %>
+                <div class="calendar-content">
+                    <p class="left max-characters"><%= event2.summary %></p>
+                    <p class="right"><%= event2.dtstart.strftime("%B %d, %H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                </div>
+                <p></p>
+            <% end %>
+            </div>
+        </div>
+        <div class="div5">
+            <div class="message">
+                <marquee behavior="scroll" direction="left" scrollamount="15">Dieses Digital Signage wurde von Melvin Waldner und Jeremias Biland entwickelt. Wir freuen uns um jedes Feedback!</marquee>
+            </div>
+        </div>
+    </div>
+    </div>
+   </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    
+3:    <html lang="de">
+4:       <head>
+5:          <meta charset="UTF-8">
+6:          <link href="css/Stylesheet.css" rel="Stylesheet">
+7:          
+8:          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+9:          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+10:          <link rel="icon" href="Bilder/Logo.png">
+11:          <link rel="preconnect" href="https://fonts.googleapis.com">
+12:          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+13:          <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+14:          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+15:          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+16:          <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+17:          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+18:          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+19:          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+20:          <title>TVStation</title>
+21:       </head>
+22:       <body>
+23:        <div class="header">
+24:            <h1>Zentrale Informatik</h1>
+25:            <p class="date"><%= Time.now.strftime("%A, %B %d, %H:%M") %></p>
+26:            <div class="bl-logo">
+27:                <%= image_tag("Baselland.png", size: "235x55") %>
+28:            </div>
+29:        </div>
+30:        <div class="body">
+31:        <div class="parent">
+32:        <div class="div1"> 
+33:            <div class="inner-parent">
+34:            <div class="div1">
+35:                <div class="weather">
+36:                    <h2 class="bold">Today</h2>
+37:                    <img src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+38:                    <p><%= @data["main"]["temp"] %> Grad</p>
+39:                    <p><%= @data["weather"].first["main"] %></p>
+40:                    <p><%= @data["weather"].first["description"] %></p>
+41:                </div>
+42:            </div>
+43:            <div class="div2">
+44:                <div class="weatherprediction">
+45:                    <p class="bold"><%= Date.parse(@days[1]["datetime"]).strftime("%a, %b %d") %></p>
+46:                    <p><%= @days[1]["temp"] %> Grad</p>
+47:                    <p><%= @days[1]["conditions"] %></p>
+48:                </div>
+49:            </div>
+50:            <div class="div3">
+51:                <div class="weatherprediction">
+52:                    <p class="bold"><%= Date.parse(@days[2]["datetime"]).strftime("%a, %b %d") %></p>
+53:                    <p><%= @days[2]["temp"] %> Grad</p>
+54:                    <p><%= @days[2]["conditions"] %></p>
+55:                </div>
+56:            </div>
+57:            <div class="div4">
+58:                <div class="weatherprediction">
+59:                    <p class="bold"><%= Date.parse(@days[3]["datetime"]).strftime("%a, %b %d") %></p>
+60:                    <p><%= @days[3]["temp"] %> Grad</p>
+61:                    <p><%= @days[3]["conditions"] %></p>
+62:                </div>
+63:            </div>
+64:            <div class="div5">
+65:                <div class="weatherpredictionUnder">
+66:                    <p class="bold"><%= Date.parse(@days[4]["datetime"]).strftime("%a, %b %d") %></p>
+67:                    <p><%= @days[4]["temp"] %> Grad</p>
+68:                    <p><%= @days[4]["conditions"] %></p>
+69:                </div>
+70:            </div>
+71:            <div class="div6">
+72:                <div class="weatherpredictionUnder">
+73:                    <p class="bold"><%= Date.parse(@days[5]["datetime"]).strftime("%a, %b %d") %></p>
+74:                    <p><%= @days[5]["temp"] %> Grad</p>
+75:                    <p><%= @days[5]["conditions"] %></p>
+76:                </div>
+77:            </div>
+78:            <div class="div7">
+79:                <div class="weatherpredictionUnder">
+80:                    <p class="bold"><%= Date.parse(@days[6]["datetime"]).strftime("%a, %b %d") %></p>
+81:                    <p><%= @days[6]["temp"] %> Grad</p>
+82:                    <p><%= @days[6]["conditions"] %></p>
+83:                </div>
+84:            </div>
+85:        </div>
+86:        </div>
+87:            <div class="div2"> 
+88:                <div class="news">
+89:                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
+90:                        <ol class="carousel-indicators">
+91:                        <% @i_news.each_with_index do |_, index| %>
+92:                            <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" <%= index == 0 ? 'class="active"' : '' %>></li>
+93:                        <% end %>
+94:                        </ol>
+95:                        <div class="carousel-inner">
+96:                            <% @i_news.each_with_index do |item, index| %>
+97:                                <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+98:                                    <div class="news-slide">
+99:                                        <img class="minheightimg" src="<%= asset_path(item["author"] + ".png") %>" alt="">
+100:                                        <p id="devider">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+101:                                        <h3 class="minheight"><%= truncate_title(item["title"], item["author"]) %></h3>
+102:                                    </div>
+103:                                </div>
+104:                            <% end %>
+105:                        </div>
+106:                    </div>
+107:                </div>
+108:            </div>
+109:            <div class="div3">
+110:                <div class="calendar">
+111:                    <% status = "Frei" %>
+112:                    <% @events.each do |event| %>
+113:                        <% if event.dtstart <= Time.now && Time.now <= event.dtend %>
+114:                            <% status = "Besetzt" %>
+115:                        <% end %>
+116:                    <% end %>
+117:                    <div class="title">
+118:                        <h2 class="bold">ZZZFKD Sitzungszimmer 310, 3. Stock</h2>
+119:                        <% if status == "Besetzt" %>
+120:                            <p class="dotted-text" style="color: red;"><%= status %></p>
+121:                        <% else %>
+122:                            <img class="size" src="<%= asset_path(<%= status %> + ".png") %>" alt="">
+123:                        <% end %>
+124:                    </div>
+125:                    <% @events.each do |event| %>
+126:                        <div class="calendar-content">
+127:                            <p class="left max-characters"><%= event.summary %></p>
+128:                            <p class="right"><%= event.dtstart.strftime("%B %d, %H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+129:                        </div>
+130:                        <p></p>
+131:                    <% end %>
+132:                </div>
+133:            </div>
+134:            <div class="div4">
+135:                <div class="calendar">
+136:                <% status2 = "Frei" %>
+137:                    <% @events2.each do |event2| %>
+138:                        <% if event2.dtstart <= Time.now && Time.now <= event2.dtend %>
+139:                            <% status2 = "Besetzt" %>
+140:                        <% end %>
+141:                    <% end %>
+142:                    <div class="title">
+143:                        <h2 class="bold">ZZZSID Schulungsraum 1, 3. Stock</h2>
+144:                        <% if status2 == "Besetzt" %>
+145:                            <p class="dotted-text" style="color: red;"><%= status2 %></p>
+146:                        <% else %>
+147:                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+148:                        <% end %>
+149:                    </div>
+150:                <% @events2.each do |event2| %>
+151:                    <div class="calendar-content">
+152:                        <p class="left max-characters"><%= event2.summary %></p>
+153:                        <p class="right"><%= event2.dtstart.strftime("%B %d, %H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+154:                    </div>
+155:                    <p></p>
+156:                <% end %>
+157:                </div>
+158:            </div>
+159:            <div class="div5">
+160:                <div class="message">
+161:                    <marquee behavior="scroll" direction="left" scrollamount="15">Dieses Digital Signage wurde von Melvin Waldner und Jeremias Biland entwickelt. Wir freuen uns um jedes Feedback!</marquee>
+162:                </div>
+163:            </div>
+164:        </div>
+165:        </div>
+166:       </body>
+167:    </html>
+  
+app/views/articles/index.html.erb:122: syntax error, unexpected '<', expecting ')'
+app/views/articles/index.html.erb:123: syntax error, unexpected `end', expecting ')'
+app/views/articles/index.html.erb:169: syntax error, unexpected `end', expecting ')'
+app/views/articles/index.html.erb:122: syntax error, unexpected '<', expecting ')'
+app/views/articles/index.html.erb:123: syntax error, unexpected `end', expecting ')'
+app/views/articles/index.html.erb:169: syntax error, unexpected `end', expecting ')'
+app/views/articles/index.html.erb:122: syntax error, unexpected '<', expecting ')'
+app/views/articles/index.html.erb:123: syntax error, unexpected `end', expecting ')'
+app/views/articles/index.html.erb:169: syntax error, unexpected `end', expecting ')'
+app/views/articles/index.html.erb:122: syntax error, unexpected '<', expecting ')'
+app/views/articles/index.html.erb:123: syntax error, unexpected `end', expecting ')'
+app/views/articles/index.html.erb:169: syntax error, unexpected `end', expecting ')'
+app/views/articles/index.html.erb:122: syntax error, unexpected '<', expecting ')'
+app/views/articles/index.html.erb:123: syntax error, unexpected `end', expecting ')'
+app/views/articles/index.html.erb:169: syntax error, unexpected `end', expecting ')'
+app/views/articles/index.html.erb:122: syntax error, unexpected '<', expecting ')'
+app/views/articles/index.html.erb:123: syntax error, unexpected `end', expecting ')'
+app/views/articles/index.html.erb:169: syntax error, unexpected `end', expecting ')'
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:44:52 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 2280)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 3437)
+Completed 200 OK in 1641ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 1840329)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:44:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:44:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:45:06 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2774)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5778)
+Completed 200 OK in 1736ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 1858404)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:45:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:45:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 15:45:31 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 2280)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 3445)
+Completed 200 OK in 1502ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 1840287)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 15:45:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 15:45:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 16:08:56 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2774)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 5774)
+Completed 200 OK in 1842ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 1858362)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 16:08:57 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 16:08:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 16:09:40 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 703)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1548)
+Completed 200 OK in 1587ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 1837499)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 16:09:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 16:09:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 16:09:49 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2774)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 5786)
+Completed 200 OK in 1676ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 1858422)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 16:09:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 16:09:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 16:10:25 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2774)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 5788)
+Completed 200 OK in 1646ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 1858376)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 16:10:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 16:10:27 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 16:11:35 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 703)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1520)
+Completed 200 OK in 1845ms (Views: 1.2ms | ActiveRecord: 0.0ms | Allocations: 1837475)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 16:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/fonts/DOTMATRI.ttf" for 127.0.0.1 at 2023-07-13 16:11:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/fonts/DOTMATRI.ttf"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 16:11:44 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2774)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 5776)
+Completed 200 OK in 1707ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 1858418)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 16:11:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2023-07-13 16:13:17 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2774)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 5786)
+Completed 200 OK in 1709ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 1858429)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2023-07-13 16:13:19 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  

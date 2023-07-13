@@ -1,16 +1,7 @@
-
-
 @font-face {
   font-family: 'Roboto';
   src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
        url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Dot Matrix';
-  src: url('/fonts/DOTMATRI.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -167,7 +158,7 @@ body {
 .message {
   font-size: 50px;
   white-space: nowrap;
-  font-family: 'Dot Matrix', monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 .bl-logo {
@@ -232,11 +223,10 @@ h3 {
   margin-top: 10px;
 }
 
-.dotted-text {
-  text-align: right;
-  font-family: 'Dot Matrix', monospace;
-  margin-top: -10px;
-  font-size: 40px;
+.size {
+  height: 30px;
+  margin-top: 2px;
+  margin-left: auto;
 }
 
 /* Responsive Design for 1920x1080 */
