@@ -51,13 +51,13 @@
                         <p>Temperatur: <%= @data["main"]["temp"] %>°</p>
                         <p>Gefühlt: <%= @data["main"]["feels_like"] %>°</p>
                         <p>Feuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
-                        <p class="bold"><%= @data["weather"].first["description"] %></p>
+                        <i><%= @data["weather"].first["description"] %></i>
                     </div>
                 </div>
                 <% (2..7).each do |i| %>
                 <div class="div<%= i %>">
                     <div class="weatherprediction<%= i > 4 ? 'Under' : '' %>">
-                    <p class="bold" class="weatherDate"><%= german_day_name_short(Date.parse(@days[i]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[i]["datetime"])) %> <%= Date.parse(@days[i]["datetime"]).strftime("%d") %></p>
+                    <p class="bold"><%= german_day_name(Date.parse(@days[i]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[i]["datetime"])) %> <%= Date.parse(@days[i]["datetime"]).strftime("%d") %></p>
                     <p>Temp: <%= @days[i]["temp"] %>°</p>
                     <i><%= multiline_text(@days[i]["conditions"]) %></i>
                     </div>
@@ -103,7 +103,7 @@
                             <img class="size" src="<%= asset_path("free.png") %>" alt="">
                         <% end %>
                     </div>
-                    <% @events.first(4).each do |event| %>
+                    <% @events.first(5).each do |event| %>
                         <div class="calendar-content">
                             <p class="left max-characters"><%= event.summary %></p>
                             <p class="right"><%= german_month_name(event.dtstart) %> <%= event.dtstart.strftime("%d, %H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
@@ -128,7 +128,7 @@
                             <img class="size" src="<%= asset_path("free.png") %>" alt="">
                         <% end %>
                     </div>
-                <% @events2.first(4).each do |event2| %>
+                <% @events2.first(5).each do |event2| %>
                     <div class="calendar-content">
                         <p class="left max-characters"><%= event2.summary %></p>
                         <p class="right"><%= german_month_name(event2.dtstart) %> <%= event2.dtstart.strftime("%d, %H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
@@ -146,7 +146,7 @@
                     <% elsif (6..8).include?(current_hour) %>
                         Guten Morgen und herzlich Willkommen an der Frenkendörferstrasse 17 in Liestal!
                     <% elsif (11..13).include?(current_hour) %>
-                        Guten Appetit und bis später! Ich hoffe das Essen wird dir schmecken.
+                        Guten Appetit und bis später! Ich hoffe das Essen dir schmecken.
                     <% elsif (16..20).include?(current_hour) %>
                         Einen schönen Abend und bis bald! Geniesse die Arbeitsfreie Zeit.
                     <% else %>

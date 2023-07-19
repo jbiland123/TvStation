@@ -81,7 +81,8 @@ body {
   padding: 5px 20px 5px 20px;
   background-color: white;
   text-align: center;
-  margin-right: 15px;
+  margin-right: 10px;
+  width: 200px;
 }
 
 .weatherprediction {
@@ -90,9 +91,10 @@ body {
   border-radius: 10px;
   background-color: rgb(232, 242, 242);
   padding: 5px 20px 5px 20px;
-  margin-right: 15px;
+  margin-left: 15px;
   text-align: center;
   height: 150px;
+  width: 187px;
 }
 
 .weatherpredictionUnder {
@@ -101,15 +103,16 @@ body {
   border-radius: 10px;
   background-color: rgb(232, 242, 242);
   padding: 5px 20px 5px 20px;
-  margin-right: 15px;
+  margin-left: 15px;
   margin-top: 8px;
   text-align: center;
   height: 150px;
+  width: 187px;
 }
 
 .weatherImage {
-  margin-top: -25px;
-  margin-bottom: -14px;
+  margin-top: -20px;
+  margin-bottom: -10px;
   height: 130px;
 }
 
@@ -133,7 +136,7 @@ body {
 
 .minheight {
   text-align: center;
-  height: 100px;
+  height: 120px;
 }
 
 .minheightimg {
