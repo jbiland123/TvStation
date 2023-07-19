@@ -154,6 +154,33 @@
                     <% end %>
                     </marquee>
                 </div>
+                <div class="progress" role="progressbar" aria-label="Fortschritt des Tages" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" id="daily-progress" style="width: 0;"></div>
+                </div>
+
+                <script>
+                function updateProgress() {
+                    const now = new Date();
+                    const startOfDay = new Date(now);
+                    startOfDay.setHours(8, 0, 0, 0); // Setze die Startzeit auf 8 Uhr
+                    const endOfDay = new Date(now);
+                    endOfDay.setHours(16, 0, 0, 0); // Setze die Endzeit auf 16 Uhr
+
+                    // Berechne den Fortschritt in Prozent
+                    const totalMilliseconds = endOfDay - startOfDay;
+                    const currentMilliseconds = now - startOfDay;
+                    const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+
+                    // Setze die Breite der Fortschrittsleiste entsprechend
+                    const progressBar = document.getElementById("daily-progress");
+                    progressBar.style.width = progressPercent + "%";
+                }
+
+                // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+                setInterval(updateProgress, 10000);
+                </script>
+
+
             </div>
         </div>
     </div>
