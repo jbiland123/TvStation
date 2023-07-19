@@ -8,12 +8,12 @@ class ArticlesController < ApplicationController
   helper_method :truncate_title
 
   def index
-    url = 'https://api.openweathermap.org/data/2.5/weather?lat=47.486614&lon=7.733427&units=metric&appid=2cd6c916e89c89f156c3ee6332d5bd03'
+    url = 'https://api.openweathermap.org/data/2.5/weather?lat=47.486614&lon=7.733427&units=metric&appid=2cd6c916e89c89f156c3ee6332d5bd03&lang=de'
     uri = URI(url)
     res = Net::HTTP.get_response(uri)
     @data = JSON.parse(res.body)
 
-    url2 = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/liestal?unitGroup=metric&key=WMGTGTC8KQ68VLT8C62HQJCMW&contentType=json'
+    url2 = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/liestal?unitGroup=metric&key=WMGTGTC8KQ68VLT8C62HQJCMW&contentType=json&lang=de'
     uri2 = URI(url2)
     res2 = Net::HTTP.get_response(uri2)
     @data2 = JSON.parse(res2.body)
@@ -27,7 +27,7 @@ class ArticlesController < ApplicationController
 
     @news = @data3["articles"]
 
-    @i_news = @news.select { |item| item["author"] == "SRF News" or item["author"] == "blue News" or item["author"] == "Polizei Basel-Landschaft" or item["author"] == "Tages-Anzeiger"}
+    @i_news = @news.select { |item| item["author"] == "SRF News" or item["author"] == "blue News" or item["author"] == "Polizei Basel-Landschaft" or item["author"] == "Tages-Anzeiger" or item["author"] == "BLICK"}
 
     file_path = Rails.public_path.join('calendar.txt')
     calendar_file = File.read(file_path)

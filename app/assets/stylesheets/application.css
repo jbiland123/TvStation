@@ -92,6 +92,7 @@ body {
   padding: 5px 20px 5px 20px;
   margin-right: 26px;
   text-align: center;
+  height: 150px;
 }
 
 .weatherpredictionUnder {
@@ -103,6 +104,7 @@ body {
   margin-right: 26px;
   margin-top: 12px;
   text-align: center;
+  height: 150px;
 }
 
 .news {
@@ -121,6 +123,19 @@ body {
 .carousel-indicators .active {
   background-color: rgb(207, 232, 232); /* Hintergrundfarbe des aktiven Indicators auf hell setzen */
   opacity: 1; /* Opazität des aktiven Indicators anpassen (optional) */
+}
+
+.minheight {
+  text-align: center;
+  height: 100px;
+}
+
+.minheightimg {
+  height: 75px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
 }
 
 #devider {
@@ -155,6 +170,17 @@ body {
   padding: 5px 20px 5px 20px;
 }
 
+.title {
+  display: flex;
+  margin-top: 10px;
+}
+
+.size {
+  height: 30px;
+  margin-top: 2px;
+  margin-left: auto;
+}
+
 .message {
   font-size: 50px;
   white-space: nowrap;
@@ -169,10 +195,6 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-
-.calendar p {
-  flex: 1;
 }
 
 .nowrap {
@@ -203,30 +225,6 @@ h1 {
 
 h3 {
   font-size: 25px;
-}
-
-.minheight {
-  text-align: center;
-  height: 100px;
-}
-
-.minheightimg {
-  height: 75px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
-.title {
-  display: flex;
-  margin-top: 10px;
-}
-
-.size {
-  height: 30px;
-  margin-top: 2px;
-  margin-left: auto;
 }
 
 /* Responsive Design for 1920x1080 */

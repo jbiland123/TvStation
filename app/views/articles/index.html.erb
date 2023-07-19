@@ -19,13 +19,27 @@
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
       <title>TVStation</title>
    </head>
-   <body>
-    <div class="header">
-        <h1>Zentrale Informatik</h1>
-        <p class="date"><%= Time.now.strftime("%A, %B %d, %H:%M") %></p>
-        <div class="bl-logo">
-            <%= image_tag("Baselland.png", size: "235x55") %>
-        </div>
+<body>
+  <div class="header">
+    <h1>Zentrale Informatik</h1>
+    <p class="date" id="current-time"></p>
+    <div class="bl-logo">
+      <%= image_tag("Baselland.png", size: "235x55") %>
+    </div>
+  </div>
+
+  <script>
+    function updateTime() {
+      const currentTime = new Date();
+      const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+      const formattedTime = currentTime.toLocaleDateString('de', options);
+      document.getElementById('current-time').innerText = formattedTime;
+    }
+    updateTime();
+    setInterval(updateTime, 60000);
+  </script>
+
+    
     </div>
     <div class="body">
     <div class="parent">
@@ -33,55 +47,22 @@
         <div class="inner-parent">
         <div class="div1">
             <div class="weather">
-                <h2 class="bold">Today</h2>
+                <h2 class="bold">Heute</h2>
                 <img src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
                 <p><%= @data["main"]["temp"] %> Grad</p>
                 <p><%= @data["weather"].first["main"] %></p>
                 <p><%= @data["weather"].first["description"] %></p>
             </div>
         </div>
-        <div class="div2">
-            <div class="weatherprediction">
-                <p class="bold"><%= Date.parse(@days[1]["datetime"]).strftime("%a, %b %d") %></p>
-                <p><%= @days[1]["temp"] %> Grad</p>
-                <p><%= @days[1]["conditions"] %></p>
+       <% (2..7).each do |i| %>
+        <div class="div<%= i %>">
+            <div class="weatherprediction<%= i > 4 ? 'Under' : '' %>">
+            <p class="bold"><%= german_day_name_short(Date.parse(@days[i]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[i]["datetime"])) %> <%= Date.parse(@days[i]["datetime"]).strftime("%d") %></p>
+            <p><%= @days[i]["temp"] %> Grad</p>
+            <p><%= multiline_text(@days[i]["conditions"]) %></p>
             </div>
         </div>
-        <div class="div3">
-            <div class="weatherprediction">
-                <p class="bold"><%= Date.parse(@days[2]["datetime"]).strftime("%a, %b %d") %></p>
-                <p><%= @days[2]["temp"] %> Grad</p>
-                <p><%= @days[2]["conditions"] %></p>
-            </div>
-        </div>
-        <div class="div4">
-            <div class="weatherprediction">
-                <p class="bold"><%= Date.parse(@days[3]["datetime"]).strftime("%a, %b %d") %></p>
-                <p><%= @days[3]["temp"] %> Grad</p>
-                <p><%= @days[3]["conditions"] %></p>
-            </div>
-        </div>
-        <div class="div5">
-            <div class="weatherpredictionUnder">
-                <p class="bold"><%= Date.parse(@days[4]["datetime"]).strftime("%a, %b %d") %></p>
-                <p><%= @days[4]["temp"] %> Grad</p>
-                <p><%= @days[4]["conditions"] %></p>
-            </div>
-        </div>
-        <div class="div6">
-            <div class="weatherpredictionUnder">
-                <p class="bold"><%= Date.parse(@days[5]["datetime"]).strftime("%a, %b %d") %></p>
-                <p><%= @days[5]["temp"] %> Grad</p>
-                <p><%= @days[5]["conditions"] %></p>
-            </div>
-        </div>
-        <div class="div7">
-            <div class="weatherpredictionUnder">
-                <p class="bold"><%= Date.parse(@days[6]["datetime"]).strftime("%a, %b %d") %></p>
-                <p><%= @days[6]["temp"] %> Grad</p>
-                <p><%= @days[6]["conditions"] %></p>
-            </div>
-        </div>
+        <% end %>
     </div>
     </div>
         <div class="div2"> 
@@ -125,7 +106,7 @@
                 <% @events.each do |event| %>
                     <div class="calendar-content">
                         <p class="left max-characters"><%= event.summary %></p>
-                        <p class="right"><%= event.dtstart.strftime("%B %d, %H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+                        <p class="right"><%= german_month_name(event.dtstart) %> <%= event.dtstart.strftime("%d, %H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
                     </div>
                     <p></p>
                 <% end %>
@@ -150,7 +131,7 @@
             <% @events2.each do |event2| %>
                 <div class="calendar-content">
                     <p class="left max-characters"><%= event2.summary %></p>
-                    <p class="right"><%= event2.dtstart.strftime("%B %d, %H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                    <p class="right"><%= german_month_name(event2.dtstart) %> <%= event2.dtstart.strftime("%d, %H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
                 </div>
                 <p></p>
             <% end %>
