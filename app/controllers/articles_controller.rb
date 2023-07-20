@@ -29,7 +29,7 @@ class ArticlesController < ApplicationController
 
     @i_news = @news.select { |item| item["author"] == "SRF News" or item["author"] == "blue News" or item["author"] == "Polizei Basel-Landschaft" or item["author"] == "Tages-Anzeiger" or item["author"] == "BLICK"}
 
-    file_path = Rails.public_path.join('calendar.txt')
+    file_path = Rails.public_path.join('sitzungszimmer310.txt')
     calendar_file = File.read(file_path)
     calendar = Icalendar::Calendar.parse(calendar_file).first
     
@@ -37,7 +37,7 @@ class ArticlesController < ApplicationController
     
     @location = @events.first.location
 
-    file_path2 = Rails.public_path.join('calendar2.txt')
+    file_path2 = Rails.public_path.join('schulungsraum1.txt')
     calendar_file2 = File.read(file_path2)
     calendar2 = Icalendar::Calendar.parse(calendar_file2).first
     

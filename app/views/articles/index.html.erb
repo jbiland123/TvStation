@@ -43,6 +43,28 @@
     <div class="body">
         <div class="parent">
             <div class="div1"> 
+                <div class="news">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
+                        <ol class="carousel-indicators">
+                        <% @i_news.each_with_index do |_, index| %>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" <%= index == 0 ? 'class="active"' : '' %>></li>
+                        <% end %>
+                        </ol>
+                        <div class="carousel-inner">
+                            <% @i_news.each_with_index do |item, index| %>
+                                <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+                                    <div class="news-slide">
+                                        <img class="minheightimg" src="<%= asset_path(item["author"] + ".png") %>" alt="">
+                                        <p id="devider">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+                                        <h3 class="minheight"><%= truncate_title(item["title"], item["author"]) %></h3>
+                                    </div>
+                                </div>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div2"> 
                 <div class="inner-parent">
                 <div class="div1">
                     <div class="weather">
@@ -65,28 +87,6 @@
                 <% end %>
             </div>
         </div>
-            <div class="div2"> 
-                <div class="news">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
-                        <ol class="carousel-indicators">
-                        <% @i_news.each_with_index do |_, index| %>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" <%= index == 0 ? 'class="active"' : '' %>></li>
-                        <% end %>
-                        </ol>
-                        <div class="carousel-inner">
-                            <% @i_news.each_with_index do |item, index| %>
-                                <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
-                                    <div class="news-slide">
-                                        <img class="minheightimg" src="<%= asset_path(item["author"] + ".png") %>" alt="">
-                                        <p id="devider">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
-                                        <h3 class="minheight"><%= truncate_title(item["title"], item["author"]) %></h3>
-                                    </div>
-                                </div>
-                            <% end %>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="div3">
                 <div class="calendar">
                     <% status = "Frei" %>
@@ -96,20 +96,26 @@
                         <% end %>
                     <% end %>
                     <div class="title">
-                        <h2 class="bold">ZZZFKD Sitzungszimmer 310, 3. Stock</h2>
+                        <h2 class="bold">Sitzungszimmer 310 - 3. Stock</h2>
                         <% if status == "Besetzt" %>
                             <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
                         <% else %>
                             <img class="size" src="<%= asset_path("free.png") %>" alt="">
                         <% end %>
                     </div>
-                    <% @events.first(5).each do |event| %>
+                    <% @events.first(1).each do |event| %>
+                        <div class="calendar-content-first">
+                            <p class="left max-characters"><%= event.summary %></p>
+                            <p class="right"><%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+                        </div>
+                    <% end %>
+                    <% @events.drop(1).first(4).each do |event| %>
                         <div class="calendar-content">
                             <p class="left max-characters"><%= event.summary %></p>
-                            <p class="right"><%= german_month_name(event.dtstart) %> <%= event.dtstart.strftime("%d, %H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+                            <p class="right"><%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
                         </div>
-                        <p></p>
                     <% end %>
+                    <br>
                 </div>
             </div>
             <div class="div4">
@@ -121,25 +127,36 @@
                         <% end %>
                     <% end %>
                     <div class="title">
-                        <h2 class="bold">ZZZSID Schulungsraum 1, 3. Stock</h2>
+                        <h2 class="bold">Schulungsraum 1 - Theorieprüfungen</h2>
                         <% if status2 == "Besetzt" %>
                             <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
                         <% else %>
                             <img class="size" src="<%= asset_path("free.png") %>" alt="">
                         <% end %>
                     </div>
-                <% @events2.first(5).each do |event2| %>
+                <% @events2.first(1).each do |event2| %>
+                    <div class="calendar-content-first">
+                        <p class="left max-characters"><%= event2.summary %></p>
+                        <p class="right"><%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                    </div>
+                <% end %>
+                <% @events2.drop(1).first(4).each do |event2| %>
                     <div class="calendar-content">
                         <p class="left max-characters"><%= event2.summary %></p>
-                        <p class="right"><%= german_month_name(event2.dtstart) %> <%= event2.dtstart.strftime("%d, %H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                        <p class="right"><%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
                     </div>
-                    <p></p>
                 <% end %>
+                <br>
                 </div>
             </div>
+
             <div class="div5">
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" id="daily-progress"></div>
+                </div>
+                
                 <div class="message">
-                    <marquee behavior="scroll" direction="left" scrollamount="15">
+                    <marquee behavior="scroll" direction="left" scrollamount="5">
                     <% current_hour = Time.now.hour %>
                     <% if status2 == "Besetzt" %>
                         Herzlich Willkommen an der Frenkendörferstrasse 17 in Liestal! Für die Theorieprüfung warten sie bitte hier. Sie werden bald abgehohlt.
@@ -154,9 +171,6 @@
                     <% end %>
                     </marquee>
                 </div>
-                <div class="progress" role="progressbar" aria-label="Fortschritt des Tages" aria-valuemin="0" aria-valuemax="100">
-                    <div class="progress-bar" id="daily-progress" style="width: 0;"></div>
-                </div>
 
                 <script>
                 function updateProgress() {
@@ -164,7 +178,7 @@
                     const startOfDay = new Date(now);
                     startOfDay.setHours(8, 0, 0, 0); // Setze die Startzeit auf 8 Uhr
                     const endOfDay = new Date(now);
-                    endOfDay.setHours(16, 0, 0, 0); // Setze die Endzeit auf 16 Uhr
+                    endOfDay.setHours(17, 0, 0, 0); // Setze die Endzeit auf 16 Uhr
 
                     // Berechne den Fortschritt in Prozent
                     const totalMilliseconds = endOfDay - startOfDay;

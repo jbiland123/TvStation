@@ -27,19 +27,23 @@ body {
   border-bottom: 1px solid #ff0000;
 }
 
+.bl-logo {
+  margin: 14px 50px 16px 50px;
+}
+
 .date {
-  margin-left: 450px;
+  margin-left: 400px;
   margin-top: 18px;
   color: black;
-  font-size: 21px;
+  font-size: 25px;
 }
 
 .parent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, auto);
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
   grid-auto-rows: auto;
   }
   
@@ -74,6 +78,52 @@ body {
 .inner-parent .div6 { grid-area: 2 / 3 / 3 / 4;}
 
 .inner-parent .div7 { grid-area: 2 / 4 / 3 / 5;}
+
+.weather,
+.weatherprediction,
+.weatherpredictionUnder,
+.news,
+.calendar,
+.calendar-content {
+  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);*/
+  border: 2px solid rgb(229, 231, 231);
+}
+
+.news {
+  background-color: white;
+  border-radius: 10px;
+  padding: 5px 20px 5px 20px;
+  margin: auto;
+  width: 820px;
+}
+
+.carousel-indicators li {
+  background-color: #464646; /* Hintergrundfarbe der Indicators auf dunkel setzen */
+  opacity: 0.5; /* Opazität der Indicators anpassen (optional) */
+}
+
+.carousel-indicators .active {
+  background-color: rgb(207, 232, 232); /* Hintergrundfarbe des aktiven Indicators auf hell setzen */
+  opacity: 1; /* Opazität des aktiven Indicators anpassen (optional) */
+}
+
+.minheight {
+  text-align: center;
+  height: 120px;
+}
+
+.minheightimg {
+  height: 75px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+#devider {
+  font-size: 22px;
+  text-align: center;
+}
 
 .weather {
   border-radius: 10px;
@@ -113,41 +163,6 @@ body {
   height: 130px;
 }
 
-.news {
-  background-color: white;
-  border-radius: 10px;
-  padding: 5px 20px 5px 20px;
-  margin: auto;
-}
-
-.carousel-indicators li {
-  background-color: #464646; /* Hintergrundfarbe der Indicators auf dunkel setzen */
-  opacity: 0.5; /* Opazität der Indicators anpassen (optional) */
-}
-
-.carousel-indicators .active {
-  background-color: rgb(207, 232, 232); /* Hintergrundfarbe des aktiven Indicators auf hell setzen */
-  opacity: 1; /* Opazität des aktiven Indicators anpassen (optional) */
-}
-
-.minheight {
-  text-align: center;
-  height: 120px;
-}
-
-.minheightimg {
-  height: 75px;
-  margin-top: 30px;
-  margin-bottom: 20px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-}
-
-#devider {
-  font-size: 22px;
-  text-align: center;
-}
-
 .calendar {
   background-color: white;
   border-radius: 10px;
@@ -155,29 +170,33 @@ body {
   height: 100%;
 }
 
-.weather,
-.weatherprediction,
-.weatherpredictionUnder,
-.news,
-.calendar,
-.calendar-content {
-  /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);*/
-  border: 2px solid rgb(213, 209, 209);
+.title {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgb(229, 231, 231);
+}
+
+.calendar-content-first {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background-color: rgb(207, 232, 232);
+  padding: 20px 20px 10px 20px;
 }
 
 .calendar-content {
   font-size: 18px;
+  color: grey;
   display: flex;
   justify-content: space-between;
-  border: 2px solid black;
+  border: 2px solid rgb(207, 232, 232);
   border-radius: 10px;
   background-color: rgb(232, 242, 242);
-  padding: 5px 20px 5px 20px;
-}
-
-.title {
-  display: flex;
-  margin-top: 10px;
+  padding: 15px 20px 0px 20px;
+  margin: -2px 10px 0px 10px;
 }
 
 .size {
@@ -189,11 +208,22 @@ body {
 .message {
   font-size: 50px;
   white-space: nowrap;
-  font-family: 'Roboto', sans-serif;
 }
 
-.bl-logo {
-  margin: 14px 50px 16px 50px;
+/* Set the background color of the progress bar */
+.progress-bar {
+  background-color: rgb(229, 231, 231); /* Change this to the desired background color */
+}
+
+/* Set the text color of the progress bar */
+.progress-bar {
+  color: #ffffff; /* Change this to the desired text color */
+}
+
+/* Set the progress bar's color at different stages */
+.progress-bar {
+  /* Color when width is less than or equal to 25% */
+  background-color: #ff0000; /* Change this to the desired color */
 }
 
 .max-characters {
