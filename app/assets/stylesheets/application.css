@@ -163,6 +163,18 @@ body {
   height: 130px;
 }
 
+.temperatur {
+  font-size: 30px;
+}
+
+.weather-description {
+  font-size: 20px;
+}
+
+.less-distance {
+  padding-top: -20px;
+}
+
 .calendar {
   background-color: white;
   border-radius: 10px;

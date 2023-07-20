@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
   helper_method :truncate_title
 
   def index
-    url = 'https://api.openweathermap.org/data/2.5/weather?lat=47.486614&lon=7.733427&units=metric&appid=2cd6c916e89c89f156c3ee6332d5bd03&lang=de'
+    url = 'https://api.openweathermap.org/data/2.5/weather?lat=47.496658463630894&lon=7.7210972814041545&units=metric&appid=2cd6c916e89c89f156c3ee6332d5bd03&lang=de'
     uri = URI(url)
     res = Net::HTTP.get_response(uri)
     @data = JSON.parse(res.body)

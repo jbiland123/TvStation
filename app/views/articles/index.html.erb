@@ -70,10 +70,10 @@
                     <div class="weather">
                         <h2 class="bold">Heute</h2>
                         <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
-                        <p>Temperatur: <%= @data["main"]["temp"] %>°</p>
-                        <p>Gefühlt: <%= @data["main"]["feels_like"] %>°</p>
-                        <p>Feuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
-                        <i><%= @data["weather"].first["description"] %></i>
+                        <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+                        <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
+                        <p>Feuchtigkeit: <%= @data["main"]["humidity"] %>%
+                        Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
                     </div>
                 </div>
                 <% (2..7).each do |i| %>
@@ -162,7 +162,7 @@
                         Herzlich Willkommen an der Frenkendörferstrasse 17 in Liestal! Für die Theorieprüfung warten sie bitte hier. Sie werden bald abgehohlt.
                     <% elsif (6..8).include?(current_hour) %>
                         Guten Morgen und herzlich Willkommen an der Frenkendörferstrasse 17 in Liestal!
-                    <% elsif (11..13).include?(current_hour) %>
+                    <% elsif (11..12).include?(current_hour) %>
                         Guten Appetit und bis später! Ich hoffe das Essen dir schmecken.
                     <% elsif (16..20).include?(current_hour) %>
                         Einen schönen Abend und bis bald! Geniesse die Arbeitsfreie Zeit.
