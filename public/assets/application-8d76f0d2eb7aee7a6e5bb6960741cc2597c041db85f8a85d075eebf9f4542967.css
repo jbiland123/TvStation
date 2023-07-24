@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -182,7 +182,7 @@ body {
 .calendar {
   background-color: white;
   border-radius: 10px;
-  padding: 5px 20px 20px 20px;
+  padding: 5px 20px 5px 20px;
   height: 100%;
 }
 
@@ -200,7 +200,7 @@ body {
   justify-content: space-between;
   border-radius: 10px;
   background-color: rgb(207, 232, 232);
-  padding: 20px 20px 10px 20px;
+  padding: 20px 20px 0px 20px;
   margin-bottom: 10px;
 }
 
