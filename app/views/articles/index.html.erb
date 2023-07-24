@@ -70,10 +70,10 @@
                     <div class="weather">
                         <h2 class="bold">Heute</h2>
                         <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
-                        <i class="weather-description"><%= @data["weather"].first["description"] %></i>
                         <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
-                        <p>Feuchtigkeit: <%= @data["main"]["humidity"] %></p>
-                        <p class="weatherinfo"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+                        <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+                        <p class="weatherinfo">Feuchtigkeit: <%= @data["main"]["humidity"] %></p>
+                        <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
                     </div>
                 </div>
                 <% (2..7).each do |i| %>

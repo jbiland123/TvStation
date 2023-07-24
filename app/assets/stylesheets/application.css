@@ -166,13 +166,14 @@ body {
   font-size: 30px;
 }
 
-.weather-description {
-  font-size: 20px;
-}
-
 .weatherinfo {
   white-space: nowrap;
-  margin-top: -15px;
+  margin-top: 5px;
+}
+
+.weatherinfo2 {
+  white-space: nowrap;
+  margin-top: -12px;
 }
 
 .less-distance {
