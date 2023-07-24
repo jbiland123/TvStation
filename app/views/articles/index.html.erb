@@ -193,9 +193,9 @@
                 function updateProgress() {
                     const now = new Date();
                     const startOfDay = new Date(now);
-                    startOfDay.setHours(8, 0, 0, 0); // Setze die Startzeit auf 8 Uhr
+                    startOfDay.setHours(6, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
                     const endOfDay = new Date(now);
-                    endOfDay.setHours(17, 0, 0, 0); // Setze die Endzeit auf 16 Uhr
+                    endOfDay.setHours(18, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
 
                     // Berechne den Fortschritt in Prozent
                     const totalMilliseconds = endOfDay - startOfDay;

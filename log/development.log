@@ -7814,3 +7814,42 @@ Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 13:27:07 +0200
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started GET "/" for ::1 at 2023-07-24 13:38:24 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 4267)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 5430)
+Completed 200 OK in 1378ms (Views: 4.0ms | Allocations: 64156)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 13:38:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 13:47:26 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 4205)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 6944)
+Completed 200 OK in 1316ms (Views: 5.9ms | Allocations: 65734)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 13:47:28 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 13:47:49 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 4178)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 5341)
+Completed 200 OK in 810ms (Views: 5.3ms | Allocations: 64009)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 13:47:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
