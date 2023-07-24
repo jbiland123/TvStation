@@ -154,22 +154,40 @@
                     <div class="progress-bar" id="daily-progress"></div>
                 </div>
                 
-                <div class="message">
-                    <marquee behavior="scroll" direction="left" scrollamount="5">
-                        <% current_hour = Time.now.hour %>
-                        <% if status2 == "Besetzt" %>
-                            Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank!
-                        <% elsif (6..10).include?(current_hour) %>
-                            Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
-                        <% elsif (11..13).include?(current_hour) %>
-                            Guten Appetit und eine angenehme Pause! 
-                        <% elsif (16..19).include?(current_hour) %>
-                            Einen schönen Feierabend! Erhole dich gut und bis morgen!
-                        <% else %>
-                            Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
-                        <% end %>
-                    </marquee>
-                </div>
+                <div class="message" id="message">
+                <marquee behavior="scroll" direction="left" scrollamount="5">
+                  Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+                </marquee>
+              </div>
+              
+              <script>
+                function updateMessage() {
+                  var currentHour = new Date().getHours();
+                  var messageDiv = document.getElementById("message");
+                  var messageContent = "";
+              
+                  if (status2 == "Besetzt") {
+                    messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank!";
+                  } else if (currentHour >= 6 && currentHour <= 10) {
+                    messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                  } else if (currentHour >= 11 && currentHour <= 13) {
+                    messageContent = "Guten Appetit und eine angenehme Pause!";
+                  } else if (currentHour >= 16 && currentHour <= 19) {
+                    messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+                  } else {
+                    messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                  }
+              
+                  messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+                }
+              
+                // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+                updateMessage();
+              
+                // Aktualisiere die Nachricht alle 10 Sekunden
+                setInterval(updateMessage, 10000);
+              </script>
+              
 
                 <script>
                 function updateProgress() {
