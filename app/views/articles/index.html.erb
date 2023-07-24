@@ -158,15 +158,15 @@
                     <marquee behavior="scroll" direction="left" scrollamount="5">
                     <% current_hour = Time.now.hour %>
                     <% if status2 == "Besetzt" %>
-                        Herzlich Willkommen an der Frenkendörferstrasse 17 in Liestal! Für die Theorieprüfung warten sie bitte hier. Sie werden bald abgehohlt.
-                    <% elsif (6..8).include?(current_hour) %>
-                        Guten Morgen und herzlich Willkommen an der Frenkendörferstrasse 17 in Liestal!
-                    <% elsif (11..12).include?(current_hour) %>
-                        Guten Appetit und bis später! Ich hoffe das Essen dir schmecken.
-                    <% elsif (16..20).include?(current_hour) %>
-                        Einen schönen Abend und bis bald! Geniesse die Arbeitsfreie Zeit.
+                        Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank!
+                    <% elsif (6..10).include?(current_hour) %>
+                        Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+                    <% elsif (11..13).include?(current_hour) %>
+                        Guten Appetit und eine angenehme Pause! 
+                    <% elsif (16..19).include?(current_hour) %>
+                        Einen schönen Feierabend! Erhole dich gut und bis morgen!
                     <% else %>
-                        Herzlich Willkommen an der Frenkendörferstrasse 17 in Liestal!
+                        Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
                     <% end %>
                     </marquee>
                 </div>
