@@ -156,20 +156,20 @@
                 
                 <div class="message">
                     <marquee behavior="scroll" direction="left" scrollamount="5">
-                    <% current_hour = Time.now.hour %>
-                    <% if status2 == "Besetzt" %>
-                        Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank!
-                    <% elsif (6..10).include?(current_hour) %>
-                        Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
-                    <% elsif (11..13).include?(current_hour) %>
-                        Guten Appetit und eine angenehme Pause! 
-                    <% elsif (16..19).include?(current_hour) %>
-                        Einen schönen Feierabend! Erhole dich gut und bis morgen!
-                    <% else %>
-                        Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
-                    <% end %>
+                        <% current_hour = Time.now.hour %>
+                        <% if status2 == "Besetzt" %>
+                            Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank!
+                        <% elsif (6..10).include?(current_hour) %>
+                            Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+                        <% elsif (11..13).include?(current_hour) %>
+                            Guten Appetit und eine angenehme Pause! 
+                        <% elsif (16..19).include?(current_hour) %>
+                            Einen schönen Feierabend! Erhole dich gut und bis morgen!
+                        <% else %>
+                            Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+                        <% end %>
                     </marquee>
-                </div>
+                </div>              
 
                 <script>
                 function updateProgress() {
