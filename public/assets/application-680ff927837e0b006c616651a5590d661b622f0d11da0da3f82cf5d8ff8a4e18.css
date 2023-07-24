@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -130,6 +130,7 @@ body {
   padding: 5px 20px 5px 20px;
   background-color: white;
   text-align: center;
+  margin-right: 5px;
   width: 225px;
 }
 
@@ -138,10 +139,10 @@ body {
   border-radius: 10px;
   background-color: rgb(232, 242, 242);
   padding: 5px 20px 5px 20px;
-  margin-left: 15px;
+  margin-left: 5px;
   text-align: center;
   height: 150px;
-  width: 207px;
+  width: 205px;
 }
 
 .weatherpredictionUnder {
@@ -149,11 +150,11 @@ body {
   border-radius: 10px;
   background-color: rgb(232, 242, 242);
   padding: 5px 20px 5px 20px;
-  margin-left: 15px;
+  margin-left: 5px;
   margin-top: 8px;
   text-align: center;
   height: 150px;
-  width: 207px;
+  width: 205px;
 }
 
 .weatherImage {
