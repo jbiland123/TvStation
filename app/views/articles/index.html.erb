@@ -79,9 +79,9 @@
                 <% (2..7).each do |i| %>
                 <div class="div<%= i %>">
                     <div class="weatherprediction<%= i > 4 ? 'Under' : '' %>">
-                    <p class="bold"><%= german_day_name(Date.parse(@days[i]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[i]["datetime"])) %> <%= Date.parse(@days[i]["datetime"]).strftime("%d") %></p>
-                    <p>Temp: <%= @days[i]["temp"] %>°</p>
-                    <i><%= multiline_text(@days[i]["conditions"]) %></i>
+                    <p class="bold"><%= german_day_name(Date.parse(@days[i-1]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[i]["datetime"])) %> <%= Date.parse(@days[i-1]["datetime"]).strftime("%d") %></p>
+                    <p>Temp: <%= @days[i-1]["temp"] %>°</p>
+                    <i><%= multiline_text(@days[i-1]["conditions"]) %></i>
                     </div>
                 </div>
                 <% end %>

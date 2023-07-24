@@ -8074,3 +8074,647 @@ Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:05:09 +0200
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started GET "/" for ::1 at 2023-07-24 14:23:34 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 4282)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 5446)
+Completed 200 OK in 1380ms (Views: 3.4ms | Allocations: 64166)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:23:35 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:24:07 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 4278)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 5463)
+Completed 200 OK in 877ms (Views: 5.1ms | Allocations: 64166)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:24:08 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:24:23 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 4278)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 5441)
+Completed 200 OK in 1423ms (Views: 5.3ms | Allocations: 64107)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:24:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:24:48 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 4284)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 5435)
+Completed 200 OK in 827ms (Views: 5.5ms | Allocations: 64111)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:24:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:26:57 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 4278)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 5448)
+Completed 200 OK in 1290ms (Views: 5.1ms | Allocations: 64127)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:26:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:27:12 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 4278)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 5446)
+Completed 200 OK in 1255ms (Views: 4.9ms | Allocations: 64106)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:27:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:27:29 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 4285)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 5451)
+Completed 200 OK in 803ms (Views: 5.4ms | Allocations: 64170)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:27:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:28:37 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 4817)
+  Rendered layout layouts/application.html.erb (Duration: 5.9ms | Allocations: 7835)
+Completed 200 OK in 1263ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 73377)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:28:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:29:32 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 4283)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 5443)
+Completed 200 OK in 1273ms (Views: 3.3ms | ActiveRecord: 0.0ms | Allocations: 64233)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:29:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:29:47 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 4817)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 7851)
+Completed 200 OK in 1251ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 73409)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:29:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:31:23 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 4283)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 5445)
+Completed 200 OK in 868ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 64210)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:31:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:34:05 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 4288)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 5447)
+Completed 200 OK in 1427ms (Views: 4.7ms | ActiveRecord: 0.0ms | Allocations: 64127)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:34:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:42:17 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 2443)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 2525)
+Completed 500 Internal Server Error in 1367ms (Allocations: 61139)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+
+<html lang="de">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="refresh" content="1800">
+      <link href="css/Stylesheet.css" rel="Stylesheet">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="icon" href="Bilder/Logo.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <title>TVStation</title>
+   </head>
+<body>
+    <div class="header">
+        <h1>Zentrale Informatik</h1>
+        <p class="date" id="current-time"></p>
+        <div class="bl-logo">
+        <%= image_tag("Baselland.png", size: "235x55") %>
+        </div>
+    </div>
+
+    <script>
+        function updateTime() {
+        const currentTime = new Date();
+        const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+        const formattedTime = currentTime.toLocaleDateString('ch', options);
+        document.getElementById('current-time').innerText = formattedTime;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+
+    <div class="body">
+        <div class="parent">
+            <div class="div1"> 
+                <div class="news">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
+                        <ol class="carousel-indicators">
+                        <% @i_news.each_with_index do |_, index| %>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" <%= index == 0 ? 'class="active"' : '' %>></li>
+                        <% end %>
+                        </ol>
+                        <div class="carousel-inner">
+                            <% @i_news.each_with_index do |item, index| %>
+                                <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+                                    <div class="news-slide">
+                                        <img class="minheightimg" src="<%= asset_path(item["author"] + ".png") %>" alt="">
+                                        <p id="devider">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+                                        <h3 class="minheight"><%= truncate_title(item["title"], item["author"]) %></h3>
+                                    </div>
+                                </div>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div2"> 
+                <div class="inner-parent">
+                <div class="div1">
+                    <div class="weather">
+                        <h2 class="bold">Heute</h2>
+                        <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+                        <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
+                        <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+                        <p class="weatherinfo">Feuchtigkeit: <%= @data["main"]["humidity"] %></p>
+                        <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+                    </div>
+                </div>
+                <% (1..6).each do |i+1| %>
+                <div class="div<%= i %>">
+                    <div class="weatherprediction<%= i > 3 ? 'Under' : '' %>">
+                    <p class="bold"><%= german_day_name(Date.parse(@days[i]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[i]["datetime"])) %> <%= Date.parse(@days[i]["datetime"]).strftime("%d") %></p>
+                    <p>Temp: <%= @days[i]["temp"] %>°</p>
+                    <i><%= multiline_text(@days[i]["conditions"]) %></i>
+                    </div>
+                </div>
+                <% end %>
+            </div>
+        </div>
+            <div class="div3">
+                <div class="calendar">
+                    <% status = "Frei" %>
+                    <% @events.each do |event| %>
+                        <% if event.dtstart <= Time.now && Time.now <= event.dtend %>
+                            <% status = "Besetzt" %>
+                        <% end %>
+                    <% end %>
+                    <div class="title">
+                        <h2 class="bold">Sitzungszimmer 310</h2>
+                        <% if status == "Besetzt" %>
+                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                        <% else %>
+                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                        <% end %>
+                    </div>
+                    <% @events.first(1).each do |event| %>
+                        <div class="calendar-content-first">
+                            <p class="left max-characters"><%= event.summary %></p>
+                            <p class="right"><%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+                        </div>
+                    <% end %>
+                    <% @events.drop(1).first(4).each do |event| %>
+                        <div class="calendar-content">
+                            <p class="left max-characters"><%= event.summary %></p>
+                            <p class="right"><%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+            <div class="div4">
+                <div class="calendar">
+                <% status2 = "Frei" %>
+                    <% @events2.each do |event2| %>
+                        <% if event2.dtstart <= Time.now && Time.now <= event2.dtend %>
+                            <% status2 = "Besetzt" %>
+                        <% end %>
+                    <% end %>
+                    <div class="title">
+                        <h2 class="bold">Schulungsraum 1 - Theorieprüfungen</h2>
+                        <% if status2 == "Besetzt" %>
+                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                        <% else %>
+                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                        <% end %>
+                    </div>
+                <% @events2.first(1).each do |event2| %>
+                    <div class="calendar-content-first">
+                        <p class="left max-characters"><%= event2.summary %></p>
+                        <p class="right"><%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                    </div>
+                <% end %>
+                <% @events2.drop(1).first(4).each do |event2| %>
+                    <div class="calendar-content">
+                        <p class="left max-characters"><%= event2.summary %></p>
+                        <p class="right"><%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                    </div>
+                <% end %>
+            
+                </div>
+            </div>
+
+            <div class="div5">
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" id="daily-progress"></div>
+                </div>
+                
+                <div class="message" id="message">
+                <marquee behavior="scroll" direction="left" scrollamount="5">
+                  Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+                </marquee>
+              </div>
+              
+              <script>
+                function updateMessage() {
+                  var currentHour = new Date().getHours();
+                  var messageDiv = document.getElementById("message");
+                  var messageContent = "";
+              
+                  if (status2 == "Besetzt") {
+                    messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank!";
+                  } else if (currentHour >= 6 && currentHour <= 10) {
+                    messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                  } else if (currentHour >= 11 && currentHour <= 13) {
+                    messageContent = "Guten Appetit und eine angenehme Pause!";
+                  } else if (currentHour >= 16 && currentHour <= 19) {
+                    messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+                  } else {
+                    messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                  }
+              
+                  messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+                }
+              
+                // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+                updateMessage();
+              
+                // Aktualisiere die Nachricht alle 10 Sekunden
+                setInterval(updateMessage, 10000);
+              </script>
+              
+
+                <script>
+                function updateProgress() {
+                    const now = new Date();
+                    const startOfDay = new Date(now);
+                    startOfDay.setHours(6, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+                    const endOfDay = new Date(now);
+                    endOfDay.setHours(18, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+
+                    // Berechne den Fortschritt in Prozent
+                    const totalMilliseconds = endOfDay - startOfDay;
+                    const currentMilliseconds = now - startOfDay;
+                    const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+
+                    // Setze die Breite der Fortschrittsleiste entsprechend
+                    const progressBar = document.getElementById("daily-progress");
+                    progressBar.style.width = progressPercent + "%";
+                }
+
+                // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+                setInterval(updateProgress, 10000);
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    
+3:    <html lang="de">
+4:       <head>
+5:          <meta charset="UTF-8">
+6:          <meta http-equiv="refresh" content="1800">
+7:          <link href="css/Stylesheet.css" rel="Stylesheet">
+8:          
+9:          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+10:          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+11:          <link rel="icon" href="Bilder/Logo.png">
+12:          <link rel="preconnect" href="https://fonts.googleapis.com">
+13:          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+14:          <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+15:          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+16:          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+17:          <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+18:          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+19:          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+20:          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+21:          <title>TVStation</title>
+22:       </head>
+23:    <body>
+24:        <div class="header">
+25:            <h1>Zentrale Informatik</h1>
+26:            <p class="date" id="current-time"></p>
+27:            <div class="bl-logo">
+28:            <%= image_tag("Baselland.png", size: "235x55") %>
+29:            </div>
+30:        </div>
+31:    
+32:        <script>
+33:            function updateTime() {
+34:            const currentTime = new Date();
+35:            const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
+36:            const formattedTime = currentTime.toLocaleDateString('ch', options);
+37:            document.getElementById('current-time').innerText = formattedTime;
+38:            }
+39:            updateTime();
+40:            setInterval(updateTime, 1000);
+41:        </script>
+42:    
+43:        <div class="body">
+44:            <div class="parent">
+45:                <div class="div1"> 
+46:                    <div class="news">
+47:                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
+48:                            <ol class="carousel-indicators">
+49:                            <% @i_news.each_with_index do |_, index| %>
+50:                                <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" <%= index == 0 ? 'class="active"' : '' %>></li>
+51:                            <% end %>
+52:                            </ol>
+53:                            <div class="carousel-inner">
+54:                                <% @i_news.each_with_index do |item, index| %>
+55:                                    <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+56:                                        <div class="news-slide">
+57:                                            <img class="minheightimg" src="<%= asset_path(item["author"] + ".png") %>" alt="">
+58:                                            <p id="devider">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+59:                                            <h3 class="minheight"><%= truncate_title(item["title"], item["author"]) %></h3>
+60:                                        </div>
+61:                                    </div>
+62:                                <% end %>
+63:                            </div>
+64:                        </div>
+65:                    </div>
+66:                </div>
+67:                <div class="div2"> 
+68:                    <div class="inner-parent">
+69:                    <div class="div1">
+70:                        <div class="weather">
+71:                            <h2 class="bold">Heute</h2>
+72:                            <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+73:                            <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
+74:                            <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+75:                            <p class="weatherinfo">Feuchtigkeit: <%= @data["main"]["humidity"] %></p>
+76:                            <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+77:                        </div>
+78:                    </div>
+79:                    <% (1..6).each do |i+1| %>
+80:                    <div class="div<%= i %>">
+81:                        <div class="weatherprediction<%= i > 3 ? 'Under' : '' %>">
+82:                        <p class="bold"><%= german_day_name(Date.parse(@days[i]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[i]["datetime"])) %> <%= Date.parse(@days[i]["datetime"]).strftime("%d") %></p>
+83:                        <p>Temp: <%= @days[i]["temp"] %>°</p>
+84:                        <i><%= multiline_text(@days[i]["conditions"]) %></i>
+85:                        </div>
+86:                    </div>
+87:                    <% end %>
+88:                </div>
+89:            </div>
+90:                <div class="div3">
+91:                    <div class="calendar">
+92:                        <% status = "Frei" %>
+93:                        <% @events.each do |event| %>
+94:                            <% if event.dtstart <= Time.now && Time.now <= event.dtend %>
+95:                                <% status = "Besetzt" %>
+96:                            <% end %>
+97:                        <% end %>
+98:                        <div class="title">
+99:                            <h2 class="bold">Sitzungszimmer 310</h2>
+100:                            <% if status == "Besetzt" %>
+101:                                <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+102:                            <% else %>
+103:                                <img class="size" src="<%= asset_path("free.png") %>" alt="">
+104:                            <% end %>
+105:                        </div>
+106:                        <% @events.first(1).each do |event| %>
+107:                            <div class="calendar-content-first">
+108:                                <p class="left max-characters"><%= event.summary %></p>
+109:                                <p class="right"><%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+110:                            </div>
+111:                        <% end %>
+112:                        <% @events.drop(1).first(4).each do |event| %>
+113:                            <div class="calendar-content">
+114:                                <p class="left max-characters"><%= event.summary %></p>
+115:                                <p class="right"><%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+116:                            </div>
+117:                        <% end %>
+118:                    </div>
+119:                </div>
+120:                <div class="div4">
+121:                    <div class="calendar">
+122:                    <% status2 = "Frei" %>
+123:                        <% @events2.each do |event2| %>
+124:                            <% if event2.dtstart <= Time.now && Time.now <= event2.dtend %>
+125:                                <% status2 = "Besetzt" %>
+126:                            <% end %>
+127:                        <% end %>
+128:                        <div class="title">
+129:                            <h2 class="bold">Schulungsraum 1 - Theorieprüfungen</h2>
+130:                            <% if status2 == "Besetzt" %>
+131:                                <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+132:                            <% else %>
+133:                                <img class="size" src="<%= asset_path("free.png") %>" alt="">
+134:                            <% end %>
+135:                        </div>
+136:                    <% @events2.first(1).each do |event2| %>
+137:                        <div class="calendar-content-first">
+138:                            <p class="left max-characters"><%= event2.summary %></p>
+139:                            <p class="right"><%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+140:                        </div>
+141:                    <% end %>
+142:                    <% @events2.drop(1).first(4).each do |event2| %>
+143:                        <div class="calendar-content">
+144:                            <p class="left max-characters"><%= event2.summary %></p>
+145:                            <p class="right"><%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+146:                        </div>
+147:                    <% end %>
+148:                
+149:                    </div>
+150:                </div>
+151:    
+152:                <div class="div5">
+153:                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+154:                        <div class="progress-bar" id="daily-progress"></div>
+155:                    </div>
+156:                    
+157:                    <div class="message" id="message">
+158:                    <marquee behavior="scroll" direction="left" scrollamount="5">
+159:                      Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+160:                    </marquee>
+161:                  </div>
+162:                  
+163:                  <script>
+164:                    function updateMessage() {
+165:                      var currentHour = new Date().getHours();
+166:                      var messageDiv = document.getElementById("message");
+167:                      var messageContent = "";
+168:                  
+169:                      if (status2 == "Besetzt") {
+170:                        messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank!";
+171:                      } else if (currentHour >= 6 && currentHour <= 10) {
+172:                        messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+173:                      } else if (currentHour >= 11 && currentHour <= 13) {
+174:                        messageContent = "Guten Appetit und eine angenehme Pause!";
+175:                      } else if (currentHour >= 16 && currentHour <= 19) {
+176:                        messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+177:                      } else {
+178:                        messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+179:                      }
+180:                  
+181:                      messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+182:                    }
+183:                  
+184:                    // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+185:                    updateMessage();
+186:                  
+187:                    // Aktualisiere die Nachricht alle 10 Sekunden
+188:                    setInterval(updateMessage, 10000);
+189:                  </script>
+190:                  
+191:    
+192:                    <script>
+193:                    function updateProgress() {
+194:                        const now = new Date();
+195:                        const startOfDay = new Date(now);
+196:                        startOfDay.setHours(6, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+197:                        const endOfDay = new Date(now);
+198:                        endOfDay.setHours(18, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+199:    
+200:                        // Berechne den Fortschritt in Prozent
+201:                        const totalMilliseconds = endOfDay - startOfDay;
+202:                        const currentMilliseconds = now - startOfDay;
+203:                        const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+204:    
+205:                        // Setze die Breite der Fortschrittsleiste entsprechend
+206:                        const progressBar = document.getElementById("daily-progress");
+207:                        progressBar.style.width = progressPercent + "%";
+208:                    }
+209:    
+210:                    // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+211:                    setInterval(updateProgress, 10000);
+212:                    </script>
+213:    
+214:    
+215:                </div>
+216:            </div>
+217:        </div>
+218:       </body>
+219:    </html>
+  
+app/views/articles/index.html.erb:79: syntax error, unexpected '+', expecting '|'
+app/views/articles/index.html.erb:221: syntax error, unexpected `end', expecting end-of-input
+app/views/articles/index.html.erb:79: syntax error, unexpected '+', expecting '|'
+app/views/articles/index.html.erb:221: syntax error, unexpected `end', expecting end-of-input
+app/views/articles/index.html.erb:79: syntax error, unexpected '+', expecting '|'
+app/views/articles/index.html.erb:221: syntax error, unexpected `end', expecting end-of-input
+app/views/articles/index.html.erb:79: syntax error, unexpected '+', expecting '|'
+app/views/articles/index.html.erb:221: syntax error, unexpected `end', expecting end-of-input
+app/views/articles/index.html.erb:79: syntax error, unexpected '+', expecting '|'
+app/views/articles/index.html.erb:221: syntax error, unexpected `end', expecting end-of-input
+app/views/articles/index.html.erb:79: syntax error, unexpected '+', expecting '|'
+app/views/articles/index.html.erb:221: syntax error, unexpected `end', expecting end-of-input
+Started GET "/" for ::1 at 2023-07-24 14:43:02 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 4280)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 5431)
+Completed 200 OK in 901ms (Views: 6.0ms | Allocations: 64172)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:43:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-07-24 14:43:12 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.4ms | Allocations: 4279)
+  Rendered layout layouts/application.html.erb (Duration: 7.8ms | Allocations: 5444)
+Completed 200 OK in 1232ms (Views: 9.6ms | Allocations: 64106)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-07-24 14:43:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
