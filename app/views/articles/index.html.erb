@@ -22,7 +22,7 @@
    </head>
 <body>
     <div class="header">
-        <h1>Melvin</h1>
+        <h1>Zentrale Informatik</h1>
         <p class="date" id="current-time"></p>
         <div class="bl-logo">
         <%= image_tag("Baselland.png", size: "235x55") %>
@@ -33,7 +33,7 @@
         function updateTime() {
         const currentTime = new Date();
         const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-        const formattedTime = currentTime.toLocaleDateString('de', options);
+        const formattedTime = currentTime.toLocaleDateString('ch', options);
         document.getElementById('current-time').innerText = formattedTime;
         }
         updateTime();
@@ -96,7 +96,7 @@
                         <% end %>
                     <% end %>
                     <div class="title">
-                        <h2 class="bold">Sitzungszimmer 310 - 3. Stock</h2>
+                        <h2 class="bold">Sitzungszimmer 310</h2>
                         <% if status == "Besetzt" %>
                             <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
                         <% else %>
