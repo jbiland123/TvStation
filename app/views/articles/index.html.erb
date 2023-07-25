@@ -159,33 +159,35 @@
                     Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
                 </marquee>
               </div>
-              
+
               <script>
                 function updateMessage() {
-                var currentHour = new Date().getHours();
-                var messageDiv = document.getElementById("message");
-                var status2 = document.getElementById('status').innerText;
+                    var currentHour = new Date().getHours();
+                    var messageDiv = document.getElementById("message");
+                    var status2 = document.getElementById('status').innerText;
+                    var messageContent = "";
 
-                var messageContent = "";
-
-                  if (status2 == "Besetzt") {
+                    if (status2 == "Besetzt") {
                     messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
-                  } else if (currentHour >= 6 && currentHour < 9) {
+                    } else if (currentHour >= 6 && currentHour < 9) {
                     messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
-                  } else if (currentHour >= 10 && currentHour < 13) {
+                    } else if (currentHour >= 11 && currentHour < 13) {
                     messageContent = "Guten Appetit und eine angenehme Pause!";
-                  } else if (currentHour >= 16 && currentHour < 19) {
+                    } else if (currentHour >= 16 && currentHour < 19) {
                     messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
-                  } else {
+                    } else {
                     messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
-                  }
+                    }
 
-                  messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">' + messageContent + '</marquee>';
+                    messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
                 }
-              
+
                 // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
                 updateMessage();
-              </script>
+
+                // Aktualisiere die Nachricht alle volle Stunde
+                setInterval(updateMessage, 3600000 - (new Date().getTime() % 3600000));
+                </script>
 
                 <script>
                 function updateProgress() {
