@@ -72,7 +72,7 @@
                         <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
                         <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
                         <i class="weather-description"><%= @data["weather"].first["description"] %></i>
-                        <p class="weatherinfo">Feuchtigkeit: <%= @data["main"]["humidity"] %></p>
+                        <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
                         <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
                     </div>
                 </div>
