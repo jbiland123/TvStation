@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -280,7 +280,7 @@ h3 {
   font-size: 25px;
 }
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (min-width: 2000px) {
   h1 {
     color: green;
     margin-top: 4px;
