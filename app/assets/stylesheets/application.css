@@ -34,7 +34,7 @@ body {
 }
 
 .bl-logo {
-  margin: 14px 50px 16px 50px;
+  margin: 14px 0px 16px 430px;
 }
 
 .date {
@@ -315,16 +315,9 @@ h3 {
 }
 
 @media only screen and (min-width: 1600px ) and (max-width: 1700px ){
-
-  .header {
-    transform: scaleY(0.7); /* Verkleinere die Höhe um 80% */
-    transform-origin: top; /* Lege den Ursprung der Transformation auf die Oberseite fest */
-  }
-
   .body {
-    margin-top: -20px;
-    margin-left: -146px;
-    transform: scale(0.815); /* Verkleinere den gesamten Inhalt um 80% */
+    margin-left: -40px;
+    transform: scale(0.95); /* Verkleinere den gesamten Inhalt um 80% */
     transform-origin: top; /* Lege den Ursprung der Transformation auf die Oberseite fest */
   }
 
