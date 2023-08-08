@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,12 +34,12 @@ body {
 }
 
 .bl-logo {
-  margin: 14px 0px 16px 480px;
+  margin: 14px 0px 16px 430px;
 }
 
 .date {
   margin-left: 400px;
-  margin-top: 10px;
+  margin-top: 18px;
   color: black;
   font-size: 25px;
 }
@@ -294,25 +294,29 @@ h3 {
   }
 
   .title {
-    margin-top: 9px;
-    margin-bottom: 9px;
+    margin-top: 8px;
+    margin-bottom: 10px;
+  }
+
+  .calendar-content-first {
+    margin-bottom: 7px;
+  }
+  
+  .calendar-content {
+    margin-bottom: 3px;
   }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1700px){
   .body {
     margin-left: -40px;
-    transform: scale(0.95);
-    transform-origin: top;
+    transform: scale(0.95); /* Verkleinere den gesamten Inhalt um 80% */
+    transform-origin: top; /* Lege den Ursprung der Transformation auf die Oberseite fest */
   }
 
   .title {
     margin-top: 9px;
     margin-bottom: 9px;
-  }
-
-  .bl-logo {
-    margin: 14px 0px 16px 430px;
   }
 }
 

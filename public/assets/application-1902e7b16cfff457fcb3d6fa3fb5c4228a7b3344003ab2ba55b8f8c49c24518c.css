@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .bl-logo {
-  margin: 14px 0px 16px 480px;
+  margin: 14px 0px 16px 430px;
 }
 
 .date {
@@ -309,10 +309,6 @@ h3 {
   .title {
     margin-top: 9px;
     margin-bottom: 9px;
-  }
-
-  .bl-logo {
-    margin: 14px 0px 16px 430px;
   }
 }
 
