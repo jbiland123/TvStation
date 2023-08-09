@@ -105,13 +105,13 @@
                     </div>
                     <% @events.first(1).each do |event| %>
                         <div class="calendar-content-first">
-                            <p class="left max-characters"><%= event.summary %></p>
+                            <p class="left max-characters">Gebucht</p>
                             <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
                         </div>
                     <% end %>
                     <% @events.drop(1).first(4).each do |event| %>
                         <div class="calendar-content">
-                            <p class="left max-characters"><%= event.summary %></p>
+                            <p class="left max-characters">Gebucht</p>
                             <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
                         </div>
                     <% end %>
@@ -135,13 +135,13 @@
                     </div>
                 <% @events2.first(1).each do |event2| %>
                     <div class="calendar-content-first">
-                        <p class="left max-characters"><%= event2.summary %></p>
+                        <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
                         <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
                     </div>
                 <% end %>
                 <% @events2.drop(1).first(4).each do |event2| %>
                     <div class="calendar-content">
-                        <p class="left max-characters"><%= event2.summary %></p>
+                        <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
                         <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
                     </div>
                 <% end %>
