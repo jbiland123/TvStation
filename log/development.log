@@ -12354,3 +12354,345 @@ Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:14:28 +0200
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started GET "/" for ::1 at 2023-08-09 08:27:50 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 4676)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 7671)
+Completed 200 OK in 1891ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 73100)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:27:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:28:30 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 4676)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 7668)
+Completed 200 OK in 1489ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 73113)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:28:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:28:43 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 4676)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 7675)
+Completed 200 OK in 1765ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 73067)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:28:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:31:03 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 3847)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 5004)
+Completed 200 OK in 1837ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 63576)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:31:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:31:48 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 3827)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 4988)
+Completed 200 OK in 1611ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 63525)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:31:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:34:11 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 7358)
+Completed 200 OK in 2004ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 72763)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:34:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:35:54 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 7356)
+Completed 200 OK in 1793ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 72801)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:35:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:36:42 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 7356)
+Completed 200 OK in 1775ms (Views: 6.2ms | ActiveRecord: 0.0ms | Allocations: 72800)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:36:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:37:08 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 7352)
+Completed 200 OK in 1705ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 72794)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:37:10 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:39:14 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1693)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2556)
+Completed 200 OK in 1801ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 60220)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:39:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:41:05 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 1647)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2443)
+Completed 200 OK in 1378ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 59899)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:41:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:41:10 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1648)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2446)
+Completed 200 OK in 1716ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 59962)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:41:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:41:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:41:42 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 7356)
+Completed 200 OK in 1837ms (Views: 9.8ms | ActiveRecord: 0.0ms | Allocations: 72769)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:41:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:43:00 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1694)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 2559)
+Completed 200 OK in 1267ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 60310)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:43:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:43:08 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 7352)
+Completed 200 OK in 1192ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 72800)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:43:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:43:33 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 7352)
+Completed 200 OK in 2174ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 72798)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:43:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:44:27 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 7346)
+Completed 200 OK in 2741ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 72798)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:44:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:45:03 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 7358)
+Completed 200 OK in 1826ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 72826)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:45:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:45:51 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 7362)
+Completed 200 OK in 1254ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 72807)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:45:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:46:50 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1693)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2554)
+Completed 200 OK in 1402ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 60275)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:46:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:48:15 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 7346)
+Completed 200 OK in 2146ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 72792)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:48:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:48:35 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 1693)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 2570)
+Completed 200 OK in 1360ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 60261)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:48:37 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:48:45 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 7362)
+Completed 200 OK in 1264ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 72799)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:48:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:49:07 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 7344)
+Completed 200 OK in 1479ms (Views: 8.8ms | ActiveRecord: 0.0ms | Allocations: 72775)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:49:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:49:24 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 7356)
+Completed 200 OK in 1243ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 72786)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:49:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-09 08:51:15 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4357)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 7350)
+Completed 200 OK in 2929ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 72757)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-09 08:51:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
