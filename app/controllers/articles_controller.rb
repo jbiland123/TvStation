@@ -13,6 +13,11 @@ class ArticlesController < ApplicationController
     res = Net::HTTP.get_response(uri)
     @data = JSON.parse(res.body)
 
+    url1 = 'https://api.openweathermap.org/data/2.5/forecast?lat=47.496658463630894&lon=7.7210972814041545&units=metric&appid=2cd6c916e89c89f156c3ee6332d5bd03&lang=de'
+    uri1 = URI(url1)
+    res1 = Net::HTTP.get_response(uri1)
+    @data1 = JSON.parse(res1.body)
+
     url2 = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/liestal?unitGroup=metric&key=WMGTGTC8KQ68VLT8C62HQJCMW&contentType=json&lang=de'
     uri2 = URI(url2)
     res2 = Net::HTTP.get_response(uri2)
