@@ -88,6 +88,80 @@
             </div>
         </div>
             <div class="div3">
+<div>
+  <canvas id="myChart1"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx1 = document.getElementById('myChart1');
+
+  new Chart(ctx1, {
+    type: 'line',
+    data: {
+      labels: ['9:00', '12:00', '15:00', '18:00', '21:00'],
+      datasets: [{
+        data: [<%= @temperatures[0] %>, <%= @temperatures[1] %>, <%= @temperatures[2] %>, <%= @temperatures[3] %>, <%= @temperatures[4] %>],
+        borderWidth: 1,
+        pointRadius: 5,
+        fill: true,
+        borderColor: 'rgb(75, 192, 192)',
+        tension: 0.1
+      }]
+    },
+    options: {
+      scales: {
+        x: {
+          grid: {
+            display: false
+          }
+        },
+        y: {
+          display: false,
+          ticks: {
+            suggestedMin: 0 // Setze den niedrigsten Wert auf 0
+          },
+          max: 100, // Maximalwert auf der Y-Achse
+          grid: {
+            display: false
+          }
+        }
+      },
+      plugins: {
+        legend: {
+          display: false,
+          position: 'top'
+        }
+      }
+    },
+    plugins: [{
+      afterDatasetsDraw: function (chart) {
+        const ctx = chart.ctx;
+        chart.data.datasets.forEach(function (dataset, datasetIndex) {
+          const meta = chart.getDatasetMeta(datasetIndex);
+          if (meta.hidden) return;
+          meta.data.forEach(function (element, index) {
+            // Zeichne den Text über dem Punkt
+            ctx.fillStyle = 'black';
+            const fontSize = 12;
+            const fontStyle = 'normal';
+            const fontFamily = 'Helvetica';
+            ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+            const dataPoint = dataset.data[index];
+            const x = element.x;
+            const y = element.y - 10;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'bottom';
+            ctx.fillText(dataPoint, x, y);
+          });
+        });
+      }
+    }]
+  });
+</script>
+
+
+
                 <div class="calendar">
                     <% status = "Frei" %>
                     <% @events.each do |event| %>

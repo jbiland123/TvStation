@@ -18,6 +18,8 @@ class ArticlesController < ApplicationController
     res1 = Net::HTTP.get_response(uri1)
     @data1 = JSON.parse(res1.body)
 
+    @temperatures = @data1["list"][1..5].map { |interval| interval["main"]["temp"] }
+
     url2 = 'https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/liestal?unitGroup=metric&key=WMGTGTC8KQ68VLT8C62HQJCMW&contentType=json&lang=de'
     uri2 = URI(url2)
     res2 = Net::HTTP.get_response(uri2)
