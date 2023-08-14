@@ -22,23 +22,36 @@
    </head>
 <body>
     <div class="header">
-        <h1>Zentrale Informatik</h1>
+        <h1 class='bold'>Zentrale Informatik</h1>
         <p class="date" id="current-time"></p>
         <div class="bl-logo">
         <%= image_tag("Baselland.png", size: "235x55") %>
         </div>
     </div>
 
-    <script>
-        function updateTime() {
-        const currentTime = new Date();
-        const options = { weekday: 'long', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit' };
-        const formattedTime = currentTime.toLocaleDateString('ch', options);
-        document.getElementById('current-time').innerText = formattedTime;
-        }
-        updateTime();
-        setInterval(updateTime, 1000);
-    </script>
+<script>
+  function updateTime() {
+    const currentTime = new Date();
+    const options = {
+      weekday: 'long',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+    };
+
+    const formattedTime = currentTime.toLocaleDateString('ch', options)
+      .replace(/at\s/, '- ')
+
+    document.getElementById('current-time').innerHTML = formattedTime;
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
+
+
 
     <div class="body">
         <div class="parent">
@@ -76,20 +89,21 @@
                         <script>
                             const ctx1 = document.getElementById('myChart1');
 
-                            ctx1.width = 800; // Breite in Pixeln
+                            ctx1.width = 900; // Breite in Pixeln
                             ctx1.height = -100; // Höhe in Pixeln
               
                             new Chart(ctx1, {
                             type: 'line',
                             data: {
-                                labels: ['9:00', '12:00', '15:00', '18:00', '21:00'],
+                                labels: ['<%= @time[0] %>', '<%= @time[1] %>', '<%= @time[2] %>', '<%= @time[3] %>', '<%= @time[4] %>'],
                                 datasets: [{
                                 data: [<%= @temperatures[0] %>, <%= @temperatures[1] %>, <%= @temperatures[2] %>, <%= @temperatures[3] %>, <%= @temperatures[4] %>],
-                                borderWidth: 1,
-                                pointRadius: 5,
+                                borderWidth: 2,
+                                pointRadius: 3,
+                                pointBackgroundColor: 'rgb(244, 210, 86)', // Specify red color for the last point
                                 fill: true,
-                                backgroundColor: 'rgb(229, 231, 231)',
-                                borderColor: '#ff0000',
+                                backgroundColor: 'rgb(252, 245, 217)',
+                                borderColor: 'rgb(244, 210, 86)',
                                 tension: 0.4
                                 }]
                             },
