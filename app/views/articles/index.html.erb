@@ -221,7 +221,7 @@
                         <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
                     </div>
                 <% end %>
-                <% @events2.drop(1).first(4).each do |event2| %>
+                <% @events2.drop(1).first(3).each do |event2| %>
                     <div class="calendar-content">
                         <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
                         <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
