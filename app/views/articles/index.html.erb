@@ -66,102 +66,107 @@
             </div>
             <div class="div2"> 
                 <div class="inner-parent">
-                <div class="div1">
+                    <div class="div1">
+                        <div class="verlauf">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+              
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        
+                        <script>
+                            const ctx1 = document.getElementById('myChart1');
+              
+                            new Chart(ctx1, {
+                            type: 'line',
+                            data: {
+                                labels: ['9:00', '12:00', '15:00', '18:00', '21:00'],
+                                datasets: [{
+                                data: [<%= @temperatures[0] %>, <%= @temperatures[1] %>, <%= @temperatures[2] %>, <%= @temperatures[3] %>, <%= @temperatures[4] %>],
+                                borderWidth: 1,
+                                pointRadius: 5,
+                                fill: true,
+                                borderColor: 'rgb(75, 192, 192)',
+                                tension: 0.1
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                x: {
+                                    grid: {
+                                    display: false
+                                    }
+                                },
+                                y: {
+                                    display: false,
+                                    ticks: {
+                                    suggestedMin: 0 // Setze den niedrigsten Wert auf 0
+                                    },
+                                    max: 100, // Maximalwert auf der Y-Achse
+                                    grid: {
+                                    display: false
+                                    }
+                                }
+                                },
+                                plugins: {
+                                legend: {
+                                    display: false,
+                                    position: 'top'
+                                }
+                                }
+                            },
+                            plugins: [{
+                                afterDatasetsDraw: function (chart) {
+                                const ctx = chart.ctx;
+                                chart.data.datasets.forEach(function (dataset, datasetIndex) {
+                                    const meta = chart.getDatasetMeta(datasetIndex);
+                                    if (meta.hidden) return;
+                                    meta.data.forEach(function (element, index) {
+                                    // Zeichne den Text über dem Punkt
+                                    ctx.fillStyle = 'black';
+                                    const fontSize = 12;
+                                    const fontStyle = 'normal';
+                                    const fontFamily = 'Helvetica';
+                                    ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+                                    const dataPoint = dataset.data[index];
+                                    const x = element.x;
+                                    const y = element.y - 10;
+                                    ctx.textAlign = 'center';
+                                    ctx.textBaseline = 'bottom';
+                                    ctx.fillText(dataPoint, x, y);
+                                    });
+                                });
+                                }
+                            }]
+                            });
+                        </script>
+                    </div>
                     <div class="weather">
-                        <h2 class="bold">Heute</h2>
-                        <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
-                        <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
-                        <i class="weather-description"><%= @data["weather"].first["description"] %></i>
-                        <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
-                        <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+                        <div class="inner-inner-parent">
+                            <div class="div5">
+                                <h2 class="bold">Heute</h2>
+                                <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+                            </div>
+                            <div class="div6">
+                                <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />                                    <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
+                            </div>
+                               <div class="div7">
+                                <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
+                                <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+                            </div> 
+                        </div>
                     </div>
-                </div>
-                <% (2..3).each do |i| %>
-                <div class="div<%= i %>">
-                    <div class="weatherprediction">
-                    <p class="bold"><%= german_day_name(Date.parse(@days[i-1]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[i]["datetime"])) %> <%= Date.parse(@days[i-1]["datetime"]).strftime("%d") %></p>
-                    <p>Temp: <%= @days[i-1]["temp"] %>°</p>
-                    <i><%= multiline_text(@days[i-1]["conditions"]) %></i>
+                    <% (3..4).each do |i| %>
+                    <div class="div<%= i %>">
+                        <div class="weatherprediction">
+                        <p class="bold"><%= german_day_name(Date.parse(@days[i-1]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[i]["datetime"])) %> <%= Date.parse(@days[i-1]["datetime"]).strftime("%d") %></p>
+                        <p>Temp: <%= @days[i-1]["temp"] %>°</p>
+                        <i><%= multiline_text(@days[i-1]["conditions"]) %></i>
+                        </div>
                     </div>
+                    <% end %>
                 </div>
-                <% end %>
             </div>
-        </div>
             <div class="div3">
-<div>
-  <canvas id="myChart1"></canvas>
-</div>
-
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script>
-  const ctx1 = document.getElementById('myChart1');
-
-  new Chart(ctx1, {
-    type: 'line',
-    data: {
-      labels: ['9:00', '12:00', '15:00', '18:00', '21:00'],
-      datasets: [{
-        data: [<%= @temperatures[0] %>, <%= @temperatures[1] %>, <%= @temperatures[2] %>, <%= @temperatures[3] %>, <%= @temperatures[4] %>],
-        borderWidth: 1,
-        pointRadius: 5,
-        fill: true,
-        borderColor: 'rgb(75, 192, 192)',
-        tension: 0.1
-      }]
-    },
-    options: {
-      scales: {
-        x: {
-          grid: {
-            display: false
-          }
-        },
-        y: {
-          display: false,
-          ticks: {
-            suggestedMin: 0 // Setze den niedrigsten Wert auf 0
-          },
-          max: 100, // Maximalwert auf der Y-Achse
-          grid: {
-            display: false
-          }
-        }
-      },
-      plugins: {
-        legend: {
-          display: false,
-          position: 'top'
-        }
-      }
-    },
-    plugins: [{
-      afterDatasetsDraw: function (chart) {
-        const ctx = chart.ctx;
-        chart.data.datasets.forEach(function (dataset, datasetIndex) {
-          const meta = chart.getDatasetMeta(datasetIndex);
-          if (meta.hidden) return;
-          meta.data.forEach(function (element, index) {
-            // Zeichne den Text über dem Punkt
-            ctx.fillStyle = 'black';
-            const fontSize = 12;
-            const fontStyle = 'normal';
-            const fontFamily = 'Helvetica';
-            ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
-            const dataPoint = dataset.data[index];
-            const x = element.x;
-            const y = element.y - 10;
-            ctx.textAlign = 'center';
-            ctx.textBaseline = 'bottom';
-            ctx.fillText(dataPoint, x, y);
-          });
-        });
-      }
-    }]
-  });
-</script>
-
-
-
                 <div class="calendar">
                     <% status = "Frei" %>
                     <% @events.each do |event| %>
