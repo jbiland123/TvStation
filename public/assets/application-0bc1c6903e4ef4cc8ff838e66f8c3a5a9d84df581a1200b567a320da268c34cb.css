@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -147,7 +147,7 @@ body {
 .weather {
   background-color: rgb(207, 232, 232);
   border-radius: 10px;
-  padding: 5px 0px 0px 8px;
+  padding: 0px 20px 5px 20px;
 }
 
 .verlauf {
