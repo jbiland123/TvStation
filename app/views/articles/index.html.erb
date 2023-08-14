@@ -88,8 +88,9 @@
                                 borderWidth: 1,
                                 pointRadius: 5,
                                 fill: true,
-                                borderColor: 'rgb(75, 192, 192)',
-                                tension: 0.1
+                                backgroundColor: 'rgb(229, 231, 231)',
+                                borderColor: '#ff0000',
+                                tension: 0.4
                                 }]
                             },
                             options: {
@@ -104,7 +105,7 @@
                                     ticks: {
                                     suggestedMin: 0 // Setze den niedrigsten Wert auf 0
                                     },
-                                    max: 100, // Maximalwert auf der Y-Achse
+                                    max: 40, // Maximalwert auf der Y-Achse
                                     grid: {
                                     display: false
                                     }
@@ -147,15 +148,14 @@
                         <div class="inner-inner-parent">
                             <div class="div5">
                                 <h2 class="bold">Heute</h2>
-                                <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+                                <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
                             </div>
                             <div class="div6">
-                                <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />                                    <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
-                            </div>
-                               <div class="div7">
+                                <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
+                                <i class="weather-description"><%= @data["weather"].first["description"] %></i>
                                 <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
                                 <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
-                            </div> 
+                            </div>
                         </div>
                     </div>
                     <% (3..4).each do |i| %>

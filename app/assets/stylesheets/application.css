@@ -76,20 +76,20 @@ body {
     .inner-parent .div3 { grid-area: 2 / 4 / 3 / 5; }
     .inner-parent .div4 { grid-area: 2 / 5 / 3 / 6; }
 
-  .inner-inner-parent {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    }
-    
-    .inner-inner-parent .div5 { grid-area: 1 / 1 / 2 / 2; 
-      border-right: 2px solid rgb(232, 242, 242);
-   }
-    .inner-inner-parent .div6 { grid-area: 1 / 2 / 2 / 3; 
-      border-right: 2px solid rgb(232, 242, 242);}
-    .inner-inner-parent .div7 { grid-area: 1 / 3 / 2 / 4; }
+    .inner-inner-parent {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      }
+      
+      .inner-inner-parent .div5 { grid-area: 1 / 1 / 2 / 2; 
+        border-right: 2px solid rgb(232, 242, 242);
+      text-align: center;}
+      .inner-inner-parent .div6 { grid-area: 1 / 2 / 2 / 4; 
+      text-align: center;
+    font-size: 18px;}
 
 .div2,
 .weather,
@@ -147,7 +147,7 @@ body {
 .weather {
   background-color: rgb(207, 232, 232);
   border-radius: 10px;
-  padding: 5px 0px 0px 8px;
+  padding: 5px 0px 0px 0px;
 }
 
 .verlauf {
@@ -177,6 +177,7 @@ body {
 
 .temperatur {
   font-size: 25px;
+  margin-bottom: 2px;
 }
 
 .weatherinfo {
