@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -30,7 +30,6 @@ body {
 
 .body {
   margin-left: -7px;
-  transform: scale(0.99);
 }
 
 .bl-logo {
