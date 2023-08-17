@@ -43,6 +43,7 @@
 
     const formattedTime = currentTime.toLocaleDateString('ch', options)
       .replace(/at\s/, '- ')
+      .replace(/um\s/, '- ')
 
     document.getElementById('current-time').innerHTML = formattedTime;
   }
@@ -112,6 +113,12 @@
                                 x: {
                                     grid: {
                                     display: false
+                                    },
+                                    ticks: {
+                                        font: {
+                                        size: 19, // Ändere die Schriftgröße hier
+                                        family: 'Helvetica' // Schriftart
+                                        }
                                     }
                                 },
                                 y: {
@@ -137,16 +144,16 @@
                                     meta.data.forEach(function (element, index) {
                                     // Zeichne den Text über dem Punkt
                                     ctx.fillStyle = 'black';
-                                    const fontSize = 15;
+                                    const fontSize = 19;
                                     const fontStyle = 'normal';
                                     const fontFamily = 'Helvetica';
                                     ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
                                     const dataPoint = dataset.data[index];
                                     const x = element.x;
-                                    const y = element.y - 7;
+                                    const y = element.y - 10;
                                     ctx.textAlign = 'center';
                                     ctx.textBaseline = 'bottom';
-                                    ctx.fillText(dataPoint, x, y);
+                                    ctx.fillText(dataPoint + '°', x, y);
                                     });
                                 });
                                 }

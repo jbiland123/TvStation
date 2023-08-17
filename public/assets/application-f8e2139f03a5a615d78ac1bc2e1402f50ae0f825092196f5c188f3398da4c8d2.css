@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -148,7 +148,7 @@ body {
   background-color: rgb(207, 232, 232);
   border-radius: 10px;
   padding: 5px 0px 0px 0px;
-  margin-top: -5px;
+  margin-top: -10px;
 }
 
 .verlauf {
@@ -170,7 +170,7 @@ body {
   margin-left: 15px;
   text-align: center;
   height: 100%;
-  margin-top: -5px;
+  margin-top: -7px;
 }
 
 .weatherImage {
