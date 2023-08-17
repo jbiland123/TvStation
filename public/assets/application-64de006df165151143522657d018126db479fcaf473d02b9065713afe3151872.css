@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -121,7 +121,7 @@ body {
 
 .minheight {
   text-align: center;
-  height: 165px;
+  height: 160px;
 }
 
 .minheightimg {
@@ -281,11 +281,6 @@ h1 {
   color: #ff0000;
   margin-top: 4px;
   font-size: 30px;
-}
-
-.kursiv {
-  font-style: italic;
-  margin-bottom: 27px;
 }
 
 h3 {
