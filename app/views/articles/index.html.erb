@@ -95,7 +95,7 @@
                             new Chart(ctx1, {
                             type: 'line',
                             data: {
-                                labels: ['<%= @time[0] %>', '<%= @time[1] %>', '<%= @time[2] %>', '<%= @time[3] %>', '<%= @time[4] %>'],
+                                labels: ['<%= @times_formatted[0] %>', '<%= @times_formatted[1] %>', '<%= @times_formatted[2] %>', '<%= @times_formatted[3] %>', '<%= @times_formatted[4] %>'],
                                 datasets: [{
                                 data: [<%= @temperatures[0] %>, <%= @temperatures[1] %>, <%= @temperatures[2] %>, <%= @temperatures[3] %>, <%= @temperatures[4] %>],
                                 borderWidth: 2,
@@ -120,15 +120,11 @@
                                     suggestedMin: 0 // Setze den niedrigsten Wert auf 0
                                     },
                                     max: 40, // Maximalwert auf der Y-Achse
-                                    grid: {
-                                    display: false
-                                    }
                                 }
                                 },
                                 plugins: {
                                 legend: {
                                     display: false,
-                                    position: 'top'
                                 }
                                 }
                             },
@@ -141,13 +137,13 @@
                                     meta.data.forEach(function (element, index) {
                                     // Zeichne den Text über dem Punkt
                                     ctx.fillStyle = 'black';
-                                    const fontSize = 12;
+                                    const fontSize = 15;
                                     const fontStyle = 'normal';
                                     const fontFamily = 'Helvetica';
                                     ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
                                     const dataPoint = dataset.data[index];
                                     const x = element.x;
-                                    const y = element.y - 10;
+                                    const y = element.y - 7;
                                     ctx.textAlign = 'center';
                                     ctx.textBaseline = 'bottom';
                                     ctx.fillText(dataPoint, x, y);
@@ -295,9 +291,9 @@
                 function updateProgress() {
                     const now = new Date();
                     const startOfDay = new Date(now);
-                    startOfDay.setHours(6, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+                    startOfDay.setHours(7.30, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
                     const endOfDay = new Date(now);
-                    endOfDay.setHours(18, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+                    endOfDay.setHours(17, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
 
                     // Berechne den Fortschritt in Prozent
                     const totalMilliseconds = endOfDay - startOfDay;
