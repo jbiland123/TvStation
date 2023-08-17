@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -140,7 +140,6 @@ body {
 .div2 {
   background-color: white;
   border-radius: 10px;
-  padding: 5px 20px 15px 20px;
 }
 
 .weather-title {
@@ -153,6 +152,7 @@ body {
 .weather {
   background-color: rgb(207, 232, 232);
   border-radius: 10px;
+  margin-top: -5px;
 }
 
 .verlauf {
@@ -160,6 +160,10 @@ body {
   height: 100%;
   padding: 5px 20px 15px 20px;
   margin-top: 15px;
+}
+
+.weather .div2 {
+  text-align: center;
 }
 
 .weatherprediction {
@@ -170,6 +174,7 @@ body {
   margin-left: 15px;
   text-align: center;
   height: 100%;
+  margin-top: -3px;
 }
 
 .weatherImage {
@@ -178,9 +183,23 @@ body {
   height: 130px;
 }
 
+.temperatur {
+  font-size: 25px;
+  margin-bottom: 2px;
+}
+
 .weatherinfo {
-  white-space: break-spaces;
-  text-align: center;
+  white-space: nowrap;
+  margin-top: 5px;
+}
+
+.weatherinfo2 {
+  white-space: nowrap;
+  margin-top: -13px;
+}
+
+.less-distance {
+  padding-top: -20px;
 }
 
 .calendar {

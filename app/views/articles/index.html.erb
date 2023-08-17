@@ -79,7 +79,7 @@
                 </div>
             </div>
             <div class="div2"> 
-            <p>Wetterverlauf von heute</p>
+            <p class="weather-title">Wetterverlauf von heute</p>
                 <div class="inner-parent">
                     <div class="div1">
                         <div class="verlauf">
@@ -165,7 +165,7 @@
                     <div class="weather">
                         <div class="inner-inner-parent">
                             <div class="div5">
-                                <h2 class="bold">Heute</h2>
+                                <p class="bold">Heute</p>
                                 <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
                                 <% @daily_temperatures.each do |date, temps| %>
                                     <% if date.to_date == Date.today %>
@@ -174,10 +174,9 @@
                                 <% end %>
                             </div>
                             <div class="div6">
-                                <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
-                                <i class="weather-description"><%= @data["weather"].first["description"] %></i>
-                                <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
-                                <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+                                <p class="bold"><%= @data["main"]["temp"] %>°</p>
+                                <i><%= @data["weather"].first["description"] %></i>
+                                <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
                             </div>
                         </div>
                     </div>
@@ -186,16 +185,16 @@
                         <p class="bold"><%= (Date.today + 1).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
                         <% tomorrow = Date.today + 1 %>
                         <% @daily_weather_icons.each do |date, icon| %>
-                        <% if date.to_date == tomorrow %>
-                            <img class="weatherImage" src='http://openweathermap.org/img/wn/<%= icon %>@2x.png'>
-                            <% break %>
-                        <% end %>
+                            <% if date.to_date == tomorrow %>
+                                <img class="weatherImage" src='http://openweathermap.org/img/wn/<%= icon %>@2x.png'>
+                                <% break %>
+                            <% end %>
                         <% end %>
                         <% @daily_temperatures.each do |date, temps| %>
-                        <% if date.to_date == tomorrow %>
-                            <p><%= temps[:min] %>° | <%= temps[:max] %>°</p>
-                            <% break %>
-                        <% end %>
+                            <% if date.to_date == tomorrow %>
+                                <p><%= temps[:min] %>° | <%= temps[:max] %>°</p>
+                                <% break %>
+                            <% end %>
                         <% end %>
                         </div>
                     </div>
