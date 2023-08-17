@@ -22709,3 +22709,1685 @@ Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 09:17:24 +0200
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started GET "/" for ::1 at 2023-08-17 09:20:01 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 3993)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 5158)
+Completed 200 OK in 1861ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 1246372)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 09:20:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 09:20:45 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 3986)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 5153)
+Completed 200 OK in 1857ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 1246367)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 09:20:46 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 09:21:38 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 3917)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 5080)
+Completed 200 OK in 1939ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 1246274)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 09:21:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 09:36:40 +0200
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 549ms (Allocations: 2869)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:32:in `block in index'
+app/controllers/articles_controller.rb:32:in `each'
+app/controllers/articles_controller.rb:32:in `group_by'
+app/controllers/articles_controller.rb:32:in `index'
+Started GET "/" for ::1 at 2023-08-17 09:40:33 +0200
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 262ms (ActiveRecord: 0.0ms | Allocations: 6087)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:33:in `block in index'
+app/controllers/articles_controller.rb:33:in `each'
+app/controllers/articles_controller.rb:33:in `group_by'
+app/controllers/articles_controller.rb:33:in `index'
+Started GET "/" for ::1 at 2023-08-17 09:40:36 +0200
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 403ms (ActiveRecord: 0.0ms | Allocations: 2832)
+
+
+  
+NoMethodError (undefined method `split' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:33:in `block in index'
+app/controllers/articles_controller.rb:33:in `each'
+app/controllers/articles_controller.rb:33:in `group_by'
+app/controllers/articles_controller.rb:33:in `index'
+Started GET "/" for ::1 at 2023-08-17 09:41:29 +0200
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 352ms (ActiveRecord: 0.0ms | Allocations: 6064)
+
+
+  
+NoMethodError (undefined method `[]' for nil:NilClass):
+  
+app/controllers/articles_controller.rb:35:in `block in index'
+app/controllers/articles_controller.rb:35:in `each'
+app/controllers/articles_controller.rb:35:in `group_by'
+app/controllers/articles_controller.rb:35:in `index'
+Started GET "/" for ::1 at 2023-08-17 09:56:13 +0200
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 480ms (Allocations: 3136)
+
+
+  
+NoMethodError (undefined method `[]' for 22.63:Float):
+  
+app/controllers/articles_controller.rb:31:in `block in index'
+app/controllers/articles_controller.rb:31:in `each'
+app/controllers/articles_controller.rb:31:in `group_by'
+app/controllers/articles_controller.rb:31:in `index'
+Started GET "/" for ::1 at 2023-08-17 09:57:56 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 4100)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 6928)
+Completed 200 OK in 2091ms (Views: 4.7ms | Allocations: 1258198)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 09:57:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 09:59:15 +0200
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 294ms (Allocations: 3127)
+
+
+  
+NoMethodError (undefined method `[]' for 22.63:Float):
+  
+app/controllers/articles_controller.rb:31:in `block in index'
+app/controllers/articles_controller.rb:31:in `each'
+app/controllers/articles_controller.rb:31:in `group_by'
+app/controllers/articles_controller.rb:31:in `index'
+Started GET "/" for ::1 at 2023-08-17 10:00:54 +0200
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 474ms (Allocations: 3126)
+
+
+  
+NoMethodError (undefined method `[]' for 22.63:Float):
+  
+app/controllers/articles_controller.rb:31:in `block in index'
+app/controllers/articles_controller.rb:31:in `each'
+app/controllers/articles_controller.rb:31:in `group_by'
+app/controllers/articles_controller.rb:31:in `index'
+Started GET "/" for ::1 at 2023-08-17 10:06:18 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 3954)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 6690)
+Completed 200 OK in 1508ms (Views: 5.0ms | Allocations: 1247865)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:06:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:21:34 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 1277)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 2066)
+Completed 200 OK in 1848ms (Views: 1.1ms | Allocations: 1242362)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:21:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:34:41 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 4594)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 4674)
+Completed 500 Internal Server Error in 2497ms (Allocations: 1246012)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    187:                 </div>
+    188:             </div>
+    189:             <div class="div3">
+    190:             <% @daily_temperatures.each do |date, temps| %>
+    191:       <tr>
+    192:         <td><%= date %></td>
+    193:         <td><%= temps[:min] %>&deg;C</td>
+  
+app/views/articles/index.html.erb:190
+Started GET "/" for ::1 at 2023-08-17 10:35:48 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1426)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 4194)
+Completed 200 OK in 1321ms (Views: 3.0ms | Allocations: 1245137)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:35:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:37:31 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 1303)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 2094)
+Completed 200 OK in 1975ms (Views: 1.3ms | Allocations: 1242541)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:37:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:40:53 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4065)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 5241)
+Completed 200 OK in 1855ms (Views: 4.1ms | Allocations: 1246301)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:40:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:42:54 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 4061)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 5223)
+Completed 200 OK in 1818ms (Views: 3.6ms | Allocations: 1246555)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:42:56 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:43:36 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.7ms | Allocations: 4083)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 5245)
+Completed 200 OK in 1785ms (Views: 3.2ms | Allocations: 1246588)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:43:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:43:50 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4082)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 5242)
+Completed 200 OK in 2141ms (Views: 3.2ms | Allocations: 1246605)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:43:52 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:44:41 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 5205)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 5285)
+Completed 500 Internal Server Error in 1277ms (Allocations: 1246596)
+
+
+  
+ActionView::Template::Error (undefined method `call' for {"2023-08-17"=>{:min=>18.54, :max=>31.82}, "2023-08-18"=>{:min=>15.96, :max=>33.35}, "2023-08-19"=>{:min=>18.87, :max=>34.15}, "2023-08-20"=>{:min=>19.41, :max=>34.49}, "2023-08-21"=>{:min=>20.11, :max=>34.72}, "2023-08-22"=>{:min=>20.66, :max=>22.09}}:Hash):
+    173:                                 <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+    174:                                 <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
+    175:                                 <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+    176:                                 <% @daily_temperatures.(0).each do |date, temps| %>
+    177:                                     <tr>
+    178:                                         <td><%= date %></td>
+    179:                                         <td><%= temps[:min] %>&deg;C</td>
+  
+app/views/articles/index.html.erb:176
+Started GET "/" for ::1 at 2023-08-17 10:44:49 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 5195)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 5275)
+Completed 500 Internal Server Error in 1331ms (Allocations: 1246580)
+
+
+  
+ActionView::Template::Error (undefined method `call' for {"2023-08-17"=>{:min=>18.54, :max=>31.82}, "2023-08-18"=>{:min=>15.96, :max=>33.35}, "2023-08-19"=>{:min=>18.87, :max=>34.15}, "2023-08-20"=>{:min=>19.41, :max=>34.49}, "2023-08-21"=>{:min=>20.11, :max=>34.72}, "2023-08-22"=>{:min=>20.66, :max=>22.09}}:Hash):
+    173:                                 <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+    174:                                 <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
+    175:                                 <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+    176:                                 <% @daily_temperatures.(0..0).each do |date, temps| %>
+    177:                                     <tr>
+    178:                                         <td><%= date %></td>
+    179:                                         <td><%= temps[:min] %>&deg;C</td>
+  
+app/views/articles/index.html.erb:176
+Started GET "/" for ::1 at 2023-08-17 10:44:55 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 5195)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 5275)
+Completed 500 Internal Server Error in 1886ms (Allocations: 1246623)
+
+
+  
+ActionView::Template::Error (undefined method `call' for {"2023-08-17"=>{:min=>18.54, :max=>31.82}, "2023-08-18"=>{:min=>15.96, :max=>33.35}, "2023-08-19"=>{:min=>18.87, :max=>34.15}, "2023-08-20"=>{:min=>19.41, :max=>34.49}, "2023-08-21"=>{:min=>20.11, :max=>34.72}, "2023-08-22"=>{:min=>20.66, :max=>22.09}}:Hash):
+    173:                                 <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+    174:                                 <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
+    175:                                 <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+    176:                                 <% @daily_temperatures.(0..1).each do |date, temps| %>
+    177:                                     <tr>
+    178:                                         <td><%= date %></td>
+    179:                                         <td><%= temps[:min] %>&deg;C</td>
+  
+app/views/articles/index.html.erb:176
+Started GET "/" for ::1 at 2023-08-17 10:45:03 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2855)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 2936)
+Completed 500 Internal Server Error in 1304ms (Allocations: 1244261)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+
+<html lang="de">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="refresh" content="1800">
+      <link href="css/Stylesheet.css" rel="Stylesheet">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="icon" href="Bilder/Logo.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <title>TVStation</title>
+   </head>
+<body>
+    <div class="header">
+        <h1 class='bold'>Zentrale Informatik</h1>
+        <p class="date" id="current-time"></p>
+        <div class="bl-logo">
+        <%= image_tag("Baselland.png", size: "235x55") %>
+        </div>
+    </div>
+
+<script>
+  function updateTime() {
+    const currentTime = new Date();
+    const options = {
+      weekday: 'long',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+    };
+
+    const formattedTime = currentTime.toLocaleDateString('ch', options)
+      .replace(/at\s/, '- ')
+      .replace(/um\s/, '- ')
+
+    document.getElementById('current-time').innerHTML = formattedTime;
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
+
+
+
+    <div class="body">
+        <div class="parent">
+            <div class="div1"> 
+                <div class="news">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
+                        <ol class="carousel-indicators">
+                        <% @i_news.each_with_index do |_, index| %>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" <%= index == 0 ? 'class="active"' : '' %>></li>
+                        <% end %>
+                        </ol>
+                        <div class="carousel-inner">
+                            <% @i_news.each_with_index do |item, index| %>
+                                <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+                                    <div class="news-slide">
+                                        <img class="minheightimg" src="<%= asset_path(item["author"] + ".png") %>" alt="">
+                                        <p id="devider">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+                                        <h3 class="minheight"><%= truncate_title(item["title"], item["author"]) %></h3>
+                                    </div>
+                                </div>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div2"> 
+                <div class="inner-parent">
+                    <div class="div1">
+                        <div class="verlauf">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+              
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        
+                        <script>
+                            const ctx1 = document.getElementById('myChart1');
+
+                            ctx1.width = 900; // Breite in Pixeln
+                            ctx1.height = -100; // Höhe in Pixeln
+              
+                            new Chart(ctx1, {
+                            type: 'line',
+                            data: {
+                                labels: ['<%= @times_formatted[0] %>', '<%= @times_formatted[1] %>', '<%= @times_formatted[2] %>', '<%= @times_formatted[3] %>', '<%= @times_formatted[4] %>'],
+                                datasets: [{
+                                data: [<%= @temperatures[0] %>, <%= @temperatures[1] %>, <%= @temperatures[2] %>, <%= @temperatures[3] %>, <%= @temperatures[4] %>],
+                                borderWidth: 2,
+                                pointRadius: 3,
+                                pointBackgroundColor: 'rgb(244, 210, 86)', // Specify red color for the last point
+                                fill: true,
+                                backgroundColor: 'rgb(252, 245, 217)',
+                                borderColor: 'rgb(244, 210, 86)',
+                                tension: 0.4
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                x: {
+                                    grid: {
+                                    display: false
+                                    },
+                                    ticks: {
+                                        font: {
+                                        size: 19, // Ändere die Schriftgröße hier
+                                        family: 'Helvetica' // Schriftart
+                                        }
+                                    }
+                                },
+                                y: {
+                                    display: false,
+                                    ticks: {
+                                    suggestedMin: 0 // Setze den niedrigsten Wert auf 0
+                                    },
+                                    max: 40, // Maximalwert auf der Y-Achse
+                                }
+                                },
+                                plugins: {
+                                legend: {
+                                    display: false,
+                                }
+                                }
+                            },
+                            plugins: [{
+                                afterDatasetsDraw: function (chart) {
+                                const ctx = chart.ctx;
+                                chart.data.datasets.forEach(function (dataset, datasetIndex) {
+                                    const meta = chart.getDatasetMeta(datasetIndex);
+                                    if (meta.hidden) return;
+                                    meta.data.forEach(function (element, index) {
+                                    // Zeichne den Text über dem Punkt
+                                    ctx.fillStyle = 'black';
+                                    const fontSize = 19;
+                                    const fontStyle = 'normal';
+                                    const fontFamily = 'Helvetica';
+                                    ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+                                    const dataPoint = dataset.data[index];
+                                    const x = element.x;
+                                    const y = element.y - 10;
+                                    ctx.textAlign = 'center';
+                                    ctx.textBaseline = 'bottom';
+                                    ctx.fillText(dataPoint + '°', x, y);
+                                    });
+                                });
+                                }
+                            }]
+                            });
+                        </script>
+                    </div>
+                    <div class="weather">
+                        <div class="inner-inner-parent">
+                            <div class="div5">
+                                <h2 class="bold">Heute</h2>
+                                <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+                            </div>
+                            <div class="div6">
+                                <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
+                                <p class="temperatur bold"><% @daily_temperatures[0] %>°</p>
+                                <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+                                <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
+                                <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+                                <% @daily_temperatures(0..1).each do |date, temps| %>
+                                    <tr>
+                                        <td><%= date %></td>
+                                        <td><%= temps[:min] %>&deg;C</td>
+                                        <td><%= temps[:max] %>&deg;C</td>
+                                    </tr>
+                                <% end %>
+                            </div>
+                        </div>
+                    </div>
+                    <% (3..4).each do |i| %>
+                    <div class="div<%= i %>">
+                        <div class="weatherprediction">
+                        <p class="bold"><%= german_day_name(Date.parse(@days[i-2]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[i-2]["datetime"])) %> <%= Date.parse(@days[i-2]["datetime"]).strftime("%d") %></p>
+                        <p>Temp: <%= @days[i-2]["temp"] %>°</p>
+                        <i><%= multiline_text(@days[i-2]["conditions"]) %></i>
+                        </div>
+                    </div>
+                    <% end %>
+                </div>
+            </div>
+            <div class="div3">
+<% @daily_temperatures.each do |date, temps| %>
+    <tr>
+        <td><%= date %></td>
+        <td><%= temps[:min] %>&deg;C</td>
+        <td><%= temps[:max] %>&deg;C</td>
+    </tr>
+<% end %>
+                <div class="calendar">
+                    <% status = "Frei" %>
+                    <% @events.each do |event| %>
+                        <% if event.dtstart <= Time.now && Time.now <= event.dtend %>
+                            <% status = "Besetzt" %>
+                        <% end %>
+                    <% end %>
+                    <div class="title">
+                        <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+                        <% if status == "Besetzt" %>
+                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                        <% else %>
+                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                        <% end %>
+                    </div>
+                    <% @events.first(1).each do |event| %>
+                        <div class="calendar-content-first">
+                            <p class="left max-characters">Gebucht</p>
+                            <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+                        </div>
+                    <% end %>
+                    <% @events.drop(1).first(4).each do |event| %>
+                        <div class="calendar-content">
+                            <p class="left max-characters">Gebucht</p>
+                            <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+            <div class="div4">
+                <div class="calendar">
+                <% status2 = "Frei" %>
+                    <% @events2.each do |event2| %>
+                        <% if event2.dtstart <= Time.now && Time.now <= event2.dtend %>
+                            <% status2 = "Besetzt" %>
+                        <% end %>
+                    <% end %>
+                    <div class="title">
+                        <h2 class="bold">Schulungsraum 1 - Theorieprüfungen</h2>
+                        <% if status2 == "Besetzt" %>
+                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                        <% else %>
+                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                        <% end %>
+                    </div>
+                <% @events2.first(1).each do |event2| %>
+                    <div class="calendar-content-first">
+                        <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                    </div>
+                <% end %>
+                <% @events2.drop(1).first(3).each do |event2| %>
+                    <div class="calendar-content">
+                        <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                    </div>
+                <% end %>
+                <div id="status" style="display: none;"><%= status2 %></div>
+                </div>
+            </div>
+
+            <div class="div5">
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" id="daily-progress"></div>
+                </div>
+                
+              <div class="message" id="message">
+                <marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">
+                    Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+                </marquee>
+              </div>
+
+              <script>
+                function updateMessage() {
+                    var currentDate = new Date();
+                    var currentHour = currentDate.getHours();
+                    var currentMinute = currentDate.getMinutes();
+                    var currentSecond = currentDate.getSeconds();
+
+                    if (currentMinute === 0 && currentSecond === 0) {
+                        var messageDiv = document.getElementById("message");
+                        var status2 = document.getElementById('status').innerText;
+                        var messageContent = "";
+
+                        if (status2 == "Besetzt") {
+                            messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
+                        } else if (currentHour >= 6 && currentHour < 9) {
+                            messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                        } else if (currentHour >= 11 && currentHour < 13) {
+                            messageContent = "Guten Appetit und eine angenehme Pause!";
+                        } else if (currentHour >= 16 && currentHour < 19) {
+                            messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+                        } else {
+                            messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                        }
+
+                        messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+                    }
+                }
+
+                // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+                updateMessage();
+
+                // Aktualisiere die Nachricht jede volle Stunde
+                setInterval(updateMessage, 1000);
+                </script>
+
+                <script>
+                function updateProgress() {
+                    const now = new Date();
+                    const startOfDay = new Date(now);
+                    startOfDay.setHours(7.30, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+                    const endOfDay = new Date(now);
+                    endOfDay.setHours(17, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+
+                    // Berechne den Fortschritt in Prozent
+                    const totalMilliseconds = endOfDay - startOfDay;
+                    const currentMilliseconds = now - startOfDay;
+                    const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+
+                    // Setze die Breite der Fortschrittsleiste entsprechend
+                    const progressBar = document.getElementById("daily-progress");
+                    progressBar.style.width = progressPercent + "%";
+                }
+
+                // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+                setInterval(updateProgress, 10000);
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    
+3:    <html lang="de">
+4:       <head>
+5:          <meta charset="UTF-8">
+6:          <meta http-equiv="refresh" content="1800">
+7:          <link href="css/Stylesheet.css" rel="Stylesheet">
+8:          
+9:          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+10:          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+11:          <link rel="icon" href="Bilder/Logo.png">
+12:          <link rel="preconnect" href="https://fonts.googleapis.com">
+13:          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+14:          <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+15:          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+16:          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+17:          <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+18:          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+19:          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+20:          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+21:          <title>TVStation</title>
+22:       </head>
+23:    <body>
+24:        <div class="header">
+25:            <h1 class='bold'>Zentrale Informatik</h1>
+26:            <p class="date" id="current-time"></p>
+27:            <div class="bl-logo">
+28:            <%= image_tag("Baselland.png", size: "235x55") %>
+29:            </div>
+30:        </div>
+31:    
+32:    <script>
+33:      function updateTime() {
+34:        const currentTime = new Date();
+35:        const options = {
+36:          weekday: 'long',
+37:          month: 'long',
+38:          day: 'numeric',
+39:          hour: '2-digit',
+40:          minute: '2-digit',
+41:          hour12: false,
+42:        };
+43:    
+44:        const formattedTime = currentTime.toLocaleDateString('ch', options)
+45:          .replace(/at\s/, '- ')
+46:          .replace(/um\s/, '- ')
+47:    
+48:        document.getElementById('current-time').innerHTML = formattedTime;
+49:      }
+50:    
+51:      updateTime();
+52:      setInterval(updateTime, 1000);
+53:    </script>
+54:    
+55:    
+56:    
+57:        <div class="body">
+58:            <div class="parent">
+59:                <div class="div1"> 
+60:                    <div class="news">
+61:                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
+62:                            <ol class="carousel-indicators">
+63:                            <% @i_news.each_with_index do |_, index| %>
+64:                                <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" <%= index == 0 ? 'class="active"' : '' %>></li>
+65:                            <% end %>
+66:                            </ol>
+67:                            <div class="carousel-inner">
+68:                                <% @i_news.each_with_index do |item, index| %>
+69:                                    <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+70:                                        <div class="news-slide">
+71:                                            <img class="minheightimg" src="<%= asset_path(item["author"] + ".png") %>" alt="">
+72:                                            <p id="devider">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+73:                                            <h3 class="minheight"><%= truncate_title(item["title"], item["author"]) %></h3>
+74:                                        </div>
+75:                                    </div>
+76:                                <% end %>
+77:                            </div>
+78:                        </div>
+79:                    </div>
+80:                </div>
+81:                <div class="div2"> 
+82:                    <div class="inner-parent">
+83:                        <div class="div1">
+84:                            <div class="verlauf">
+85:                                <canvas id="myChart1"></canvas>
+86:                            </div>
+87:                  
+88:                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+89:                            
+90:                            <script>
+91:                                const ctx1 = document.getElementById('myChart1');
+92:    
+93:                                ctx1.width = 900; // Breite in Pixeln
+94:                                ctx1.height = -100; // Höhe in Pixeln
+95:                  
+96:                                new Chart(ctx1, {
+97:                                type: 'line',
+98:                                data: {
+99:                                    labels: ['<%= @times_formatted[0] %>', '<%= @times_formatted[1] %>', '<%= @times_formatted[2] %>', '<%= @times_formatted[3] %>', '<%= @times_formatted[4] %>'],
+100:                                    datasets: [{
+101:                                    data: [<%= @temperatures[0] %>, <%= @temperatures[1] %>, <%= @temperatures[2] %>, <%= @temperatures[3] %>, <%= @temperatures[4] %>],
+102:                                    borderWidth: 2,
+103:                                    pointRadius: 3,
+104:                                    pointBackgroundColor: 'rgb(244, 210, 86)', // Specify red color for the last point
+105:                                    fill: true,
+106:                                    backgroundColor: 'rgb(252, 245, 217)',
+107:                                    borderColor: 'rgb(244, 210, 86)',
+108:                                    tension: 0.4
+109:                                    }]
+110:                                },
+111:                                options: {
+112:                                    scales: {
+113:                                    x: {
+114:                                        grid: {
+115:                                        display: false
+116:                                        },
+117:                                        ticks: {
+118:                                            font: {
+119:                                            size: 19, // Ändere die Schriftgröße hier
+120:                                            family: 'Helvetica' // Schriftart
+121:                                            }
+122:                                        }
+123:                                    },
+124:                                    y: {
+125:                                        display: false,
+126:                                        ticks: {
+127:                                        suggestedMin: 0 // Setze den niedrigsten Wert auf 0
+128:                                        },
+129:                                        max: 40, // Maximalwert auf der Y-Achse
+130:                                    }
+131:                                    },
+132:                                    plugins: {
+133:                                    legend: {
+134:                                        display: false,
+135:                                    }
+136:                                    }
+137:                                },
+138:                                plugins: [{
+139:                                    afterDatasetsDraw: function (chart) {
+140:                                    const ctx = chart.ctx;
+141:                                    chart.data.datasets.forEach(function (dataset, datasetIndex) {
+142:                                        const meta = chart.getDatasetMeta(datasetIndex);
+143:                                        if (meta.hidden) return;
+144:                                        meta.data.forEach(function (element, index) {
+145:                                        // Zeichne den Text über dem Punkt
+146:                                        ctx.fillStyle = 'black';
+147:                                        const fontSize = 19;
+148:                                        const fontStyle = 'normal';
+149:                                        const fontFamily = 'Helvetica';
+150:                                        ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+151:                                        const dataPoint = dataset.data[index];
+152:                                        const x = element.x;
+153:                                        const y = element.y - 10;
+154:                                        ctx.textAlign = 'center';
+155:                                        ctx.textBaseline = 'bottom';
+156:                                        ctx.fillText(dataPoint + '°', x, y);
+157:                                        });
+158:                                    });
+159:                                    }
+160:                                }]
+161:                                });
+162:                            </script>
+163:                        </div>
+164:                        <div class="weather">
+165:                            <div class="inner-inner-parent">
+166:                                <div class="div5">
+167:                                    <h2 class="bold">Heute</h2>
+168:                                    <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+169:                                </div>
+170:                                <div class="div6">
+171:                                    <p class="temperatur bold"><%= @data["main"]["temp"] %>°</p>
+172:                                    <p class="temperatur bold"><% @daily_temperatures[0] %>°</p>
+173:                                    <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+174:                                    <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%</p>
+175:                                    <p class="weatherinfo2"> Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+176:                                    <% @daily_temperatures(0..1).each do |date, temps| %>
+177:                                        <tr>
+178:                                            <td><%= date %></td>
+179:                                            <td><%= temps[:min] %>&deg;C</td>
+180:                                            <td><%= temps[:max] %>&deg;C</td>
+181:                                        </tr>
+182:                                    <% end %>
+183:                                </div>
+184:                            </div>
+185:                        </div>
+186:                        <% (3..4).each do |i| %>
+187:                        <div class="div<%= i %>">
+188:                            <div class="weatherprediction">
+189:                            <p class="bold"><%= german_day_name(Date.parse(@days[i-2]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[i-2]["datetime"])) %> <%= Date.parse(@days[i-2]["datetime"]).strftime("%d") %></p>
+190:                            <p>Temp: <%= @days[i-2]["temp"] %>°</p>
+191:                            <i><%= multiline_text(@days[i-2]["conditions"]) %></i>
+192:                            </div>
+193:                        </div>
+194:                        <% end %>
+195:                    </div>
+196:                </div>
+197:                <div class="div3">
+198:    <% @daily_temperatures.each do |date, temps| %>
+199:        <tr>
+200:            <td><%= date %></td>
+201:            <td><%= temps[:min] %>&deg;C</td>
+202:            <td><%= temps[:max] %>&deg;C</td>
+203:        </tr>
+204:    <% end %>
+205:                    <div class="calendar">
+206:                        <% status = "Frei" %>
+207:                        <% @events.each do |event| %>
+208:                            <% if event.dtstart <= Time.now && Time.now <= event.dtend %>
+209:                                <% status = "Besetzt" %>
+210:                            <% end %>
+211:                        <% end %>
+212:                        <div class="title">
+213:                            <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+214:                            <% if status == "Besetzt" %>
+215:                                <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+216:                            <% else %>
+217:                                <img class="size" src="<%= asset_path("free.png") %>" alt="">
+218:                            <% end %>
+219:                        </div>
+220:                        <% @events.first(1).each do |event| %>
+221:                            <div class="calendar-content-first">
+222:                                <p class="left max-characters">Gebucht</p>
+223:                                <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+224:                            </div>
+225:                        <% end %>
+226:                        <% @events.drop(1).first(4).each do |event| %>
+227:                            <div class="calendar-content">
+228:                                <p class="left max-characters">Gebucht</p>
+229:                                <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+230:                            </div>
+231:                        <% end %>
+232:                    </div>
+233:                </div>
+234:                <div class="div4">
+235:                    <div class="calendar">
+236:                    <% status2 = "Frei" %>
+237:                        <% @events2.each do |event2| %>
+238:                            <% if event2.dtstart <= Time.now && Time.now <= event2.dtend %>
+239:                                <% status2 = "Besetzt" %>
+240:                            <% end %>
+241:                        <% end %>
+242:                        <div class="title">
+243:                            <h2 class="bold">Schulungsraum 1 - Theorieprüfungen</h2>
+244:                            <% if status2 == "Besetzt" %>
+245:                                <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+246:                            <% else %>
+247:                                <img class="size" src="<%= asset_path("free.png") %>" alt="">
+248:                            <% end %>
+249:                        </div>
+250:                    <% @events2.first(1).each do |event2| %>
+251:                        <div class="calendar-content-first">
+252:                            <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
+253:                            <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+254:                        </div>
+255:                    <% end %>
+256:                    <% @events2.drop(1).first(3).each do |event2| %>
+257:                        <div class="calendar-content">
+258:                            <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
+259:                            <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+260:                        </div>
+261:                    <% end %>
+262:                    <div id="status" style="display: none;"><%= status2 %></div>
+263:                    </div>
+264:                </div>
+265:    
+266:                <div class="div5">
+267:                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+268:                        <div class="progress-bar" id="daily-progress"></div>
+269:                    </div>
+270:                    
+271:                  <div class="message" id="message">
+272:                    <marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">
+273:                        Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+274:                    </marquee>
+275:                  </div>
+276:    
+277:                  <script>
+278:                    function updateMessage() {
+279:                        var currentDate = new Date();
+280:                        var currentHour = currentDate.getHours();
+281:                        var currentMinute = currentDate.getMinutes();
+282:                        var currentSecond = currentDate.getSeconds();
+283:    
+284:                        if (currentMinute === 0 && currentSecond === 0) {
+285:                            var messageDiv = document.getElementById("message");
+286:                            var status2 = document.getElementById('status').innerText;
+287:                            var messageContent = "";
+288:    
+289:                            if (status2 == "Besetzt") {
+290:                                messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
+291:                            } else if (currentHour >= 6 && currentHour < 9) {
+292:                                messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+293:                            } else if (currentHour >= 11 && currentHour < 13) {
+294:                                messageContent = "Guten Appetit und eine angenehme Pause!";
+295:                            } else if (currentHour >= 16 && currentHour < 19) {
+296:                                messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+297:                            } else {
+298:                                messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+299:                            }
+300:    
+301:                            messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+302:                        }
+303:                    }
+304:    
+305:                    // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+306:                    updateMessage();
+307:    
+308:                    // Aktualisiere die Nachricht jede volle Stunde
+309:                    setInterval(updateMessage, 1000);
+310:                    </script>
+311:    
+312:                    <script>
+313:                    function updateProgress() {
+314:                        const now = new Date();
+315:                        const startOfDay = new Date(now);
+316:                        startOfDay.setHours(7.30, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+317:                        const endOfDay = new Date(now);
+318:                        endOfDay.setHours(17, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+319:    
+320:                        // Berechne den Fortschritt in Prozent
+321:                        const totalMilliseconds = endOfDay - startOfDay;
+322:                        const currentMilliseconds = now - startOfDay;
+323:                        const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+324:    
+325:                        // Setze die Breite der Fortschrittsleiste entsprechend
+326:                        const progressBar = document.getElementById("daily-progress");
+327:                        progressBar.style.width = progressPercent + "%";
+328:                    }
+329:    
+330:                    // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+331:                    setInterval(updateProgress, 10000);
+332:                    </script>
+333:    
+334:    
+335:                </div>
+336:            </div>
+337:        </div>
+338:       </body>
+339:    </html>
+  
+app/views/articles/index.html.erb:176: syntax error, unexpected '(', expecting `end'
+app/views/articles/index.html.erb:176: syntax error, unexpected ')', expecting `end'
+app/views/articles/index.html.erb:176: syntax error, unexpected '(', expecting `end'
+app/views/articles/index.html.erb:176: syntax error, unexpected ')', expecting `end'
+app/views/articles/index.html.erb:176: syntax error, unexpected '(', expecting `end'
+app/views/articles/index.html.erb:176: syntax error, unexpected ')', expecting `end'
+app/views/articles/index.html.erb:176: syntax error, unexpected '(', expecting `end'
+app/views/articles/index.html.erb:176: syntax error, unexpected ')', expecting `end'
+app/views/articles/index.html.erb:176: syntax error, unexpected '(', expecting `end'
+app/views/articles/index.html.erb:176: syntax error, unexpected ')', expecting `end'
+app/views/articles/index.html.erb:176: syntax error, unexpected '(', expecting `end'
+app/views/articles/index.html.erb:176: syntax error, unexpected ')', expecting `end'
+Started GET "/" for ::1 at 2023-08-17 10:46:52 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4278)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 5436)
+Completed 200 OK in 1351ms (Views: 8.1ms | Allocations: 1246745)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:46:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:47:05 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4251)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 5425)
+Completed 200 OK in 1754ms (Views: 4.3ms | Allocations: 1246789)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:47:07 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:47:26 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4234)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 5394)
+Completed 200 OK in 1814ms (Views: 5.3ms | Allocations: 1246724)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:47:28 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:52:56 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 4617)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 5783)
+Completed 200 OK in 1741ms (Views: 4.3ms | Allocations: 1247064)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:52:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:53:53 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 4604)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 5768)
+Completed 200 OK in 1911ms (Views: 3.9ms | Allocations: 1247137)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:53:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:55:03 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 4603)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 5771)
+Completed 200 OK in 1997ms (Views: 3.9ms | Allocations: 1247083)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:55:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:55:32 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 4591)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 5767)
+Completed 200 OK in 1417ms (Views: 3.5ms | Allocations: 1247093)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:55:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:56:20 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 7837)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 7917)
+Completed 500 Internal Server Error in 1272ms (Allocations: 1249220)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `date' for #<ActionView::Base:0x00000000029e78>
+Did you mean?  @data):
+    168:                                 <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+    169:                             </div>
+    170:                             <div class="div6">
+    171:                                 <% if date.to_date == Date.today %>
+    172:                                     <p class="temperatur bold"><%= temps[:min] %>°<%= temps[:max] %>°</p>
+    173:                                 <% end %>
+    174:                                 <i class="weather-description"><%= @data["weather"].first["description"] %></i>
+  
+app/views/articles/index.html.erb:171
+Started GET "/" for ::1 at 2023-08-17 10:57:02 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 4588)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 5748)
+Completed 200 OK in 1878ms (Views: 3.6ms | Allocations: 1247083)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:57:04 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:57:13 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 4563)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 5725)
+Completed 200 OK in 1778ms (Views: 3.4ms | Allocations: 1247058)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:57:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:58:16 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 4585)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 5753)
+Completed 200 OK in 1405ms (Views: 4.4ms | Allocations: 1247069)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:58:17 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:58:33 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 4607)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 5807)
+Completed 200 OK in 1817ms (Views: 4.3ms | Allocations: 1247377)
+
+
+Started GET "/" for ::1 at 2023-08-17 10:58:35 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1455)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 2244)
+Completed 200 OK in 1691ms (Views: 1.2ms | Allocations: 1242700)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:58:36 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 10:58:45 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4586)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 5734)
+Completed 200 OK in 1454ms (Views: 3.4ms | Allocations: 1246782)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 10:58:47 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:00:46 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 4589)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 5767)
+Completed 200 OK in 1835ms (Views: 3.8ms | Allocations: 1247096)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:00:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:01:13 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4463)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 5625)
+Completed 200 OK in 1694ms (Views: 3.4ms | Allocations: 1246964)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:01:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:02:32 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4374)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 5540)
+Completed 200 OK in 1751ms (Views: 3.4ms | Allocations: 1246883)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:02:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:04:18 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1410)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 2213)
+Completed 200 OK in 1331ms (Views: 1.2ms | Allocations: 1242625)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:04:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:05:44 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 4720)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 4800)
+Completed 500 Internal Server Error in 1311ms (Allocations: 1243329)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    182:                     </div>
+    183:                     <div class="div3">
+    184:                         <div class="weatherprediction">
+    185:                         <p class="bold"><%= german_day_name(Date.parse(@days[1]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[1]["datetime"])) %> <%= Date.parse(@days[1]["datetime"]).strftime("%d") %></p>
+    186:                         <% tomorrow = Date.today + 1 %>
+    187:                         <% @daily_temperatures.each do |date, temps| %>
+    188:                         <% if date.to_date == tomorrow %>
+  
+app/views/articles/index.html.erb:185
+Started GET "/" for ::1 at 2023-08-17 11:06:36 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1770)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1841)
+Completed 500 Internal Server Error in 1351ms (Allocations: 1239450)
+
+
+  
+ActionView::Template::Error (undefined method `[]' for nil:NilClass):
+    182:                     </div>
+    183:                     <div class="div3">
+    184:                         <div class="weatherprediction">
+    185:                         <p class="bold"><%= german_day_name(Date.parse(@days[1]["datetime"])) %>, <%= german_month_name_short(Date.parse(@days[1]["datetime"])) %> <%= Date.parse(@days[1]["datetime"]).strftime("%d") %></p>
+    186:                         <% tomorrow = Date.today + 1 %>
+    187:                         <% @daily_temperatures.each do |date, temps| %>
+    188:                         <% if date.to_date == tomorrow %>
+  
+app/views/articles/index.html.erb:185
+Started GET "/" for ::1 at 2023-08-17 11:09:15 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4240)
+  Rendered layout layouts/application.html.erb (Duration: 1.8ms | Allocations: 4320)
+Completed 500 Internal Server Error in 1829ms (Allocations: 1245660)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Date into String):
+    182:                     </div>
+    183:                     <div class="div3">
+    184:                         <div class="weatherprediction">
+    185:                         <p class="bold"><%= Date.parse(Date.today + 1).strftime("%d") %></p>
+    186:                         <% tomorrow = Date.today + 1 %>
+    187:                         <% @daily_temperatures.each do |date, temps| %>
+    188:                         <% if date.to_date == tomorrow %>
+  
+app/views/articles/index.html.erb:185:in `parse'
+app/views/articles/index.html.erb:185
+Started GET "/" for ::1 at 2023-08-17 11:09:47 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 4230)
+  Rendered layout layouts/application.html.erb (Duration: 2.1ms | Allocations: 4310)
+Completed 500 Internal Server Error in 1848ms (Allocations: 1245612)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Date into String):
+    182:                     </div>
+    183:                     <div class="div3">
+    184:                         <div class="weatherprediction">
+    185:                         <p class="bold"><%= Date.parse(Date.today).strftime("%d") %></p>
+    186:                         <% tomorrow = Date.today + 1 %>
+    187:                         <% @daily_temperatures.each do |date, temps| %>
+    188:                         <% if date.to_date == tomorrow %>
+  
+app/views/articles/index.html.erb:185:in `parse'
+app/views/articles/index.html.erb:185
+Started GET "/" for ::1 at 2023-08-17 11:11:30 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4241)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 4321)
+Completed 500 Internal Server Error in 1475ms (Allocations: 1245649)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Date into String):
+    183:                     <div class="div3">
+    184:                         <div class="weatherprediction">
+    185:                         <% tomorrow = Date.today + 1 %>
+    186:                         <p class="bold"><%= Date.parse(tomorrow).strftime("%d") %></p>
+    187:                         <% tomorrow = Date.today + 1 %>
+    188:                         <% @daily_temperatures.each do |date, temps| %>
+    189:                         <% if date.to_date == tomorrow %>
+  
+app/views/articles/index.html.erb:186:in `parse'
+app/views/articles/index.html.erb:186
+Started GET "/" for ::1 at 2023-08-17 11:12:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4365)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 7096)
+Completed 200 OK in 1820ms (Views: 3.9ms | Allocations: 1248460)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:12:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:12:56 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 7541)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 7621)
+Completed 500 Internal Server Error in 1761ms (Allocations: 1248925)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `gdate' for #<ActionView::Base:0x000000000344b8>):
+    182:                     </div>
+    183:                     <div class="div3">
+    184:                         <div class="weatherprediction">
+    185:                         <p class="bold"><%= gdate.to_date %>, <%= german_month_name_short(Date.parse(@days[1]["datetime"])) %> <%= Date.parse(@days[1]["datetime"]).strftime("%d") %></p>
+    186:                         <% tomorrow = Date.today + 1 %>
+    187:                         <% @daily_temperatures.each do |date, temps| %>
+    188:                         <% if date.to_date == tomorrow %>
+  
+app/views/articles/index.html.erb:185
+Started GET "/" for ::1 at 2023-08-17 11:13:13 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4365)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 5523)
+Completed 200 OK in 1365ms (Views: 3.3ms | Allocations: 1246876)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:13:15 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:13:42 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 4281)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 5451)
+Completed 200 OK in 1365ms (Views: 3.7ms | Allocations: 1246793)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:13:44 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:16:10 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4327)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 5503)
+Completed 200 OK in 1901ms (Views: 4.4ms | Allocations: 1246833)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:16:12 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:17:39 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4300)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 5462)
+Completed 200 OK in 1919ms (Views: 3.6ms | Allocations: 1246808)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:17:41 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:19:56 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4234)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 5402)
+Completed 200 OK in 1749ms (Views: 4.3ms | Allocations: 1246770)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:19:58 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:20:22 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1458)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 3944)
+Completed 200 OK in 1306ms (Views: 2.4ms | Allocations: 1242074)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:20:23 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:20:31 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 4745)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 7742)
+Completed 200 OK in 786ms (Views: 6.3ms | ActiveRecord: 0.0ms | Allocations: 1262629)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:20:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:28:12 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4327)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 7073)
+Completed 200 OK in 1578ms (Views: 4.8ms | Allocations: 1245894)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:28:14 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:30:51 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 4305)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 5474)
+Completed 200 OK in 1273ms (Views: 3.3ms | Allocations: 1244291)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:30:53 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:32:00 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4322)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 5482)
+Completed 200 OK in 1286ms (Views: 3.3ms | Allocations: 1244309)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:32:02 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:33:29 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4369)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 5534)
+Completed 200 OK in 1367ms (Views: 3.3ms | Allocations: 1244317)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:33:30 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:33:41 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 4350)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 5510)
+Completed 200 OK in 884ms (Views: 3.7ms | Allocations: 1244319)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:33:41 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:34:02 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 4464)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 5629)
+Completed 200 OK in 1320ms (Views: 5.6ms | Allocations: 1244445)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:34:03 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:34:22 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4476)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 5648)
+Completed 200 OK in 1231ms (Views: 3.3ms | Allocations: 1244482)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:34:23 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:34:48 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 4477)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 5641)
+Completed 200 OK in 804ms (Views: 3.5ms | Allocations: 1244460)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:34:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:35:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4476)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 5642)
+Completed 200 OK in 894ms (Views: 3.4ms | Allocations: 1244452)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:35:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:36:09 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4492)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 5656)
+Completed 200 OK in 1229ms (Views: 3.5ms | Allocations: 1244458)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:36:11 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:37:37 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 5004)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 8007)
+Completed 200 OK in 1371ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 1263177)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:37:38 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:38:00 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.4ms | Allocations: 5004)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 8001)
+Completed 200 OK in 1337ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 1263179)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:38:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:38:12 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 5004)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 7995)
+Completed 200 OK in 753ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 1263165)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:38:13 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:38:32 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 5004)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 8001)
+Completed 200 OK in 1503ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 1263139)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:38:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-17 11:40:14 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4494)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 5655)
+Completed 200 OK in 1376ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 1244516)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-17 11:40:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
