@@ -85,16 +85,21 @@ body {
       grid-row-gap: 0px;
       }
       
-      .inner-inner-parent .div5 { grid-area: 1 / 1 / 2 / 2; 
-      border-right: 2px solid rgb(232, 242, 242);
-      text-align: center;}
+      .inner-inner-parent .div5 { grid-area: 1 / 1 / 2 / 2;
+      text-align: center;
+      background-color: rgb(232, 242, 242);
+      border-top-left-radius: 8px;
+      border-top-right-radius: 0;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 0; 
+      padding-bottom: 4px;
+      border-right: 2px solid rgb(229, 231, 231);}
       .inner-inner-parent .div6 { grid-area: 1 / 2 / 2 / 4; 
       text-align: center;}
 
 .div2,
-.weather,
 .weatherprediction,
-.weatherpredictionUnder,
+.weather,
 .news,
 .calendar,
 .calendar-content {
@@ -174,7 +179,6 @@ body {
   padding: 5px 20px 5px 20px;
   margin-left: 15px;
   text-align: center;
-  height: 100%;
 }
 
 .weatherImage {
