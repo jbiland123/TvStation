@@ -167,7 +167,7 @@
                         <div class="inner-inner-parent">
                             <div class="div5">
                                 <p class="bold weather-dates">Heute</p>
-                                <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+                                <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
                                 <% @daily_temperatures.each do |date, temps| %>
                                     <% if date.to_date == Date.today %>
                                         <p><%= temps[:max] %>° | <%= temps[:min] %>°</p>
@@ -187,7 +187,7 @@
                         <% tomorrow = Date.today + 1 %>
                         <% @daily_weather_icons.each do |date, icon| %>
                             <% if date.to_date == tomorrow %>
-                                <img class="weatherImage" src='http://openweathermap.org/img/wn/<%= icon %>@2x.png'>
+                                <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
                                 <% break %>
                             <% end %>
                         <% end %>
@@ -205,7 +205,7 @@
                         <% day_after_tomorrow = Date.today + 2 %>
                         <% @daily_weather_icons.each do |date, icon| %>
                         <% if date.to_date == day_after_tomorrow %>
-                            <img class="weatherImage" src='http://openweathermap.org/img/wn/<%= icon %>@2x.png'>
+                            <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
                             <% break %>
                         <% end %>
                         <% end %>

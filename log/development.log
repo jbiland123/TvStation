@@ -37053,3 +37053,1619 @@ Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:40:23 +0200
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started GET "/" for ::1 at 2023-08-18 09:40:41 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1545)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 2402)
+Completed 200 OK in 1181ms (Views: 1.3ms | ActiveRecord: 0.0ms | Allocations: 1240360)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:40:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:40:51 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 3015)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 3097)
+Completed 500 Internal Server Error in 1353ms (ActiveRecord: 0.0ms | Allocations: 1241633)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+
+<html lang="de">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="refresh" content="1800">
+      <link href="css/Stylesheet.css" rel="Stylesheet">
+      
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link rel="icon" href="Bilder/Logo.png">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <title>TVStation</title>
+   </head>
+<body>
+    <div class="header">
+        <h1 class='bold'>Zentrale Informatik</h1>
+        <p class="date" id="current-time"></p>
+        <div class="bl-logo">
+        <%= image_tag("Baselland.png", size: "235x55") %>
+        </div>
+    </div>
+
+<script>
+  function updateTime() {
+    const currentTime = new Date();
+    const options = {
+      weekday: 'long',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+    };
+
+    const formattedTime = currentTime.toLocaleDateString('ch', options)
+      .replace(/at\s/, '- ')
+      .replace(/um\s/, '- ')
+
+    document.getElementById('current-time').innerHTML = formattedTime;
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
+
+
+
+    <div class="body">
+        <div class="parent">
+            <div class="div1"> 
+                <div class="news">
+                    <p class="weather-title">Aktuelle Nachrichten</p>
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
+                        <ol class="carousel-indicators">
+                        <% @i_news.each_with_index do |_, index| %>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" <%= index == 0 ? 'class="active"' : '' %>></li>
+                        <% end %>
+                        </ol>
+                        <div class="carousel-inner">
+                            <% @i_news.each_with_index do |item, index| %>
+                                <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+                                    <div class="news-slide">
+                                        <img class="minheightimg" src="<%= asset_path(item["author"] + ".png") %>" alt="">
+                                        <p id="devider">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+                                        <h3 class="minheight"><%= truncate_title(item["title"], item["author"]) %></h3>
+                                    </div>
+                                </div>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div2"> 
+            <p class="weather-title">Wetterverlauf des Tages</p>
+                <div class="inner-parent">
+                    <div class="div1">
+                        <div class="verlauf">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+              
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        
+                        <script>
+                            const ctx1 = document.getElementById('myChart1');
+
+                            ctx1.width = 900; // Breite in Pixeln
+                            ctx1.height = -100; // Höhe in Pixeln
+              
+                            new Chart(ctx1, {
+                            type: 'line',
+                            data: {
+                                labels: ['<%= @times_formatted[0] %>', '<%= @times_formatted[1] %>', '<%= @times_formatted[2] %>', '<%= @times_formatted[3] %>', '<%= @times_formatted[4] %>'],
+                                datasets: [{
+                                data: [<%= @temperatures[0] %>, <%= @temperatures[1] %>, <%= @temperatures[2] %>, <%= @temperatures[3] %>, <%= @temperatures[4] %>],
+                                borderWidth: 2,
+                                pointRadius: 3,
+                                pointBackgroundColor: 'rgb(244, 210, 86)', // Specify red color for the last point
+                                fill: true,
+                                backgroundColor: 'rgb(252, 245, 217)',
+                                borderColor: 'rgb(244, 210, 86)',
+                                tension: 0.4
+                                }]
+                            },
+                            options: {
+                                scales: {
+                                x: {
+                                    grid: {
+                                    display: false
+                                    },
+                                    ticks: {
+                                        font: {
+                                        size: 19, // Ändere die Schriftgröße hier
+                                        family: 'Helvetica' // Schriftart
+                                        }
+                                    }
+                                },
+                                y: {
+                                    display: false,
+                                    ticks: {
+                                    suggestedMin: 0 // Setze den niedrigsten Wert auf 0
+                                    },
+                                    max: 40, // Maximalwert auf der Y-Achse
+                                }
+                                },
+                                plugins: {
+                                legend: {
+                                    display: false,
+                                }
+                                }
+                            },
+                            plugins: [{
+                                afterDatasetsDraw: function (chart) {
+                                const ctx = chart.ctx;
+                                chart.data.datasets.forEach(function (dataset, datasetIndex) {
+                                    const meta = chart.getDatasetMeta(datasetIndex);
+                                    if (meta.hidden) return;
+                                    meta.data.forEach(function (element, index) {
+                                    // Zeichne den Text über dem Punkt
+                                    ctx.fillStyle = 'black';
+                                    const fontSize = 19;
+                                    const fontStyle = 'normal';
+                                    const fontFamily = 'Helvetica';
+                                    ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+                                    const dataPoint = dataset.data[index];
+                                    const x = element.x;
+                                    const y = element.y - 10;
+                                    ctx.textAlign = 'center';
+                                    ctx.textBaseline = 'bottom';
+                                    ctx.fillText(dataPoint + '°', x, y);
+                                    });
+                                });
+                                }
+                            }]
+                            });
+                        </script>
+                    </div>
+                    <div class="weather">
+                        <div class="inner-inner-parent">
+                            <div class="div5">
+                                <p class="bold weather-dates">Heute</p>
+
+                                <img src="<%= asset_path("<%= @data["weather"].first["icon"] %>.png") %>" alt="">
+                                <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+                                <% @daily_temperatures.each do |date, temps| %>
+                                    <% if date.to_date == Date.today %>
+                                        <p><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                                    <% end %>
+                                <% end %>
+                            </div>
+                            <div class="div6">
+                                <p class="bold weather-dates"><%= @data["main"]["temp"] %>°</p>
+                                <p class="kursiv"><%= @data["weather"].first["description"] %></p>
+                                <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div3">
+                        <div class="weatherprediction">
+                        <p class="bold"><%= (Date.today + 1).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+                        <% tomorrow = Date.today + 1 %>
+                        <% @daily_weather_icons.each do |date, icon| %>
+                            <% if date.to_date == tomorrow %>
+                                <img class="weatherImage" src='http://openweathermap.org/img/wn/<%= icon %>@2x.png'>
+                                <% break %>
+                            <% end %>
+                        <% end %>
+                        <% @daily_temperatures.each do |date, temps| %>
+                            <% if date.to_date == tomorrow %>
+                                <p><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                                <% break %>
+                            <% end %>
+                        <% end %>
+                        </div>
+                    </div>
+                    <div class="div4">
+                        <div class="weatherprediction">
+                        <p class="bold"><%= (Date.today + 2).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+                        <% day_after_tomorrow = Date.today + 2 %>
+                        <% @daily_weather_icons.each do |date, icon| %>
+                        <% if date.to_date == day_after_tomorrow %>
+                            <img class="weatherImage" src='http://openweathermap.org/img/wn/<%= icon %>@2x.png'>
+                            <% break %>
+                        <% end %>
+                        <% end %>
+                        <% @daily_temperatures.each do |date, temps| %>
+                        <% if date.to_date == day_after_tomorrow %>
+                            <p><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                            <% break %>
+                        <% end %>
+                        <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div3">
+                <div class="calendar">
+                    <% status = "Frei" %>
+                    <% @events.each do |event| %>
+                        <% if event.dtstart <= Time.now && Time.now <= event.dtend %>
+                            <% status = "Besetzt" %>
+                        <% end %>
+                    <% end %>
+                    <div class="title">
+                        <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+                        <% if status == "Besetzt" %>
+                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                        <% else %>
+                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                        <% end %>
+                    </div>
+                    <% @events.first(1).each do |event| %>
+                        <div class="calendar-content-first">
+                            <p class="left max-characters">Gebucht</p>
+                            <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+                        </div>
+                    <% end %>
+                    <% @events.drop(1).first(4).each do |event| %>
+                        <div class="calendar-content">
+                            <p class="left max-characters">Gebucht</p>
+                            <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+                        </div>
+                    <% end %>
+                </div>
+            </div>
+            <div class="div4">
+                <div class="calendar">
+                <% status2 = "Frei" %>
+                    <% @events2.each do |event2| %>
+                        <% if event2.dtstart <= Time.now && Time.now <= event2.dtend %>
+                            <% status2 = "Besetzt" %>
+                        <% end %>
+                    <% end %>
+                    <div class="title">
+                        <h2 class="bold">Schulungsraum 1 - Theorieprüfungen</h2>
+                        <% if status2 == "Besetzt" %>
+                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                        <% else %>
+                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                        <% end %>
+                    </div>
+                <% @events2.first(1).each do |event2| %>
+                    <div class="calendar-content-first">
+                        <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                    </div>
+                <% end %>
+                <% @events2.drop(1).first(3).each do |event2| %>
+                    <div class="calendar-content">
+                        <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                    </div>
+                <% end %>
+                <div id="status" style="display: none;"><%= status2 %></div>
+                </div>
+            </div>
+
+            <div class="div5">
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" id="daily-progress"></div>
+                </div>
+                
+              <div class="message" id="message">
+                <marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">
+                    Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+                </marquee>
+              </div>
+
+              <script>
+                function updateMessage() {
+                    var currentDate = new Date();
+                    var currentHour = currentDate.getHours();
+                    var currentMinute = currentDate.getMinutes();
+                    var currentSecond = currentDate.getSeconds();
+
+                    if (currentMinute === 0 && currentSecond === 0) {
+                        var messageDiv = document.getElementById("message");
+                        var status2 = document.getElementById('status').innerText;
+                        var messageContent = "";
+
+                        if (status2 == "Besetzt") {
+                            messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
+                        } else if (currentHour >= 6 && currentHour < 9) {
+                            messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                        } else if (currentHour >= 11 && currentHour < 13) {
+                            messageContent = "Guten Appetit und eine angenehme Pause!";
+                        } else if (currentHour >= 16 && currentHour < 19) {
+                            messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+                        } else {
+                            messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                        }
+
+                        messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+                    }
+                }
+
+                // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+                updateMessage();
+
+                // Aktualisiere die Nachricht jede volle Stunde
+                setInterval(updateMessage, 1000);
+                </script>
+
+                <script>
+                function updateProgress() {
+                    const now = new Date();
+                    const startOfDay = new Date(now);
+                    startOfDay.setHours(7.30, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+                    const endOfDay = new Date(now);
+                    endOfDay.setHours(17, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+
+                    // Berechne den Fortschritt in Prozent
+                    const totalMilliseconds = endOfDay - startOfDay;
+                    const currentMilliseconds = now - startOfDay;
+                    const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+
+                    // Setze die Breite der Fortschrittsleiste entsprechend
+                    const progressBar = document.getElementById("daily-progress");
+                    progressBar.style.width = progressPercent + "%";
+                }
+
+                // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+                setInterval(updateProgress, 10000);
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    
+3:    <html lang="de">
+4:       <head>
+5:          <meta charset="UTF-8">
+6:          <meta http-equiv="refresh" content="1800">
+7:          <link href="css/Stylesheet.css" rel="Stylesheet">
+8:          
+9:          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+10:          <meta http-equiv="X-UA-Compatible" content="ie=edge">
+11:          <link rel="icon" href="Bilder/Logo.png">
+12:          <link rel="preconnect" href="https://fonts.googleapis.com">
+13:          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+14:          <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+15:          <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+16:          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+17:          <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+18:          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+19:          <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+20:          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+21:          <title>TVStation</title>
+22:       </head>
+23:    <body>
+24:        <div class="header">
+25:            <h1 class='bold'>Zentrale Informatik</h1>
+26:            <p class="date" id="current-time"></p>
+27:            <div class="bl-logo">
+28:            <%= image_tag("Baselland.png", size: "235x55") %>
+29:            </div>
+30:        </div>
+31:    
+32:    <script>
+33:      function updateTime() {
+34:        const currentTime = new Date();
+35:        const options = {
+36:          weekday: 'long',
+37:          month: 'long',
+38:          day: 'numeric',
+39:          hour: '2-digit',
+40:          minute: '2-digit',
+41:          hour12: false,
+42:        };
+43:    
+44:        const formattedTime = currentTime.toLocaleDateString('ch', options)
+45:          .replace(/at\s/, '- ')
+46:          .replace(/um\s/, '- ')
+47:    
+48:        document.getElementById('current-time').innerHTML = formattedTime;
+49:      }
+50:    
+51:      updateTime();
+52:      setInterval(updateTime, 1000);
+53:    </script>
+54:    
+55:    
+56:    
+57:        <div class="body">
+58:            <div class="parent">
+59:                <div class="div1"> 
+60:                    <div class="news">
+61:                        <p class="weather-title">Aktuelle Nachrichten</p>
+62:                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
+63:                            <ol class="carousel-indicators">
+64:                            <% @i_news.each_with_index do |_, index| %>
+65:                                <li data-target="#carouselExampleIndicators" data-slide-to="<%= index %>" <%= index == 0 ? 'class="active"' : '' %>></li>
+66:                            <% end %>
+67:                            </ol>
+68:                            <div class="carousel-inner">
+69:                                <% @i_news.each_with_index do |item, index| %>
+70:                                    <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+71:                                        <div class="news-slide">
+72:                                            <img class="minheightimg" src="<%= asset_path(item["author"] + ".png") %>" alt="">
+73:                                            <p id="devider">- - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
+74:                                            <h3 class="minheight"><%= truncate_title(item["title"], item["author"]) %></h3>
+75:                                        </div>
+76:                                    </div>
+77:                                <% end %>
+78:                            </div>
+79:                        </div>
+80:                    </div>
+81:                </div>
+82:                <div class="div2"> 
+83:                <p class="weather-title">Wetterverlauf des Tages</p>
+84:                    <div class="inner-parent">
+85:                        <div class="div1">
+86:                            <div class="verlauf">
+87:                                <canvas id="myChart1"></canvas>
+88:                            </div>
+89:                  
+90:                            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+91:                            
+92:                            <script>
+93:                                const ctx1 = document.getElementById('myChart1');
+94:    
+95:                                ctx1.width = 900; // Breite in Pixeln
+96:                                ctx1.height = -100; // Höhe in Pixeln
+97:                  
+98:                                new Chart(ctx1, {
+99:                                type: 'line',
+100:                                data: {
+101:                                    labels: ['<%= @times_formatted[0] %>', '<%= @times_formatted[1] %>', '<%= @times_formatted[2] %>', '<%= @times_formatted[3] %>', '<%= @times_formatted[4] %>'],
+102:                                    datasets: [{
+103:                                    data: [<%= @temperatures[0] %>, <%= @temperatures[1] %>, <%= @temperatures[2] %>, <%= @temperatures[3] %>, <%= @temperatures[4] %>],
+104:                                    borderWidth: 2,
+105:                                    pointRadius: 3,
+106:                                    pointBackgroundColor: 'rgb(244, 210, 86)', // Specify red color for the last point
+107:                                    fill: true,
+108:                                    backgroundColor: 'rgb(252, 245, 217)',
+109:                                    borderColor: 'rgb(244, 210, 86)',
+110:                                    tension: 0.4
+111:                                    }]
+112:                                },
+113:                                options: {
+114:                                    scales: {
+115:                                    x: {
+116:                                        grid: {
+117:                                        display: false
+118:                                        },
+119:                                        ticks: {
+120:                                            font: {
+121:                                            size: 19, // Ändere die Schriftgröße hier
+122:                                            family: 'Helvetica' // Schriftart
+123:                                            }
+124:                                        }
+125:                                    },
+126:                                    y: {
+127:                                        display: false,
+128:                                        ticks: {
+129:                                        suggestedMin: 0 // Setze den niedrigsten Wert auf 0
+130:                                        },
+131:                                        max: 40, // Maximalwert auf der Y-Achse
+132:                                    }
+133:                                    },
+134:                                    plugins: {
+135:                                    legend: {
+136:                                        display: false,
+137:                                    }
+138:                                    }
+139:                                },
+140:                                plugins: [{
+141:                                    afterDatasetsDraw: function (chart) {
+142:                                    const ctx = chart.ctx;
+143:                                    chart.data.datasets.forEach(function (dataset, datasetIndex) {
+144:                                        const meta = chart.getDatasetMeta(datasetIndex);
+145:                                        if (meta.hidden) return;
+146:                                        meta.data.forEach(function (element, index) {
+147:                                        // Zeichne den Text über dem Punkt
+148:                                        ctx.fillStyle = 'black';
+149:                                        const fontSize = 19;
+150:                                        const fontStyle = 'normal';
+151:                                        const fontFamily = 'Helvetica';
+152:                                        ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+153:                                        const dataPoint = dataset.data[index];
+154:                                        const x = element.x;
+155:                                        const y = element.y - 10;
+156:                                        ctx.textAlign = 'center';
+157:                                        ctx.textBaseline = 'bottom';
+158:                                        ctx.fillText(dataPoint + '°', x, y);
+159:                                        });
+160:                                    });
+161:                                    }
+162:                                }]
+163:                                });
+164:                            </script>
+165:                        </div>
+166:                        <div class="weather">
+167:                            <div class="inner-inner-parent">
+168:                                <div class="div5">
+169:                                    <p class="bold weather-dates">Heute</p>
+170:    
+171:                                    <img src="<%= asset_path("<%= @data["weather"].first["icon"] %>.png") %>" alt="">
+172:                                    <img class="weatherImage" src='https://openweathermap.org/img/wn/<%= @data["weather"].first["icon"] %>@2x.png' />
+173:                                    <% @daily_temperatures.each do |date, temps| %>
+174:                                        <% if date.to_date == Date.today %>
+175:                                            <p><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+176:                                        <% end %>
+177:                                    <% end %>
+178:                                </div>
+179:                                <div class="div6">
+180:                                    <p class="bold weather-dates"><%= @data["main"]["temp"] %>°</p>
+181:                                    <p class="kursiv"><%= @data["weather"].first["description"] %></p>
+182:                                    <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+183:                                </div>
+184:                            </div>
+185:                        </div>
+186:                        <div class="div3">
+187:                            <div class="weatherprediction">
+188:                            <p class="bold"><%= (Date.today + 1).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+189:                            <% tomorrow = Date.today + 1 %>
+190:                            <% @daily_weather_icons.each do |date, icon| %>
+191:                                <% if date.to_date == tomorrow %>
+192:                                    <img class="weatherImage" src='http://openweathermap.org/img/wn/<%= icon %>@2x.png'>
+193:                                    <% break %>
+194:                                <% end %>
+195:                            <% end %>
+196:                            <% @daily_temperatures.each do |date, temps| %>
+197:                                <% if date.to_date == tomorrow %>
+198:                                    <p><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+199:                                    <% break %>
+200:                                <% end %>
+201:                            <% end %>
+202:                            </div>
+203:                        </div>
+204:                        <div class="div4">
+205:                            <div class="weatherprediction">
+206:                            <p class="bold"><%= (Date.today + 2).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+207:                            <% day_after_tomorrow = Date.today + 2 %>
+208:                            <% @daily_weather_icons.each do |date, icon| %>
+209:                            <% if date.to_date == day_after_tomorrow %>
+210:                                <img class="weatherImage" src='http://openweathermap.org/img/wn/<%= icon %>@2x.png'>
+211:                                <% break %>
+212:                            <% end %>
+213:                            <% end %>
+214:                            <% @daily_temperatures.each do |date, temps| %>
+215:                            <% if date.to_date == day_after_tomorrow %>
+216:                                <p><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+217:                                <% break %>
+218:                            <% end %>
+219:                            <% end %>
+220:                            </div>
+221:                        </div>
+222:                    </div>
+223:                </div>
+224:                <div class="div3">
+225:                    <div class="calendar">
+226:                        <% status = "Frei" %>
+227:                        <% @events.each do |event| %>
+228:                            <% if event.dtstart <= Time.now && Time.now <= event.dtend %>
+229:                                <% status = "Besetzt" %>
+230:                            <% end %>
+231:                        <% end %>
+232:                        <div class="title">
+233:                            <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+234:                            <% if status == "Besetzt" %>
+235:                                <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+236:                            <% else %>
+237:                                <img class="size" src="<%= asset_path("free.png") %>" alt="">
+238:                            <% end %>
+239:                        </div>
+240:                        <% @events.first(1).each do |event| %>
+241:                            <div class="calendar-content-first">
+242:                                <p class="left max-characters">Gebucht</p>
+243:                                <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+244:                            </div>
+245:                        <% end %>
+246:                        <% @events.drop(1).first(4).each do |event| %>
+247:                            <div class="calendar-content">
+248:                                <p class="left max-characters">Gebucht</p>
+249:                                <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
+250:                            </div>
+251:                        <% end %>
+252:                    </div>
+253:                </div>
+254:                <div class="div4">
+255:                    <div class="calendar">
+256:                    <% status2 = "Frei" %>
+257:                        <% @events2.each do |event2| %>
+258:                            <% if event2.dtstart <= Time.now && Time.now <= event2.dtend %>
+259:                                <% status2 = "Besetzt" %>
+260:                            <% end %>
+261:                        <% end %>
+262:                        <div class="title">
+263:                            <h2 class="bold">Schulungsraum 1 - Theorieprüfungen</h2>
+264:                            <% if status2 == "Besetzt" %>
+265:                                <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+266:                            <% else %>
+267:                                <img class="size" src="<%= asset_path("free.png") %>" alt="">
+268:                            <% end %>
+269:                        </div>
+270:                    <% @events2.first(1).each do |event2| %>
+271:                        <div class="calendar-content-first">
+272:                            <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
+273:                            <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+274:                        </div>
+275:                    <% end %>
+276:                    <% @events2.drop(1).first(3).each do |event2| %>
+277:                        <div class="calendar-content">
+278:                            <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
+279:                            <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+280:                        </div>
+281:                    <% end %>
+282:                    <div id="status" style="display: none;"><%= status2 %></div>
+283:                    </div>
+284:                </div>
+285:    
+286:                <div class="div5">
+287:                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+288:                        <div class="progress-bar" id="daily-progress"></div>
+289:                    </div>
+290:                    
+291:                  <div class="message" id="message">
+292:                    <marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">
+293:                        Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+294:                    </marquee>
+295:                  </div>
+296:    
+297:                  <script>
+298:                    function updateMessage() {
+299:                        var currentDate = new Date();
+300:                        var currentHour = currentDate.getHours();
+301:                        var currentMinute = currentDate.getMinutes();
+302:                        var currentSecond = currentDate.getSeconds();
+303:    
+304:                        if (currentMinute === 0 && currentSecond === 0) {
+305:                            var messageDiv = document.getElementById("message");
+306:                            var status2 = document.getElementById('status').innerText;
+307:                            var messageContent = "";
+308:    
+309:                            if (status2 == "Besetzt") {
+310:                                messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
+311:                            } else if (currentHour >= 6 && currentHour < 9) {
+312:                                messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+313:                            } else if (currentHour >= 11 && currentHour < 13) {
+314:                                messageContent = "Guten Appetit und eine angenehme Pause!";
+315:                            } else if (currentHour >= 16 && currentHour < 19) {
+316:                                messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+317:                            } else {
+318:                                messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+319:                            }
+320:    
+321:                            messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+322:                        }
+323:                    }
+324:    
+325:                    // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+326:                    updateMessage();
+327:    
+328:                    // Aktualisiere die Nachricht jede volle Stunde
+329:                    setInterval(updateMessage, 1000);
+330:                    </script>
+331:    
+332:                    <script>
+333:                    function updateProgress() {
+334:                        const now = new Date();
+335:                        const startOfDay = new Date(now);
+336:                        startOfDay.setHours(7.30, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+337:                        const endOfDay = new Date(now);
+338:                        endOfDay.setHours(17, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+339:    
+340:                        // Berechne den Fortschritt in Prozent
+341:                        const totalMilliseconds = endOfDay - startOfDay;
+342:                        const currentMilliseconds = now - startOfDay;
+343:                        const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+344:    
+345:                        // Setze die Breite der Fortschrittsleiste entsprechend
+346:                        const progressBar = document.getElementById("daily-progress");
+347:                        progressBar.style.width = progressPercent + "%";
+348:                    }
+349:    
+350:                    // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+351:                    setInterval(updateProgress, 10000);
+352:                    </script>
+353:    
+354:    
+355:                </div>
+356:            </div>
+357:        </div>
+358:       </body>
+359:    </html>
+  
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected '>'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:179: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:186: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:187: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:188: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:192: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:204: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:205: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:206: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:210: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:224: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:225: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:226: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:229: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:232: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:233: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:234: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:235: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:237: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:242: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:242: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:243: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:247: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:247: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:248: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:248: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:249: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:254: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:255: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:256: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:259: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:262: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:263: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:264: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:265: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:267: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:272: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:272: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:273: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:277: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:277: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:278: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:278: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:279: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:286: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected string literal, expecting `end'
+app/views/articles/index.html.erb:305: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:309: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:310: syntax error, unexpected `in', expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:314: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:316: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:361: unterminated string meets end of file
+app/views/articles/index.html.erb:361: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected '>'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:179: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:186: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:187: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:188: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:192: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:204: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:205: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:206: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:210: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:224: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:225: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:226: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:229: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:232: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:233: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:234: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:235: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:237: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:242: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:242: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:243: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:247: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:247: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:248: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:248: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:249: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:254: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:255: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:256: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:259: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:262: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:263: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:264: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:265: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:267: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:272: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:272: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:273: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:277: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:277: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:278: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:278: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:279: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:286: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected string literal, expecting `end'
+app/views/articles/index.html.erb:305: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:309: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:310: syntax error, unexpected `in', expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:314: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:316: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:361: unterminated string meets end of file
+app/views/articles/index.html.erb:361: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected '>'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:179: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:186: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:187: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:188: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:192: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:204: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:205: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:206: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:210: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:224: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:225: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:226: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:229: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:232: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:233: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:234: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:235: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:237: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:242: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:242: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:243: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:247: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:247: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:248: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:248: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:249: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:254: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:255: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:256: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:259: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:262: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:263: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:264: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:265: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:267: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:272: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:272: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:273: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:277: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:277: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:278: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:278: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:279: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:286: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected string literal, expecting `end'
+app/views/articles/index.html.erb:305: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:309: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:310: syntax error, unexpected `in', expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:314: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:316: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:361: unterminated string meets end of file
+app/views/articles/index.html.erb:361: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected '>'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:179: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:186: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:187: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:188: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:192: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:204: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:205: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:206: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:210: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:224: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:225: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:226: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:229: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:232: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:233: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:234: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:235: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:237: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:242: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:242: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:243: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:247: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:247: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:248: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:248: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:249: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:254: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:255: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:256: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:259: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:262: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:263: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:264: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:265: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:267: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:272: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:272: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:273: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:277: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:277: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:278: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:278: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:279: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:286: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected string literal, expecting `end'
+app/views/articles/index.html.erb:305: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:309: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:310: syntax error, unexpected `in', expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:314: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:316: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:361: unterminated string meets end of file
+app/views/articles/index.html.erb:361: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected '>'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:179: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:186: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:187: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:188: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:192: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:204: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:205: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:206: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:210: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:224: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:225: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:226: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:229: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:232: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:233: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:234: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:235: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:237: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:242: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:242: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:243: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:247: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:247: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:248: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:248: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:249: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:254: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:255: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:256: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:259: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:262: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:263: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:264: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:265: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:267: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:272: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:272: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:273: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:277: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:277: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:278: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:278: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:279: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:286: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected string literal, expecting `end'
+app/views/articles/index.html.erb:305: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:309: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:310: syntax error, unexpected `in', expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:314: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:316: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:361: unterminated string meets end of file
+app/views/articles/index.html.erb:361: syntax error, unexpected end-of-input, expecting `end'
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected local variable or method, expecting ')'
+app/views/articles/index.html.erb:171: syntax error, unexpected '>'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:172: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:179: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:180: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:181: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:182: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:186: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:187: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:188: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:192: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:204: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:205: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:206: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:210: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:224: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:225: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:226: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:229: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:232: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:233: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:234: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:235: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:237: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:241: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:242: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:242: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:243: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:243: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:247: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:247: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:248: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:248: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:249: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:249: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:254: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:255: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:256: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:259: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:262: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:263: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:264: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:265: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:267: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:271: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:272: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:272: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:273: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:273: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:277: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:277: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:278: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:278: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:279: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:279: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:282: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:286: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:287: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:288: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:288: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:291: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:292: syntax error, unexpected string literal, expecting `end'
+app/views/articles/index.html.erb:305: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:309: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:310: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:310: syntax error, unexpected `in', expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:312: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:314: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:316: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected constant, expecting `end'
+app/views/articles/index.html.erb:318: syntax error, unexpected integer literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:321: syntax error, unexpected integer literal, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected local variable or method, expecting `end'
+app/views/articles/index.html.erb:346: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/articles/index.html.erb:361: unterminated string meets end of file
+app/views/articles/index.html.erb:361: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/" for ::1 at 2023-08-18 09:43:42 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 4638)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 5805)
+Completed 200 OK in 1192ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1244655)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:43:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:45:22 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 4637)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 5801)
+Completed 200 OK in 746ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 1244626)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:45:23 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:45:54 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 4619)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 5783)
+Completed 200 OK in 1275ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 1244571)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:45:55 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:49:00 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 4621)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 5795)
+Completed 200 OK in 1180ms (Views: 3.6ms | Allocations: 1244586)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:49:01 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:49:25 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 5138)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 8129)
+Completed 200 OK in 1508ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 1263303)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:49:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:49:37 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 5138)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 8141)
+Completed 200 OK in 1288ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 1263314)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:49:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:49:49 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 5138)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 8131)
+Completed 200 OK in 1316ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 1263303)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:49:50 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:50:23 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 5138)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 8125)
+Completed 200 OK in 893ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 1263291)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:50:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:50:38 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 5138)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 8135)
+Completed 200 OK in 878ms (Views: 5.1ms | ActiveRecord: 0.0ms | Allocations: 1263301)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:50:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:50:53 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 5138)
+  Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 8139)
+Completed 200 OK in 811ms (Views: 5.4ms | ActiveRecord: 0.0ms | Allocations: 1263296)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:50:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:51:17 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 5138)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 8143)
+Completed 200 OK in 830ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 1263261)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:51:18 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:51:43 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 5138)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 8135)
+Completed 200 OK in 795ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 1263301)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:51:43 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:51:59 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 5138)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 8127)
+Completed 200 OK in 780ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 1263302)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:52:00 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:52:19 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 5138)
+  Rendered layout layouts/application.html.erb (Duration: 4.0ms | Allocations: 8133)
+Completed 200 OK in 801ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 1263322)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:52:20 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-18 09:52:33 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 5138)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 8127)
+Completed 200 OK in 772ms (Views: 5.2ms | ActiveRecord: 0.0ms | Allocations: 1263297)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-18 09:52:33 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
