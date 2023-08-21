@@ -58,7 +58,7 @@
         <div class="parent">
             <div class="div1"> 
                 <div class="news">
-                    <p class="weather-title">Aktuelle Nachrichten</p>
+                    <p class="bold card-titles">Aktuelle Nachrichten</p>
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
                         <ol class="carousel-indicators">
                         <% @i_news.each_with_index do |_, index| %>
@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="div2"> 
-            <p class="weather-title">Wetterverlauf des Tages</p>
+            <p class="bold card-titles">Wetterverlauf des Tages</p>
                 <div class="inner-parent">
                     <div class="div1">
                         <div class="verlauf">
@@ -166,16 +166,16 @@
                     <div class="weather">
                         <div class="inner-inner-parent">
                             <div class="div5">
-                                <p class="bold weather-dates">Heute</p>
+                                <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
                                 <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
                                 <% @daily_temperatures.each do |date, temps| %>
                                     <% if date.to_date == Date.today %>
-                                        <p><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                                        <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
                                     <% end %>
                                 <% end %>
                             </div>
                             <div class="div6">
-                                <p class="bold weather-dates"><%= @data["main"]["temp"] %>°</p>
+                                <p class="bold temp-heute"><%= @data["main"]["temp"] %>°</p>
                                 <p class="kursiv"><%= @data["weather"].first["description"] %></p>
                                 <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
                             </div>
@@ -183,7 +183,7 @@
                     </div>
                     <div class="div3">
                         <div class="weatherprediction">
-                        <p class="bold"><%= (Date.today + 1).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+                        <p class="bold weather-date"><%= (Date.today + 1).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
                         <% tomorrow = Date.today + 1 %>
                         <% @daily_weather_icons.each do |date, icon| %>
                             <% if date.to_date == tomorrow %>
@@ -193,7 +193,7 @@
                         <% end %>
                         <% @daily_temperatures.each do |date, temps| %>
                             <% if date.to_date == tomorrow %>
-                                <p><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                                <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
                                 <% break %>
                             <% end %>
                         <% end %>
@@ -201,7 +201,7 @@
                     </div>
                     <div class="div4">
                         <div class="weatherprediction">
-                        <p class="bold"><%= (Date.today + 2).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+                        <p class="bold weather-date"><%= (Date.today + 2).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
                         <% day_after_tomorrow = Date.today + 2 %>
                         <% @daily_weather_icons.each do |date, icon| %>
                         <% if date.to_date == day_after_tomorrow %>
@@ -211,7 +211,7 @@
                         <% end %>
                         <% @daily_temperatures.each do |date, temps| %>
                         <% if date.to_date == day_after_tomorrow %>
-                            <p><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                            <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
                             <% break %>
                         <% end %>
                         <% end %>
