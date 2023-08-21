@@ -261,6 +261,7 @@
                         <h2 class="bold">Schulungsraum 1 - Theorieprüfungen</h2>
                         <% if status2 == "Besetzt" %>
                             <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+
                         <% else %>
                             <img class="size" src="<%= asset_path("free.png") %>" alt="">
                         <% end %>
@@ -299,14 +300,12 @@
                     var currentMinute = currentDate.getMinutes();
                     var currentSecond = currentDate.getSeconds();
 
-                    if (currentMinute === 0 && currentSecond === 0) {
-                        var messageDiv = document.getElementById("message");
-                        var status2 = document.getElementById('status').innerText;
-                        var messageContent = "";
+                    var messageDiv = document.getElementById("message");
+                    var status2 = document.getElementById('status').innerText;
+                    var messageContent = "";
 
-                        if (status2 == "Besetzt") {
-                            messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
-                        } else if (currentHour >= 6 && currentHour < 9) {
+                    if (currentMinute === 0 && currentSecond === 0) {
+                        if (currentHour >= 6 && currentHour < 9) {
                             messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
                         } else if (currentHour >= 11 && currentHour < 13) {
                             messageContent = "Guten Appetit und eine angenehme Pause!";
@@ -315,8 +314,11 @@
                         } else {
                             messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
                         }
-
                         messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+                    }
+
+                    if (status2 == "Besetzt") {
+                        messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
                     }
                 }
 
