@@ -40798,3 +40798,321 @@ Started GET "/css/Stylesheet.css" for ::1 at 2023-08-24 10:11:55 +0200
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started GET "/" for ::1 at 2023-08-28 08:45:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 5586)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 8477)
+Completed 200 OK in 1624ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 723879)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-28 08:45:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-28 08:49:23 +0200
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 60924ms (ActiveRecord: 0.0ms | Allocations: 3139)
+
+
+  
+Net::OpenTimeout (Failed to open TCP connection to newsapi.org:443 (execution expired)):
+  
+app/controllers/articles_controller.rb:62:in `index'
+Started GET "/" for ::1 at 2023-08-28 09:10:48 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1986)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 2799)
+Completed 200 OK in 1310ms (Views: 1.3ms | Allocations: 700908)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-28 09:10:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-28 09:53:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1989)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 2782)
+Completed 200 OK in 1241ms (Views: 1.3ms | Allocations: 700711)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-28 09:53:06 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-28 14:24:55 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1915)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 2708)
+Completed 200 OK in 1492ms (Views: 1.3ms | Allocations: 700637)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-28 14:24:57 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-28 19:34:38 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1877)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 2685)
+Completed 200 OK in 1215ms (Views: 1.3ms | Allocations: 700603)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-28 19:34:39 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-28 20:04:39 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 1877)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 2664)
+Completed 200 OK in 1615ms (Views: 1.3ms | Allocations: 700583)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-08-28 20:04:41 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-08-28 21:18:32 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 2661)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 2733)
+Completed 500 Internal Server Error in 1513ms (Allocations: 700627)
+
+
+  
+ActionView::Template::Error (The asset "10n.png" is not present in the asset pipeline.
+):
+    167:                         <div class="inner-inner-parent">
+    168:                             <div class="div5">
+    169:                                 <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+    170:                                 <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+    171:                                 <% @daily_temperatures.each do |date, temps| %>
+    172:                                     <% if date.to_date == Date.today %>
+    173:                                         <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+  
+app/views/articles/index.html.erb:170
+Started GET "/" for ::1 at 2023-08-28 21:18:36 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2554)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 2625)
+Completed 500 Internal Server Error in 926ms (Allocations: 700548)
+
+
+  
+ActionView::Template::Error (The asset "10n.png" is not present in the asset pipeline.
+):
+    167:                         <div class="inner-inner-parent">
+    168:                             <div class="div5">
+    169:                                 <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+    170:                                 <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+    171:                                 <% @daily_temperatures.each do |date, temps| %>
+    172:                                     <% if date.to_date == Date.today %>
+    173:                                         <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+  
+app/views/articles/index.html.erb:170
+Started GET "/" for ::1 at 2023-08-28 21:18:44 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2554)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 2625)
+Completed 500 Internal Server Error in 665ms (Allocations: 700560)
+
+
+  
+ActionView::Template::Error (The asset "10n.png" is not present in the asset pipeline.
+):
+    167:                         <div class="inner-inner-parent">
+    168:                             <div class="div5">
+    169:                                 <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+    170:                                 <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+    171:                                 <% @daily_temperatures.each do |date, temps| %>
+    172:                                     <% if date.to_date == Date.today %>
+    173:                                         <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+  
+app/views/articles/index.html.erb:170
+Started GET "/" for ::1 at 2023-08-28 21:18:50 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 2554)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 2625)
+Completed 500 Internal Server Error in 787ms (Allocations: 700550)
+
+
+  
+ActionView::Template::Error (The asset "10n.png" is not present in the asset pipeline.
+):
+    167:                         <div class="inner-inner-parent">
+    168:                             <div class="div5">
+    169:                                 <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+    170:                                 <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+    171:                                 <% @daily_temperatures.each do |date, temps| %>
+    172:                                     <% if date.to_date == Date.today %>
+    173:                                         <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+  
+app/views/articles/index.html.erb:170
+Started GET "/" for ::1 at 2023-08-28 21:19:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 7023)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 7127)
+Completed 500 Internal Server Error in 1248ms (ActiveRecord: 0.0ms | Allocations: 722505)
+
+
+  
+ActionView::Template::Error (The asset "10n.png" is not present in the asset pipeline.
+):
+    167:                         <div class="inner-inner-parent">
+    168:                             <div class="div5">
+    169:                                 <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+    170:                                 <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+    171:                                 <% @daily_temperatures.each do |date, temps| %>
+    172:                                     <% if date.to_date == Date.today %>
+    173:                                         <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+  
+app/views/articles/index.html.erb:170
+Started GET "/" for ::1 at 2023-09-06 09:19:40 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 5613)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 8504)
+Completed 200 OK in 1665ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 723881)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-09-06 09:19:42 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-09-06 10:15:08 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1912)
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | Allocations: 2777)
+Completed 200 OK in 1251ms (Views: 1.7ms | Allocations: 700972)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-09-06 10:15:09 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-09-06 10:47:04 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1864)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 2666)
+Completed 200 OK in 1273ms (Views: 1.5ms | Allocations: 700567)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-09-06 10:47:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-09-06 11:25:49 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1864)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 2654)
+Completed 200 OK in 1294ms (Views: 1.4ms | Allocations: 700547)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-09-06 11:25:51 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-09-06 12:06:23 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1864)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 2661)
+Completed 200 OK in 1227ms (Views: 1.5ms | Allocations: 700553)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-09-06 12:06:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-09-06 14:25:20 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1916)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 2727)
+Completed 200 OK in 1386ms (Views: 2.6ms | Allocations: 700629)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-09-06 14:25:22 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-09-06 14:55:22 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1916)
+  Rendered layout layouts/application.html.erb (Duration: 1.2ms | Allocations: 2715)
+Completed 200 OK in 2202ms (Views: 1.5ms | Allocations: 700642)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-09-06 14:55:24 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-09-06 17:52:07 +0200
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 41727ms (Allocations: 698)
+
+
+  
+Errno::ECONNRESET (Connection reset by peer - SSL_connect):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2023-09-11 07:59:48 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2091)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2892)
+Completed 200 OK in 891ms (Views: 2.7ms | Allocations: 700826)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-09-11 07:59:49 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2023-09-11 08:18:44 +0200
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 2091)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 2817)
+Completed 200 OK in 1052ms (Views: 2.2ms | Allocations: 700762)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2023-09-11 08:18:45 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
