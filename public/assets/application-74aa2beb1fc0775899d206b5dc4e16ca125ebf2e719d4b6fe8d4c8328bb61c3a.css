@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -161,7 +161,7 @@ body {
 }
 
 .verlauf {
-  width: 95%;
+  width: 50%;
 }
 
 .weather {
@@ -313,10 +313,6 @@ h3 {
     margin-top: 9px;
     margin-bottom: 9px;
   }
-
-  .verlauf {
-    width: 100%;
-  }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1700px){
@@ -330,10 +326,6 @@ h3 {
   .title {
     margin-top: 9px;
     margin-bottom: 9px;
-  }
-
-  .verlauf {
-    width: 100%;
   }
 }
 
