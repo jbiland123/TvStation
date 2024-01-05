@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -127,7 +127,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 562px;
+  width: 565px;
   margin-left: 50%;
   transform: translateX(-50%);
   background: rgba(232, 242, 242, 0.7); /* Semi-transparent gray background */
@@ -135,9 +135,9 @@ body {
   text-align: center;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px; 
-  margin-bottom: 12px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; 
+  margin-bottom: 10px;
   padding: 10px;
 }
 
