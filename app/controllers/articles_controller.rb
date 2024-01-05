@@ -3,10 +3,10 @@ require 'csv'
 require 'icalendar'
 require 'open-uri'
 require 'nokogiri'
+require 'feedjira'
+require 'httparty'
 
 class ArticlesController < ApplicationController
-  helper_method :truncate_title
-
   def index
     url = 'https://api.openweathermap.org/data/2.5/weather?lat=47.496658463630894&lon=7.7210972814041545&units=metric&appid=2cd6c916e89c89f156c3ee6332d5bd03&lang=de'
     uri = URI(url)
@@ -55,31 +55,42 @@ class ArticlesController < ApplicationController
     end
 
     @daily_weather_icons = daily_weather_icons
+    
+    # Assuming your existing code to fetch and parse the RSS feed
+    rss_feed_url = 'https://www.srf.ch/news/bnf/rss/1646'
+    rss_feed_response = HTTParty.get(rss_feed_url)
 
-    url3 = 'https://newsapi.org/v2/top-headlines?country=ch&apiKey=5198179471974a11ba335b68f308f387'
-    uri3 = URI(url3)
-    res3 = Net::HTTP.get_response(uri3)
-    @data3 = JSON.parse(res3.body)
+    if rss_feed_response.success?
+      rss_data = Nokogiri::XML(rss_feed_response.body)
 
-    @news = @data3["articles"]
+      @rss_news = rss_data.css('item').map do |item|
+        # Parse the description as HTML
+        description_html = Nokogiri::HTML.fragment(item.css('description').text)
 
-    @i_news = @news.select { |item| item["author"] == "SRF News" || item["author"] == "blue News" || item["author"] == "Polizei Basel-Landschaft" || item["author"] == "Tages-Anzeiger" || item["author"] == "BLICK" }
+        # Extract the image source
+        image_src = description_html.at_css('img')['src'] if description_html.at_css('img')
 
-    # file_path = Rails.public_path.join('sitzungszimmer310.txt')
-    # calendar_file = File.read(file_path)
-    # calendar = Icalendar::Calendar.parse(calendar_file).first
+        {
+          title: item.css('title').text,
+          link: item.css('link').text,
+          description: item.css('description').text,
+          image_src: image_src,
+          pub_date: DateTime.parse(item.css('pubDate').text)
+        }
+      end
+    else
+      @rss_news = []
+    end
 
-    # @events = calendar.events.select { |event| event.dtend >= DateTime.now }
+    
+    # url3 = 'https://newsapi.org/v2/top-headlines?country=ch&apiKey=5198179471974a11ba335b68f308f387'
+    # uri3 = URI(url3)
+    # res3 = Net::HTTP.get_response(uri3)
+    # @data3 = JSON.parse(res3.body)
 
-    # @location = @events.first.location
+    # @news = @data3["articles"]
 
-    # file_path2 = Rails.public_path.join('schulungsraum1.txt')
-    # calendar_file2 = File.read(file_path2)
-    # calendar2 = Icalendar::Calendar.parse(calendar_file2).first
-
-    # @events2 = calendar2.events.select { |event2| event2.dtend >= DateTime.now }
-
-    # @location2 = @events2.first.location
+    # @i_news = @news.select { |item| item["author"] == "SRF News" || item["author"] == "blue News" || item["author"] == "Polizei Basel-Landschaft" || item["author"] == "Tages-Anzeiger" || item["author"] == "BLICK" }
 
     # Fetch and parse calendar data from testraum.txt
     file_path_meetingroom = Rails.public_path.join('meetingroom.txt')
@@ -90,14 +101,6 @@ class ArticlesController < ApplicationController
     file_path_schoolroom = Rails.public_path.join('schoolroom.txt')
     calendar_file_schoolroom = File.read(file_path_schoolroom)
     @events_schoolroom = parse_calendar_data(calendar_file_schoolroom)
-
-    def truncate_title(title, author)
-      truncated_title = title.strip
-      truncated_title.gsub!(author, '')
-      truncated_title.gsub!(/— Baselland\.ch/i, '')
-      truncated_title.gsub!(/-\s*\z/, '')
-      truncated_title.strip
-    end
   end
 
   private

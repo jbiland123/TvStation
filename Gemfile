@@ -80,3 +80,5 @@ gem 'bootstrap', '~> 5.1.0'
 
 gem 'httparty'
 gem 'json'
+
+gem 'feedjira'

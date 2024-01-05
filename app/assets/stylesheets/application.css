@@ -119,27 +119,41 @@ body {
   height: 100%;
 }
 
-.carousel-indicators li {
-  background-color: #464646; /* Hintergrundfarbe der Indicators auf dunkel setzen */
-  opacity: 0.5; /* Opazität der Indicators anpassen (optional) */
+.image-container {
+  position: relative;
 }
 
-.carousel-indicators .active {
-  background-color: rgb(207, 232, 232); /* Hintergrundfarbe des aktiven Indicators auf hell setzen */
-  opacity: 1; /* Opazität des aktiven Indicators anpassen (optional) */
-}
-
-.minheight {
-  text-align: center;
-  height: 140px;
-}
-
-.minheightimg {
-  height: 75px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 569px;
   margin-left: 50%;
   transform: translateX(-50%);
+  background: rgba(232, 242, 242, 0.7); /* Semi-transparent gray background */
+  box-sizing: border-box;
+  text-align: center;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px; 
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.overlay h3 {
+  margin: 0; /* Remove default margin for better alignment */
+  color: black; /* Text color on the overlay */
+  font-weight: bold;
+}
+
+.newsimg {
+  height: 320px;
+  margin-bottom: 10px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  border-radius: 15px;
+  border: 2px solid rgb(142, 215, 215);
 }
 
 #devider {
