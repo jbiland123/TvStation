@@ -80,7 +80,7 @@
                 </div>
             </div>
             <div class="div2"> 
-            <p class="bold card-titles">Wetterverlauf des Tages</p>
+            <p class="bold card-titles">Wetterverlauf</p>
                 <div class="inner-parent">
                     <div class="div1">
                         <div class="verlauf">
@@ -221,67 +221,74 @@
             </div>
             <div class="div3">
                 <div class="calendar">
-                    <% status = "Frei" %>
-                    <% @events.each do |event| %>
-                        <% if event.dtstart <= Time.now && Time.now <= event.dtend %>
-                            <% status = "Besetzt" %>
-                        <% end %>
+                    <% status2 = "Frei" %>
+                    <% @events_meetingroom.each do |event| %>
+                    <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+                        <% status2 = "Besetzt" %>
                     <% end %>
+                    <% end %>
+
                     <div class="title">
-                        <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
-                        <% if status == "Besetzt" %>
-                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
-                        <% else %>
-                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
-                        <% end %>
+                    <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+                    <% if status2 == "Besetzt" %>
+                        <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                    <% else %>
+                        <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                    <% end %>
                     </div>
-                    <% @events.first(1).each do |event| %>
-                        <div class="calendar-content-first">
-                            <p class="left max-characters">Gebucht</p>
-                            <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
-                        </div>
+
+                    <% @events_meetingroom.first(1).each do |event| %>
+                    <div class="calendar-content-first">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
                     <% end %>
-                    <% @events.drop(1).first(3).each do |event| %>
-                        <div class="calendar-content">
-                            <p class="left max-characters">Gebucht</p>
-                            <p class="right"><%= german_day_name(event.dtstart) %>, <%= event.dtstart.strftime("%d") %>. <%= german_month_name(event.dtstart) %> | <%= event.dtstart.strftime("%H:%M") %> - <%= event.dtend.strftime("%H:%M") %></p>
-                        </div>
+
+                    <% @events_meetingroom.drop(1).first(3).each do |event| %>
+                    <div class="calendar-content">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
                     <% end %>
+
+                    <div id="status" style="display: none;"><%= status2 %></div>
                 </div>
             </div>
             <div class="div4">
                 <div class="calendar">
-                <% status2 = "Frei" %>
-                    <% @events2.each do |event2| %>
-                        <% if event2.dtstart <= Time.now && Time.now <= event2.dtend %>
-                            <% status2 = "Besetzt" %>
-                        <% end %>
+                    <% status2 = "Frei" %>
+                    <% @events_schoolroom.each do |event| %>
+                    <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+                        <% status2 = "Besetzt" %>
                     <% end %>
-                    <div class="title">
-                        <h2 class="bold">Schulungsraum 1 - Theorieprüfungen</h2>
-                        <% if status2 == "Besetzt" %>
-                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                    <% end %>
 
-                        <% else %>
-                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
-                        <% end %>
+                    <div class="title">
+                    <h2 class="bold">Schulungsraum - Veranstaltungen</h2>
+                    <% if status2 == "Besetzt" %>
+                        <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                    <% else %>
+                        <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                    <% end %>
                     </div>
-                <% @events2.first(1).each do |event2| %>
+
+                    <% @events_schoolroom.first(1).each do |event| %>
                     <div class="calendar-content-first">
-                        <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
-                        <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
                     </div>
-                <% end %>
-                <% @events2.drop(1).first(3).each do |event2| %>
+                    <% end %>
+
+                    <% @events_schoolroom.drop(1).first(3).each do |event| %>
                     <div class="calendar-content">
-                        <p class="left max-characters"><%= event2.summary.split("/").first.strip %></p>
-                        <p class="right"><%= german_day_name(event2.dtstart) %>, <%= event2.dtstart.strftime("%d") %>. <%= german_month_name(event2.dtstart) %> | <%= event2.dtstart.strftime("%H:%M") %> - <%= event2.dtend.strftime("%H:%M") %></p>
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
                     </div>
-                <% end %>
-                <div id="status" style="display: none;"><%= status2 %></div>
+                    <% end %>
+
+                    <div id="status" style="display: none;"><%= status2 %></div>
                 </div>
             </div>
-
             <div class="div5">
                 <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
                     <div class="progress-bar" id="daily-progress"></div>

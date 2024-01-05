@@ -56,7 +56,6 @@ class ArticlesController < ApplicationController
 
     @daily_weather_icons = daily_weather_icons
 
-
     url3 = 'https://newsapi.org/v2/top-headlines?country=ch&apiKey=5198179471974a11ba335b68f308f387'
     uri3 = URI(url3)
     res3 = Net::HTTP.get_response(uri3)
@@ -64,23 +63,33 @@ class ArticlesController < ApplicationController
 
     @news = @data3["articles"]
 
-    @i_news = @news.select { |item| item["author"] == "SRF News" or item["author"] == "blue News" or item["author"] == "Polizei Basel-Landschaft" or item["author"] == "Tages-Anzeiger" or item["author"] == "BLICK"}
+    @i_news = @news.select { |item| item["author"] == "SRF News" || item["author"] == "blue News" || item["author"] == "Polizei Basel-Landschaft" || item["author"] == "Tages-Anzeiger" || item["author"] == "BLICK" }
 
-    file_path = Rails.public_path.join('sitzungszimmer310.txt')
-    calendar_file = File.read(file_path)
-    calendar = Icalendar::Calendar.parse(calendar_file).first
-    
-    @events = calendar.events.select { |event| event.dtend >= DateTime.now }
-    
-    @location = @events.first.location
+    # file_path = Rails.public_path.join('sitzungszimmer310.txt')
+    # calendar_file = File.read(file_path)
+    # calendar = Icalendar::Calendar.parse(calendar_file).first
 
-    file_path2 = Rails.public_path.join('schulungsraum1.txt')
-    calendar_file2 = File.read(file_path2)
-    calendar2 = Icalendar::Calendar.parse(calendar_file2).first
-    
-    @events2 = calendar2.events.select { |event2| event2.dtend >= DateTime.now }
-    
-    @location2 = @events2.first.location
+    # @events = calendar.events.select { |event| event.dtend >= DateTime.now }
+
+    # @location = @events.first.location
+
+    # file_path2 = Rails.public_path.join('schulungsraum1.txt')
+    # calendar_file2 = File.read(file_path2)
+    # calendar2 = Icalendar::Calendar.parse(calendar_file2).first
+
+    # @events2 = calendar2.events.select { |event2| event2.dtend >= DateTime.now }
+
+    # @location2 = @events2.first.location
+
+    # Fetch and parse calendar data from testraum.txt
+    file_path_meetingroom = Rails.public_path.join('meetingroom.txt')
+    calendar_file_meetingroom = File.read(file_path_meetingroom)
+    @events_meetingroom = parse_calendar_data(calendar_file_meetingroom)
+
+    # Fetch and parse calendar data from testraum.txt
+    file_path_schoolroom = Rails.public_path.join('schoolroom.txt')
+    calendar_file_schoolroom = File.read(file_path_schoolroom)
+    @events_schoolroom = parse_calendar_data(calendar_file_schoolroom)
 
     def truncate_title(title, author)
       truncated_title = title.strip
@@ -89,5 +98,41 @@ class ArticlesController < ApplicationController
       truncated_title.gsub!(/-\s*\z/, '')
       truncated_title.strip
     end
+  end
+
+  private
+
+  # Method to parse calendar data
+  def parse_calendar_data(data)
+    events = []
+  
+    data.each_line do |line|
+      match_data = line.match(/Subject: (.+) - Start: (.+) - End: (.+)/)
+  
+      if match_data
+        subject_info = match_data[1].strip
+        # Extrahiere den gewünschten Teil des Subjects und füge es zum Hash hinzu
+        subject_parts = subject_info.split('ZI')
+        subject = subject_parts.length > 1 ? subject_parts[1].strip : subject_info
+        # Begrenze auf 40 Zeichen mit "..." am Ende
+        subject = truncate_subject(subject)
+
+        event = {
+          summary: subject,
+          dtstart: DateTime.parse(match_data[2]),
+          dtend: DateTime.parse(match_data[3])
+        }
+        events << event
+      end
+    end
+
+    events
+  end
+
+  def truncate_subject(subject)
+    if subject.length > 45
+      subject = subject[0..45] + '...'
+    end
+    subject
   end
 end
