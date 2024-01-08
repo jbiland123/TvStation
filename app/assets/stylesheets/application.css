@@ -12,6 +12,7 @@ body {
   margin-top: 110px;
   background-color: rgb(245, 245, 245);
   font-family: 'Roboto', sans-serif;
+  cursor: none;
 }
 
 .header {

@@ -85,3 +85,5 @@ gem 'feedjira'
 
 gem 'carrierwave'
 gem 'mini_magick'
+
+gem 'rack-cors'
