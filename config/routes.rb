@@ -3,10 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "articles#index"
-end
 
-Rails.application.routes.draw do
   get "/articles", to: "articles#index"
   get 'weather_controller/index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

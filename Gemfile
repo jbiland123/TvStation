@@ -82,3 +82,6 @@ gem 'httparty'
 gem 'json'
 
 gem 'feedjira'
+
+gem 'carrierwave'
+gem 'mini_magick'
