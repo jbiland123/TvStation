@@ -47338,3 +47338,174 @@ Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 12:49:37 +0100
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started POST "/api/v1/file_uploads" for 127.0.0.1 at 2024-01-11 12:50:32 +0100
+Processing by Api::V1::FileUploadsController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000000010761e998 @tempfile=#<Tempfile:/var/folders/3m/985yk9ys1lj1nryv4zcx0wvw0000gn/T/RackMultipart20240111-24816-k43fju.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from create at /Users/jeremiasbiland/Documents/GitHub/TvStation/app/controllers/api/v1/file_uploads_controller.rb:8)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mUploadedFile Create (0.2ms)[0m  [1m[32mINSERT INTO "uploaded_files" ("file", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["file", "test.txt"], ["created_at", "2024-01-11 11:50:32.059596"], ["updated_at", "2024-01-11 11:50:32.059596"]]
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 8668)
+
+
+Started POST "/api/v1/file_uploads" for 127.0.0.1 at 2024-01-11 12:51:06 +0100
+Processing by Api::V1::FileUploadsController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000000108ef13d0 @tempfile=#<Tempfile:/var/folders/3m/985yk9ys1lj1nryv4zcx0wvw0000gn/T/RackMultipart20240111-24816-raky4x.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from create at /Users/jeremiasbiland/Documents/GitHub/TvStation/app/controllers/api/v1/file_uploads_controller.rb:8)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mUploadedFile Create (0.2ms)[0m  [1m[32mINSERT INTO "uploaded_files" ("file", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["file", "test.txt"], ["created_at", "2024-01-11 11:51:06.789114"], ["updated_at", "2024-01-11 11:51:06.789114"]]
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+Completed 200 OK in 7ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 8665)
+
+
+Started POST "/api/v1/file_uploads" for 127.0.0.1 at 2024-01-11 12:51:38 +0100
+Processing by Api::V1::FileUploadsController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000000108c68938 @tempfile=#<Tempfile:/var/folders/3m/985yk9ys1lj1nryv4zcx0wvw0000gn/T/RackMultipart20240111-24816-q05hlv.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from create at /Users/jeremiasbiland/Documents/GitHub/TvStation/app/controllers/api/v1/file_uploads_controller.rb:8)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mUploadedFile Create (0.2ms)[0m  [1m[32mINSERT INTO "uploaded_files" ("file", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["file", "test.txt"], ["created_at", "2024-01-11 11:51:39.012028"], ["updated_at", "2024-01-11 11:51:39.012028"]]
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.7ms | Allocations: 9069)
+
+
+  
+Errno::EROFS (Read-only file system @ rb_sysopen - /test.txt):
+  
+app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:52:40 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 417ms (Allocations: 31730)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /uploads/meetingroom.txt):
+  
+app/controllers/articles_controller.rb:97:in `read'
+app/controllers/articles_controller.rb:97:in `index'
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:52:57 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 479ms (Allocations: 31538)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /uploads/meetingroom.txt):
+  
+app/controllers/articles_controller.rb:97:in `read'
+app/controllers/articles_controller.rb:97:in `index'
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:53:00 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 494ms (Allocations: 31533)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /uploads/meetingroom.txt):
+  
+app/controllers/articles_controller.rb:97:in `read'
+app/controllers/articles_controller.rb:97:in `index'
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:53:12 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 531ms (ActiveRecord: 0.0ms | Allocations: 35461)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /uploads/meetingroom.txt):
+  
+app/controllers/articles_controller.rb:97:in `read'
+app/controllers/articles_controller.rb:97:in `index'
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:53:22 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 499ms (ActiveRecord: 0.0ms | Allocations: 35428)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /uploads/meetingroom.txt):
+  
+app/controllers/articles_controller.rb:97:in `read'
+app/controllers/articles_controller.rb:97:in `index'
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:54:14 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 4945)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 7781)
+Completed 200 OK in 448ms (Views: 15.9ms | Allocations: 41752)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 12:54:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:55:22 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 651ms (Allocations: 32409)
+
+
+  
+Errno::ENOENT (No such file or directory @ rb_sysopen - /uploads/schoolroom.txt):
+  
+app/controllers/articles_controller.rb:102:in `read'
+app/controllers/articles_controller.rb:102:in `index'
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:56:13 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1799)
+  Rendered layout layouts/application.html.erb (Duration: 3.3ms | Allocations: 4270)
+Completed 200 OK in 430ms (Views: 4.5ms | Allocations: 37764)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 12:56:13 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:56:25 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1798)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 4274)
+Completed 200 OK in 398ms (Views: 4.9ms | Allocations: 37809)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 12:56:26 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:57:50 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 5302)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 8294)
+Completed 200 OK in 476ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 49193)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 12:57:50 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started POST "/api/v1/file_uploads" for 127.0.0.1 at 2024-01-11 12:58:19 +0100
+Processing by Api::V1::FileUploadsController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000000013630b038 @tempfile=#<Tempfile:/var/folders/3m/985yk9ys1lj1nryv4zcx0wvw0000gn/T/RackMultipart20240111-28251-d5yxwu.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from create at /Users/jeremiasbiland/Documents/GitHub/TvStation/app/controllers/api/v1/file_uploads_controller.rb:8)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mUploadedFile Create (0.3ms)[0m  [1m[32mINSERT INTO "uploaded_files" ("file", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["file", "test.txt"], ["created_at", "2024-01-11 11:58:19.311322"], ["updated_at", "2024-01-11 11:58:19.311322"]]
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+Completed 200 OK in 12ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 23987)
+
+

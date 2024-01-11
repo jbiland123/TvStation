@@ -93,12 +93,12 @@ class ArticlesController < ApplicationController
     # @i_news = @news.select { |item| item["author"] == "SRF News" || item["author"] == "blue News" || item["author"] == "Polizei Basel-Landschaft" || item["author"] == "Tages-Anzeiger" || item["author"] == "BLICK" }
 
     # Fetch and parse calendar data from testraum.txt
-    file_path_meetingroom = Rails.public_path.join('meetingroom.txt')
+    file_path_meetingroom = Rails.public_path.join('uploads', 'meetingroom.txt')
     calendar_file_meetingroom = File.read(file_path_meetingroom)
     @events_meetingroom = parse_calendar_data(calendar_file_meetingroom)
 
     # Fetch and parse calendar data from testraum.txt
-    file_path_schoolroom = Rails.public_path.join('schoolroom.txt')
+    file_path_schoolroom = Rails.public_path.join('uploads', 'schoolroom.txt')
     calendar_file_schoolroom = File.read(file_path_schoolroom)
     @events_schoolroom = parse_calendar_data(calendar_file_schoolroom)
   end
