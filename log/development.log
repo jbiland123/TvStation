@@ -47120,3 +47120,221 @@ DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlis
 Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 26484)
 
 
+Started GET "/" for 127.0.0.1 at 2024-01-11 11:45:07 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 5314)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 8204)
+Completed 200 OK in 1823ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 49679)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 11:45:09 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 11:45:44 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 5314)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 8306)
+Completed 200 OK in 1449ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 49787)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 11:45:46 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 11:46:35 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 5314)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 8312)
+Completed 200 OK in 1425ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 49786)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 11:46:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 11:50:17 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 5314)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 8306)
+Completed 200 OK in 1517ms (Views: 7.0ms | ActiveRecord: 0.0ms | Allocations: 49784)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 11:50:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 11:51:38 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 5314)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 8312)
+Completed 200 OK in 1289ms (Views: 37.8ms | ActiveRecord: 0.0ms | Allocations: 49790)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 11:51:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 11:53:22 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 5315)
+  Rendered layout layouts/application.html.erb (Duration: 4.9ms | Allocations: 8295)
+Completed 200 OK in 1413ms (Views: 6.9ms | ActiveRecord: 0.0ms | Allocations: 49765)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 11:53:24 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:21:53 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 4774)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 5930)
+Completed 200 OK in 514ms (Views: 7.3ms | Allocations: 40106)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 12:21:54 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:22:20 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 4775)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 5943)
+Completed 200 OK in 548ms (Views: 4.2ms | Allocations: 40080)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 12:22:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:22:32 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 4766)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5929)
+Completed 200 OK in 527ms (Views: 8.3ms | Allocations: 40042)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 12:22:32 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:22:43 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 4748)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 5911)
+Completed 200 OK in 453ms (Views: 4.9ms | Allocations: 39995)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 12:22:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:23:02 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 4782)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 5943)
+Completed 200 OK in 557ms (Views: 5.8ms | Allocations: 40044)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 12:23:02 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started POST "/api/v1/file_uploads" for 127.0.0.1 at 2024-01-11 12:44:19 +0100
+Processing by Api::V1::FileUploadsController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000000011e995128 @tempfile=#<Tempfile:/var/folders/3m/985yk9ys1lj1nryv4zcx0wvw0000gn/T/RackMultipart20240111-24816-j3b5si.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from create at /Users/jeremiasbiland/Documents/GitHub/TvStation/app/controllers/api/v1/file_uploads_controller.rb:8)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mUploadedFile Create (1.2ms)[0m  [1m[32mINSERT INTO "uploaded_files" ("file", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["file", "test.txt"], ["created_at", "2024-01-11 11:44:19.509302"], ["updated_at", "2024-01-11 11:44:19.509302"]]
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.9ms | Allocations: 24574)
+
+
+  
+Errno::EROFS (Read-only file system @ dir_s_mkdir - /uploads):
+  
+app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+Started POST "/api/v1/file_uploads" for 127.0.0.1 at 2024-01-11 12:47:27 +0100
+Processing by Api::V1::FileUploadsController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000000010fe27240 @tempfile=#<Tempfile:/var/folders/3m/985yk9ys1lj1nryv4zcx0wvw0000gn/T/RackMultipart20240111-24816-92b3mb.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from create at /Users/jeremiasbiland/Documents/GitHub/TvStation/app/controllers/api/v1/file_uploads_controller.rb:8)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mUploadedFile Create (0.2ms)[0m  [1m[32mINSERT INTO "uploaded_files" ("file", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["file", "test.txt"], ["created_at", "2024-01-11 11:47:27.647365"], ["updated_at", "2024-01-11 11:47:27.647365"]]
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.8ms | Allocations: 9181)
+
+
+Started POST "/api/v1/file_uploads" for 127.0.0.1 at 2024-01-11 12:47:55 +0100
+Processing by Api::V1::FileUploadsController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000000010629c140 @tempfile=#<Tempfile:/var/folders/3m/985yk9ys1lj1nryv4zcx0wvw0000gn/T/RackMultipart20240111-24816-znccei.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from create at /Users/jeremiasbiland/Documents/GitHub/TvStation/app/controllers/api/v1/file_uploads_controller.rb:8)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mUploadedFile Create (0.2ms)[0m  [1m[32mINSERT INTO "uploaded_files" ("file", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["file", "test.txt"], ["created_at", "2024-01-11 11:47:55.330877"], ["updated_at", "2024-01-11 11:47:55.330877"]]
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+Completed 200 OK in 8ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 8766)
+
+
+Started POST "/api/v1/file_uploads" for 127.0.0.1 at 2024-01-11 12:48:35 +0100
+Processing by Api::V1::FileUploadsController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x0000000107561898 @tempfile=#<Tempfile:/var/folders/3m/985yk9ys1lj1nryv4zcx0wvw0000gn/T/RackMultipart20240111-24816-hay7ze.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from create at /Users/jeremiasbiland/Documents/GitHub/TvStation/app/controllers/api/v1/file_uploads_controller.rb:8)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mUploadedFile Create (0.3ms)[0m  [1m[32mINSERT INTO "uploaded_files" ("file", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["file", "test.txt"], ["created_at", "2024-01-11 11:48:35.182404"], ["updated_at", "2024-01-11 11:48:35.182404"]]
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+Completed 200 OK in 6ms (Views: 0.1ms | ActiveRecord: 1.0ms | Allocations: 2806)
+
+
+Started GET "/" for 127.0.0.1 at 2024-01-11 12:49:36 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1798)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 4272)
+Completed 200 OK in 543ms (Views: 5.1ms | Allocations: 37741)
+
+
+Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 12:49:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
