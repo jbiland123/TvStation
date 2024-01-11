@@ -47106,3 +47106,17 @@ Started GET "/css/Stylesheet.css" for 127.0.0.1 at 2024-01-11 08:11:52 +0100
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started POST "/api/v1/file_uploads" for 127.0.0.1 at 2024-01-11 08:30:59 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Api::V1::FileUploadsController#create as */*
+  Parameters: {"file"=>#<ActionDispatch::Http::UploadedFile:0x000000012b30b160 @tempfile=#<Tempfile:/var/folders/3m/985yk9ys1lj1nryv4zcx0wvw0000gn/T/RackMultipart20240111-3807-bgi3mc.txt>, @content_type="text/plain", @original_filename="test.txt", @headers="Content-Disposition: form-data; name=\"file\"; filename=\"test.txt\"\r\nContent-Type: text/plain\r\n">}
+DEPRECATION WARNING: #extension_whitelist is deprecated, use #extension_allowlist instead. (called from create at /Users/jeremiasbiland/Documents/GitHub/TvStation/app/controllers/api/v1/file_uploads_controller.rb:8)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mUploadedFile Create (0.4ms)[0m  [1m[32mINSERT INTO "uploaded_files" ("file", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["file", "test.txt"], ["created_at", "2024-01-11 07:30:59.791383"], ["updated_at", "2024-01-11 07:30:59.791383"]]
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/api/v1/file_uploads_controller.rb:10:in `create'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 0.9ms | Allocations: 26484)
+
+
