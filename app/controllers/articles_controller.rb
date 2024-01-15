@@ -133,8 +133,8 @@ class ArticlesController < ApplicationController
   end
 
   def truncate_subject(subject)
-    if subject.length > 45
-      subject = subject[0..45] + '...'
+    if subject.length > 35
+      subject = subject[0..35] + '...'
     end
     subject
   end
