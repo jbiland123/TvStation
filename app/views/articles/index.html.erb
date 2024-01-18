@@ -124,7 +124,7 @@
                             legend: { display: false },
                             scales: {
                             xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
-                            yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 2.5)  - <%= @temperatures.min %>, fontColor: "transparent" }, gridLines: { display: false } }]
+                            yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 3)  + Math.abs(<%= @temperatures.min %>), fontColor: "transparent" }, gridLines: { display: false } }]
                             }
                         }
                         });
