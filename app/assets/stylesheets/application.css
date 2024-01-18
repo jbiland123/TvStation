@@ -160,7 +160,7 @@ body {
 .div2 {
   background-color: white;
   border-radius: 10px;
-  padding: 5px 20px 15px 20px;
+  padding: 100px 20px 15px 20px;
 }
 
 .card-titles {
@@ -168,9 +168,12 @@ body {
   font-size: 20px;
 }
 
-.verlauf {
-  width: 95%;
-}
+.weather-chart {
+  max-width: 900px;
+  position: absolute;
+  top: -170px; /* Adjust the top position as needed */
+  right: 30px; /* Adjust the right position as needed */
+  }
 
 .weather {
   background-color: rgb(207, 232, 232);

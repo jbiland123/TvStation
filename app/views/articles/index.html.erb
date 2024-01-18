@@ -6,18 +6,20 @@
       <meta http-equiv="refresh" content="1800">
       <link href="css/Stylesheet.css" rel="Stylesheet">
       
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <link rel="icon" href="Bilder/Logo.png">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="Bilder/Logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
       <title>TVStation</title>
    </head>
 <body>
@@ -75,88 +77,57 @@
                     </div>
                 </div>
             </div>
-            <div class="div2"> 
-            <p class="bold card-titles">Wetterverlauf</p>
+;            <div class="div2"> 
                 <div class="inner-parent">
                     <div class="div1">
-                        <div class="verlauf">
-                            <canvas id="myChart1"></canvas>
-                        </div>
-              
-                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <canvas id="myChart" class="weather-chart"></canvas>
                         
                         <script>
-                            const ctx1 = document.getElementById('myChart1');
-
-                            ctx1.width = 900; // Breite in Pixeln
-                            ctx1.height = -100; // Höhe in Pixeln
-              
-                            new Chart(ctx1, {
-                            type: 'line',
-                            data: {
-                                labels: ['<%= @times_formatted[0] %>', '<%= @times_formatted[1] %>', '<%= @times_formatted[2] %>', '<%= @times_formatted[3] %>', '<%= @times_formatted[4] %>'],
-                                datasets: [{
-                                data: [<%= @temperatures[0] %>, <%= @temperatures[1] %>, <%= @temperatures[2] %>, <%= @temperatures[3] %>, <%= @temperatures[4] %>],
-                                borderWidth: 2,
-                                pointRadius: 3,
-                                pointBackgroundColor: 'rgb(244, 210, 86)', // Specify red color for the last point
-                                fill: true,
-                                backgroundColor: 'rgb(252, 245, 217)',
-                                borderColor: 'rgb(244, 210, 86)',
-                                tension: 0.4
-                                }]
-                            },
-                            options: {
-                                scales: {
-                                x: {
-                                    grid: {
-                                    display: false
-                                    },
-                                    ticks: {
-                                        font: {
-                                        size: 19, // Ändere die Schriftgröße hier
-                                        family: 'Helvetica' // Schriftart
-                                        }
-                                    }
-                                },
-                                y: {
-                                    display: false,
-                                    ticks: {
-                                    suggestedMin: 0 // Setze den niedrigsten Wert auf 0
-                                    },
-                                    max: 40, // Maximalwert auf der Y-Achse
-                                }
-                                },
-                                plugins: {
-                                legend: {
-                                    display: false,
-                                }
-                                }
-                            },
-                            plugins: [{
-                                afterDatasetsDraw: function (chart) {
-                                const ctx = chart.ctx;
-                                chart.data.datasets.forEach(function (dataset, datasetIndex) {
-                                    const meta = chart.getDatasetMeta(datasetIndex);
-                                    if (meta.hidden) return;
-                                    meta.data.forEach(function (element, index) {
-                                    // Zeichne den Text über dem Punkt
-                                    ctx.fillStyle = 'black';
-                                    const fontSize = 19;
-                                    const fontStyle = 'normal';
-                                    const fontFamily = 'Helvetica';
-                                    ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
-                                    const dataPoint = dataset.data[index];
-                                    const x = element.x;
-                                    const y = element.y - 10;
-                                    ctx.textAlign = 'center';
-                                    ctx.textBaseline = 'bottom';
-                                    ctx.fillText(dataPoint + '°', x, y);
-                                    });
+                        const xValues = ["<%= @times_formatted[0] %>", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
+                        const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
+                       
+                        Chart.plugins.register({
+                        afterDatasetsDraw: (chart) => {
+                            const ctx = chart.ctx;
+                            chart.data.datasets.forEach(({ data }, datasetIndex) => {
+                            const meta = chart.getDatasetMeta(datasetIndex);
+                            if (!meta.hidden) {
+                                meta.data.forEach(({ _model }, index) => {
+                                const value = data[index];
+                                const { x, y } = _model;
+                                ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                                ctx.font = '20px Arial';
+                                ctx.textAlign = 'center';
+                                ctx.fillText(value + "°", x, y - 12);
                                 });
-                                }
-                            }]
+                            }
                             });
+                        }
+                        });
+
+                        new Chart("myChart", {
+                        type: "line",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                            fill: true,
+                            lineTension: 0.4,
+                            pointRadius: 3,
+                            pointBackgroundColor: 'rgb(244, 210, 86)',
+                            backgroundColor: 'rgb(252, 245, 217)',
+                            borderWidth: 2,
+                            borderColor: 'rgb(244, 210, 86)',
+                            data: yValues
+                            }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            scales: {
+                            xAxes: [{ gridLines: { display: false } }],
+                            yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 2.5)  - <%= @temperatures.min %>, fontColor: "transparent" }, gridLines: { display: false } }]
+                            }
+                        }
+                        });
                         </script>
                     </div>
                     <div class="weather">
