@@ -127,7 +127,7 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 562px;
+  width: 739px;
   margin-left: 50%;
   transform: translateX(-50%);
   background: rgba(232, 242, 242, 0.7); /* Semi-transparent gray background */
@@ -137,19 +137,20 @@ body {
   border-top-right-radius: 0;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px; 
-  margin-bottom: 12px;
+  margin-bottom: 2px;
   padding: 10px;
-}
-
-.overlay h3 {
-  margin: 0; /* Remove default margin for better alignment */
-  color: black; /* Text color on the overlay */
   font-weight: bold;
 }
 
+.srf-image {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  right: 50px; /* Adjust the right position as needed */
+  max-width: 20%;
+}
+
 .newsimg {
-  height: 320px;
-  margin-bottom: 10px;
+  height: 420px;
   margin-left: 50%;
   transform: translateX(-50%);
   border-radius: 15px;

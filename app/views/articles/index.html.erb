@@ -59,18 +59,15 @@
             <div class="div1">
                 <div class="news">
                     <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="8000">
-                    <div class="carousel-inner">
-                        <% @rss_news.each_with_index do |item, index| %>
-                        <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
-                            <div class="news-slide">
-                            <!-- Image Container with Text Overlay -->
-                            <div class="image-container">
-                                <img class="newsimg" src="<%= item[:image_src] %>" alt="Description Image">
-                                <!-- Text Overlay -->
-                                <div class="overlay">
-                                <h3 class="minheight"><%= item[:title] %></h3>
+                        <div class="carousel-inner">
+                            <% @rss_news.each_with_index do |item, index| %>
+                            <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+                                <div class="news-slide">
+                                <div class="image-container">
+                                    <img class="newsimg" src="<%= item[:image_src] %>" alt="Description Image">
+                                    <h3 class="overlay"><%= item[:title] %></h3>
+                                    <img class="srf-image" src="<%= asset_path("srfnews.png") %>">
                                 </div>
-                            </div>
                             </div>
                         </div>
                         <% end %>
