@@ -50261,3 +50261,2527 @@ Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:36:58 +0100
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started GET "/" for ::1 at 2024-01-18 14:37:59 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2904)
+  Rendered layout layouts/application.html.erb (Duration: 1.9ms | Allocations: 3755)
+Completed 200 OK in 483ms (Views: 2.2ms | ActiveRecord: 0.0ms | Allocations: 40995)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:37:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:38:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 5628)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 8716)
+Completed 200 OK in 516ms (Views: 12.3ms | ActiveRecord: 0.0ms | Allocations: 50748)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:38:09 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:41:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 5628)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 8713)
+Completed 200 OK in 445ms (Views: 11.3ms | ActiveRecord: 0.0ms | Allocations: 50666)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:41:05 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:41:07 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2904)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 3744)
+Completed 200 OK in 604ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 40995)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:41:07 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:41:56 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 5628)
+  Rendered layout layouts/application.html.erb (Duration: 16.6ms | Allocations: 8704)
+Completed 200 OK in 636ms (Views: 18.6ms | ActiveRecord: 0.0ms | Allocations: 50767)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:41:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:42:00 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 2904)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 3747)
+Completed 200 OK in 524ms (Views: 10.0ms | ActiveRecord: 0.0ms | Allocations: 41006)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:42:01 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:42:16 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 5628)
+  Rendered layout layouts/application.html.erb (Duration: 8.4ms | Allocations: 8707)
+Completed 200 OK in 871ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 50808)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:42:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:42:38 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 5628)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 8707)
+Completed 200 OK in 1002ms (Views: 12.1ms | ActiveRecord: 0.0ms | Allocations: 50740)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:42:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:43:05 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 5628)
+  Rendered layout layouts/application.html.erb (Duration: 12.4ms | Allocations: 8698)
+Completed 200 OK in 701ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 50793)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:43:05 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:46:41 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.0ms | Allocations: 5628)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 8710)
+Completed 200 OK in 515ms (Views: 16.5ms | ActiveRecord: 0.0ms | Allocations: 50740)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:46:42 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:46:44 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 2904)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 3756)
+Completed 200 OK in 529ms (Views: 9.9ms | ActiveRecord: 0.0ms | Allocations: 40990)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:46:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:48:36 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 5453)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 5542)
+Completed 500 Internal Server Error in 521ms (ActiveRecord: 0.0ms | Allocations: 43352)
+
+
+  
+ActionView::Template::Error (undefined method `toLocaleDateString' for an instance of Date):
+    168:                     </div>
+    169:                     <div class="div4">
+    170:                         <div class="weatherprediction">
+    171:                         <p class="bold weather-date"><%= (Date.today + 2).toLocaleDateString('de-DE', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }) %> <%= (Time.now + 2.days).toLocaleTimeString('de-DE') %></p>
+    172:                         <% day_after_tomorrow = Date.today + 2 %>
+    173:                         <% @daily_weather_icons.each do |date, icon| %>
+    174:                         <% if date.to_date == day_after_tomorrow %>
+  
+app/views/articles/index.html.erb:171
+Started GET "/" for ::1 at 2024-01-18 14:48:53 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 8.1ms | Allocations: 5176)
+  Rendered layout layouts/application.html.erb (Duration: 10.4ms | Allocations: 6271)
+Completed 200 OK in 488ms (Views: 13.6ms | ActiveRecord: 0.0ms | Allocations: 43997)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:48:53 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:50:52 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 5628)
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | Allocations: 8713)
+Completed 200 OK in 2045ms (Views: 12.8ms | ActiveRecord: 0.0ms | Allocations: 50814)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:50:54 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:51:11 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 5628)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 8716)
+Completed 200 OK in 561ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 50667)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:51:12 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:51:24 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 2904)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 3735)
+Completed 200 OK in 680ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 40977)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:51:25 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:53:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 5628)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 8692)
+Completed 200 OK in 1150ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 50856)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:53:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:54:48 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 5604)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 5693)
+Completed 500 Internal Server Error in 516ms (ActiveRecord: 0.0ms | Allocations: 43531)
+
+
+  
+ActionView::Template::Error (Translation missing: de.date.formats.long):
+    169:                     <div class="div4">
+    170:                         <div class="weatherprediction">
+    171:                         <p class="bold weather-date">
+    172:   <%= l(Date.today + 2, format: :long) %>
+    173: </p>
+    174:                         <% day_after_tomorrow = Date.today + 2 %>
+    175:                         <% @daily_weather_icons.each do |date, icon| %>
+  
+app/views/articles/index.html.erb:172
+Started GET "/" for ::1 at 2024-01-18 14:54:51 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 3198)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 3286)
+Completed 500 Internal Server Error in 1014ms (ActiveRecord: 0.0ms | Allocations: 40513)
+
+
+  
+ActionView::Template::Error (Translation missing: de.date.formats.long):
+    169:                     <div class="div4">
+    170:                         <div class="weatherprediction">
+    171:                         <p class="bold weather-date">
+    172:   <%= l(Date.today + 2, format: :long) %>
+    173: </p>
+    174:                         <% day_after_tomorrow = Date.today + 2 %>
+    175:                         <% @daily_weather_icons.each do |date, icon| %>
+  
+app/views/articles/index.html.erb:172
+Started GET "/" for ::1 at 2024-01-18 14:55:04 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 3086)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3176)
+Completed 500 Internal Server Error in 529ms (ActiveRecord: 0.0ms | Allocations: 40979)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+
+<html lang="de">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="refresh" content="1800">
+      <link href="css/Stylesheet.css" rel="Stylesheet">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="Bilder/Logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+      <title>TVStation</title>
+   </head>
+<body>
+    <div class="header">
+        <h1 class='bold'>Zentrale Informatik</h1>
+        <p class="date" id="current-time"></p>
+        <div class="bl-logo">
+        <%= image_tag("Baselland.png", size: "235x55") %>
+        </div>
+    </div>
+
+<script>
+  function updateTime() {
+    const currentTime = new Date();
+    const options = {
+      weekday: 'long',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+    };
+
+    const formattedTime = currentTime.toLocaleDateString('ch', options)
+      .replace(/at\s/, '- ')
+      .replace(/um\s/, '- ')
+
+    document.getElementById('current-time').innerHTML = formattedTime;
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
+
+
+
+    <div class="body">
+        <div class="parent">
+            <div class="div1">
+                <div class="news">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="8000">
+                        <div class="carousel-inner">
+                            <% @rss_news.each_with_index do |item, index| %>
+                            <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+                                <div class="news-slide">
+                                <div class="image-container">
+                                    <img class="newsimg" src="<%= item[:image_src] %>" alt="Description Image">
+                                    <h3 class="overlay"><%= item[:title] %></h3>
+                                    <img class="srf-image" src="<%= asset_path("srfnews.png") %>">
+                                </div>
+                            </div>
+                        </div>
+                        <% end %>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div2"> 
+                <div class="inner-parent">
+                    <div class="div1">
+                        <canvas id="myChart" class="weather-chart"></canvas>
+                        
+                        <script>
+                        const xValues = ["<%= @times_formatted[0] %>", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
+                        const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
+                       
+                        Chart.plugins.register({
+                        afterDatasetsDraw: (chart) => {
+                            const ctx = chart.ctx;
+                            chart.data.datasets.forEach(({ data }, datasetIndex) => {
+                            const meta = chart.getDatasetMeta(datasetIndex);
+                            if (!meta.hidden) {
+                                meta.data.forEach(({ _model }, index) => {
+                                const value = data[index];
+                                const { x, y } = _model;
+                                ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                                ctx.font = '20px Arial';
+                                ctx.textAlign = 'center';
+                                ctx.fillText(value + "°", x, y - 12);
+                                });
+                            }
+                            });
+                        }
+                        });
+
+                        new Chart("myChart", {
+                        type: "line",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                            fill: true,
+                            lineTension: 0.4,
+                            pointRadius: 3,
+                            pointBackgroundColor: 'rgb(244, 210, 86)',
+                            backgroundColor: 'rgb(252, 245, 217)',
+                            borderWidth: 2,
+                            borderColor: 'rgb(244, 210, 86)',
+                            data: yValues
+                            }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            scales: {
+                            xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
+                            yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 3)  + Math.abs(<%= @temperatures.min %>), fontColor: "transparent" }, gridLines: { display: false } }]
+                            }
+                        }
+                        });
+                        </script>
+                    </div>
+                    <div class="weather">
+                        <div class="inner-inner-parent">
+                            <div class="div5">
+                                <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+                                <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+                                <% @daily_temperatures.each do |date, temps| %>
+                                    <% if date.to_date == Date.today %>
+                                        <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                                    <% end %>
+                                <% end %>
+                            </div>
+                            <div class="div6">
+                                <p class="bold temp-heute"><%= @data["main"]["temp"] %>°</p>
+                                <p class="kursiv"><%= @data["weather"].first["description"] %></p>
+                                <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div3">
+                        <div class="weatherprediction">
+                        <p class="bold weather-date"><%= (Date.today + 1).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+                        <% tomorrow = Date.today + 1 %>
+                        <% @daily_weather_icons.each do |date, icon| %>
+                            <% if date.to_date == tomorrow %>
+                                <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+                                <% break %>
+                            <% end %>
+                        <% end %>
+                        <% @daily_temperatures.each do |date, temps| %>
+                            <% if date.to_date == tomorrow %>
+                                <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                                <% break %>
+                            <% end %>
+                        <% end %>
+                        </div>
+                    </div>
+                    <div class="div4">
+                        <div class="weatherprediction">
+                        <p class="bold weather-date">
+  <%= (Date.today + 2, format: :long) %>
+</p>
+                        <% day_after_tomorrow = Date.today + 2 %>
+                        <% @daily_weather_icons.each do |date, icon| %>
+                        <% if date.to_date == day_after_tomorrow %>
+                            <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+                            <% break %>
+                        <% end %>
+                        <% end %>
+                        <% @daily_temperatures.each do |date, temps| %>
+                        <% if date.to_date == day_after_tomorrow %>
+                            <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                            <% break %>
+                        <% end %>
+                        <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div3">
+                <div class="calendar">
+                    <% status2 = "Frei" %>
+                    <% @events_meetingroom.each do |event| %>
+                    <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+                        <% status2 = "Besetzt" %>
+                    <% end %>
+                    <% end %>
+
+                    <div class="title">
+                    <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+                    <% if status2 == "Besetzt" %>
+                        <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                    <% else %>
+                        <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                    <% end %>
+                    </div>
+
+                    <% @events_meetingroom.first(1).each do |event| %>
+                    <div class="calendar-content-first">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <% @events_meetingroom.drop(1).first(3).each do |event| %>
+                    <div class="calendar-content">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <div id="status" style="display: none;"><%= status2 %></div>
+                </div>
+            </div>
+            <div class="div4">
+                <div class="calendar">
+                    <% status2 = "Frei" %>
+                    <% @events_schoolroom.each do |event| %>
+                    <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+                        <% status2 = "Besetzt" %>
+                    <% end %>
+                    <% end %>
+
+                    <div class="title">
+                    <h2 class="bold">Schulungsraum - Veranstaltungen</h2>
+                    <% if status2 == "Besetzt" %>
+                        <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                    <% else %>
+                        <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                    <% end %>
+                    </div>
+
+                    <% @events_schoolroom.first(1).each do |event| %>
+                    <div class="calendar-content-first">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <% @events_schoolroom.drop(1).first(3).each do |event| %>
+                    <div class="calendar-content">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <div id="status" style="display: none;"><%= status2 %></div>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" id="daily-progress"></div>
+                </div>
+                
+              <div class="message" id="message">
+                <marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">
+                    Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+                </marquee>
+              </div>
+
+              <script>
+                function updateMessage() {
+                    var currentDate = new Date();
+                    var currentHour = currentDate.getHours();
+                    var currentMinute = currentDate.getMinutes();
+                    var currentSecond = currentDate.getSeconds();
+
+                    var messageDiv = document.getElementById("message");
+                    var status2 = document.getElementById('status').innerText;
+                    var messageContent = "";
+
+                    if (currentMinute === 0 && currentSecond === 0) {
+                        if (currentHour >= 6 && currentHour < 9) {
+                            messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                        } else if (currentHour >= 11 && currentHour < 13) {
+                            messageContent = "Guten Appetit und eine angenehme Pause!";
+                        } else if (currentHour >= 16 && currentHour < 19) {
+                            messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+                        } else {
+                            messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                        }
+                        messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+                    }
+
+                    if (status2 == "Besetzt") {
+                        messageContent = "Herzlich Willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
+                    }
+                }
+
+                // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+                updateMessage();
+
+                // Aktualisiere die Nachricht jede volle Stunde
+                setInterval(updateMessage, 1000);
+                </script>
+
+                <script>
+                function updateProgress() {
+                    const now = new Date();
+                    const startOfDay = new Date(now);
+                    startOfDay.setHours(7.30, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+                    const endOfDay = new Date(now);
+                    endOfDay.setHours(17, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+
+                    // Berechne den Fortschritt in Prozent
+                    const totalMilliseconds = endOfDay - startOfDay;
+                    const currentMilliseconds = now - startOfDay;
+                    const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+
+                    // Setze die Breite der Fortschrittsleiste entsprechend
+                    const progressBar = document.getElementById("daily-progress");
+                    progressBar.style.width = progressPercent + "%";
+                }
+
+                // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+                setInterval(updateProgress, 10000);
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    
+3:    <html lang="de">
+4:       <head>
+5:          <meta charset="UTF-8">
+6:          <meta http-equiv="refresh" content="1800">
+7:          <link href="css/Stylesheet.css" rel="Stylesheet">
+8:          
+9:            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+10:            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+11:            <link rel="icon" href="Bilder/Logo.png">
+12:            <link rel="preconnect" href="https://fonts.googleapis.com">
+13:            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+14:            <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+15:            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+16:            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+17:            <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+18:            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+19:            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+20:            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+21:            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+22:            <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+23:          <title>TVStation</title>
+24:       </head>
+25:    <body>
+26:        <div class="header">
+27:            <h1 class='bold'>Zentrale Informatik</h1>
+28:            <p class="date" id="current-time"></p>
+29:            <div class="bl-logo">
+30:            <%= image_tag("Baselland.png", size: "235x55") %>
+31:            </div>
+32:        </div>
+33:    
+34:    <script>
+35:      function updateTime() {
+36:        const currentTime = new Date();
+37:        const options = {
+38:          weekday: 'long',
+39:          month: 'long',
+40:          day: 'numeric',
+41:          hour: '2-digit',
+42:          minute: '2-digit',
+43:          hour12: false,
+44:        };
+45:    
+46:        const formattedTime = currentTime.toLocaleDateString('ch', options)
+47:          .replace(/at\s/, '- ')
+48:          .replace(/um\s/, '- ')
+49:    
+50:        document.getElementById('current-time').innerHTML = formattedTime;
+51:      }
+52:    
+53:      updateTime();
+54:      setInterval(updateTime, 1000);
+55:    </script>
+56:    
+57:    
+58:    
+59:        <div class="body">
+60:            <div class="parent">
+61:                <div class="div1">
+62:                    <div class="news">
+63:                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="8000">
+64:                            <div class="carousel-inner">
+65:                                <% @rss_news.each_with_index do |item, index| %>
+66:                                <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+67:                                    <div class="news-slide">
+68:                                    <div class="image-container">
+69:                                        <img class="newsimg" src="<%= item[:image_src] %>" alt="Description Image">
+70:                                        <h3 class="overlay"><%= item[:title] %></h3>
+71:                                        <img class="srf-image" src="<%= asset_path("srfnews.png") %>">
+72:                                    </div>
+73:                                </div>
+74:                            </div>
+75:                            <% end %>
+76:                        </div>
+77:                        </div>
+78:                    </div>
+79:                </div>
+80:                <div class="div2"> 
+81:                    <div class="inner-parent">
+82:                        <div class="div1">
+83:                            <canvas id="myChart" class="weather-chart"></canvas>
+84:                            
+85:                            <script>
+86:                            const xValues = ["<%= @times_formatted[0] %>", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
+87:                            const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
+88:                           
+89:                            Chart.plugins.register({
+90:                            afterDatasetsDraw: (chart) => {
+91:                                const ctx = chart.ctx;
+92:                                chart.data.datasets.forEach(({ data }, datasetIndex) => {
+93:                                const meta = chart.getDatasetMeta(datasetIndex);
+94:                                if (!meta.hidden) {
+95:                                    meta.data.forEach(({ _model }, index) => {
+96:                                    const value = data[index];
+97:                                    const { x, y } = _model;
+98:                                    ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+99:                                    ctx.font = '20px Arial';
+100:                                    ctx.textAlign = 'center';
+101:                                    ctx.fillText(value + "°", x, y - 12);
+102:                                    });
+103:                                }
+104:                                });
+105:                            }
+106:                            });
+107:    
+108:                            new Chart("myChart", {
+109:                            type: "line",
+110:                            data: {
+111:                                labels: xValues,
+112:                                datasets: [{
+113:                                fill: true,
+114:                                lineTension: 0.4,
+115:                                pointRadius: 3,
+116:                                pointBackgroundColor: 'rgb(244, 210, 86)',
+117:                                backgroundColor: 'rgb(252, 245, 217)',
+118:                                borderWidth: 2,
+119:                                borderColor: 'rgb(244, 210, 86)',
+120:                                data: yValues
+121:                                }]
+122:                            },
+123:                            options: {
+124:                                legend: { display: false },
+125:                                scales: {
+126:                                xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
+127:                                yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 3)  + Math.abs(<%= @temperatures.min %>), fontColor: "transparent" }, gridLines: { display: false } }]
+128:                                }
+129:                            }
+130:                            });
+131:                            </script>
+132:                        </div>
+133:                        <div class="weather">
+134:                            <div class="inner-inner-parent">
+135:                                <div class="div5">
+136:                                    <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+137:                                    <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+138:                                    <% @daily_temperatures.each do |date, temps| %>
+139:                                        <% if date.to_date == Date.today %>
+140:                                            <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+141:                                        <% end %>
+142:                                    <% end %>
+143:                                </div>
+144:                                <div class="div6">
+145:                                    <p class="bold temp-heute"><%= @data["main"]["temp"] %>°</p>
+146:                                    <p class="kursiv"><%= @data["weather"].first["description"] %></p>
+147:                                    <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+148:                                </div>
+149:                            </div>
+150:                        </div>
+151:                        <div class="div3">
+152:                            <div class="weatherprediction">
+153:                            <p class="bold weather-date"><%= (Date.today + 1).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+154:                            <% tomorrow = Date.today + 1 %>
+155:                            <% @daily_weather_icons.each do |date, icon| %>
+156:                                <% if date.to_date == tomorrow %>
+157:                                    <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+158:                                    <% break %>
+159:                                <% end %>
+160:                            <% end %>
+161:                            <% @daily_temperatures.each do |date, temps| %>
+162:                                <% if date.to_date == tomorrow %>
+163:                                    <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+164:                                    <% break %>
+165:                                <% end %>
+166:                            <% end %>
+167:                            </div>
+168:                        </div>
+169:                        <div class="div4">
+170:                            <div class="weatherprediction">
+171:                            <p class="bold weather-date">
+172:      <%= (Date.today + 2, format: :long) %>
+173:    </p>
+174:                            <% day_after_tomorrow = Date.today + 2 %>
+175:                            <% @daily_weather_icons.each do |date, icon| %>
+176:                            <% if date.to_date == day_after_tomorrow %>
+177:                                <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+178:                                <% break %>
+179:                            <% end %>
+180:                            <% end %>
+181:                            <% @daily_temperatures.each do |date, temps| %>
+182:                            <% if date.to_date == day_after_tomorrow %>
+183:                                <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+184:                                <% break %>
+185:                            <% end %>
+186:                            <% end %>
+187:                            </div>
+188:                        </div>
+189:                    </div>
+190:                </div>
+191:                <div class="div3">
+192:                    <div class="calendar">
+193:                        <% status2 = "Frei" %>
+194:                        <% @events_meetingroom.each do |event| %>
+195:                        <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+196:                            <% status2 = "Besetzt" %>
+197:                        <% end %>
+198:                        <% end %>
+199:    
+200:                        <div class="title">
+201:                        <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+202:                        <% if status2 == "Besetzt" %>
+203:                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+204:                        <% else %>
+205:                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+206:                        <% end %>
+207:                        </div>
+208:    
+209:                        <% @events_meetingroom.first(1).each do |event| %>
+210:                        <div class="calendar-content-first">
+211:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+212:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+213:                        </div>
+214:                        <% end %>
+215:    
+216:                        <% @events_meetingroom.drop(1).first(3).each do |event| %>
+217:                        <div class="calendar-content">
+218:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+219:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+220:                        </div>
+221:                        <% end %>
+222:    
+223:                        <div id="status" style="display: none;"><%= status2 %></div>
+224:                    </div>
+225:                </div>
+226:                <div class="div4">
+227:                    <div class="calendar">
+228:                        <% status2 = "Frei" %>
+229:                        <% @events_schoolroom.each do |event| %>
+230:                        <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+231:                            <% status2 = "Besetzt" %>
+232:                        <% end %>
+233:                        <% end %>
+234:    
+235:                        <div class="title">
+236:                        <h2 class="bold">Schulungsraum - Veranstaltungen</h2>
+237:                        <% if status2 == "Besetzt" %>
+238:                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+239:                        <% else %>
+240:                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+241:                        <% end %>
+242:                        </div>
+243:    
+244:                        <% @events_schoolroom.first(1).each do |event| %>
+245:                        <div class="calendar-content-first">
+246:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+247:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+248:                        </div>
+249:                        <% end %>
+250:    
+251:                        <% @events_schoolroom.drop(1).first(3).each do |event| %>
+252:                        <div class="calendar-content">
+253:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+254:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+255:                        </div>
+256:                        <% end %>
+257:    
+258:                        <div id="status" style="display: none;"><%= status2 %></div>
+259:                    </div>
+260:                </div>
+261:                <div class="div5">
+262:                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+263:                        <div class="progress-bar" id="daily-progress"></div>
+264:                    </div>
+265:                    
+266:                  <div class="message" id="message">
+267:                    <marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">
+268:                        Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+269:                    </marquee>
+270:                  </div>
+271:    
+272:                  <script>
+273:                    function updateMessage() {
+274:                        var currentDate = new Date();
+275:                        var currentHour = currentDate.getHours();
+276:                        var currentMinute = currentDate.getMinutes();
+277:                        var currentSecond = currentDate.getSeconds();
+278:    
+279:                        var messageDiv = document.getElementById("message");
+280:                        var status2 = document.getElementById('status').innerText;
+281:                        var messageContent = "";
+282:    
+283:                        if (currentMinute === 0 && currentSecond === 0) {
+284:                            if (currentHour >= 6 && currentHour < 9) {
+285:                                messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+286:                            } else if (currentHour >= 11 && currentHour < 13) {
+287:                                messageContent = "Guten Appetit und eine angenehme Pause!";
+288:                            } else if (currentHour >= 16 && currentHour < 19) {
+289:                                messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+290:                            } else {
+291:                                messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+292:                            }
+293:                            messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+294:                        }
+295:    
+296:                        if (status2 == "Besetzt") {
+297:                            messageContent = "Herzlich Willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
+298:                        }
+299:                    }
+300:    
+301:                    // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+302:                    updateMessage();
+303:    
+304:                    // Aktualisiere die Nachricht jede volle Stunde
+305:                    setInterval(updateMessage, 1000);
+306:                    </script>
+307:    
+308:                    <script>
+309:                    function updateProgress() {
+310:                        const now = new Date();
+311:                        const startOfDay = new Date(now);
+312:                        startOfDay.setHours(7.30, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+313:                        const endOfDay = new Date(now);
+314:                        endOfDay.setHours(17, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+315:    
+316:                        // Berechne den Fortschritt in Prozent
+317:                        const totalMilliseconds = endOfDay - startOfDay;
+318:                        const currentMilliseconds = now - startOfDay;
+319:                        const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+320:    
+321:                        // Setze die Breite der Fortschrittsleiste entsprechend
+322:                        const progressBar = document.getElementById("daily-progress");
+323:                        progressBar.style.width = progressPercent + "%";
+324:                    }
+325:    
+326:                    // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+327:                    setInterval(updateProgress, 10000);
+328:                    </script>
+329:    
+330:    
+331:                </div>
+332:            </div>
+333:        </div>
+334:       </body>
+335:    </html>
+  
+app/views/articles/index.html.erb:172: syntax error, unexpected ',', expecting ')'
+app/views/articles/index.html.erb:172: syntax error, unexpected ',', expecting ')'
+app/views/articles/index.html.erb:172: syntax error, unexpected ',', expecting ')'
+app/views/articles/index.html.erb:172: syntax error, unexpected ',', expecting ')'
+Started GET "/" for ::1 at 2024-01-18 14:55:14 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.0ms | Allocations: 3055)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3144)
+Completed 500 Internal Server Error in 447ms (ActiveRecord: 0.0ms | Allocations: 40357)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+
+<html lang="de">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="refresh" content="1800">
+      <link href="css/Stylesheet.css" rel="Stylesheet">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="Bilder/Logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+      <title>TVStation</title>
+   </head>
+<body>
+    <div class="header">
+        <h1 class='bold'>Zentrale Informatik</h1>
+        <p class="date" id="current-time"></p>
+        <div class="bl-logo">
+        <%= image_tag("Baselland.png", size: "235x55") %>
+        </div>
+    </div>
+
+<script>
+  function updateTime() {
+    const currentTime = new Date();
+    const options = {
+      weekday: 'long',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+    };
+
+    const formattedTime = currentTime.toLocaleDateString('ch', options)
+      .replace(/at\s/, '- ')
+      .replace(/um\s/, '- ')
+
+    document.getElementById('current-time').innerHTML = formattedTime;
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
+
+
+
+    <div class="body">
+        <div class="parent">
+            <div class="div1">
+                <div class="news">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="8000">
+                        <div class="carousel-inner">
+                            <% @rss_news.each_with_index do |item, index| %>
+                            <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+                                <div class="news-slide">
+                                <div class="image-container">
+                                    <img class="newsimg" src="<%= item[:image_src] %>" alt="Description Image">
+                                    <h3 class="overlay"><%= item[:title] %></h3>
+                                    <img class="srf-image" src="<%= asset_path("srfnews.png") %>">
+                                </div>
+                            </div>
+                        </div>
+                        <% end %>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div2"> 
+                <div class="inner-parent">
+                    <div class="div1">
+                        <canvas id="myChart" class="weather-chart"></canvas>
+                        
+                        <script>
+                        const xValues = ["<%= @times_formatted[0] %>", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
+                        const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
+                       
+                        Chart.plugins.register({
+                        afterDatasetsDraw: (chart) => {
+                            const ctx = chart.ctx;
+                            chart.data.datasets.forEach(({ data }, datasetIndex) => {
+                            const meta = chart.getDatasetMeta(datasetIndex);
+                            if (!meta.hidden) {
+                                meta.data.forEach(({ _model }, index) => {
+                                const value = data[index];
+                                const { x, y } = _model;
+                                ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                                ctx.font = '20px Arial';
+                                ctx.textAlign = 'center';
+                                ctx.fillText(value + "°", x, y - 12);
+                                });
+                            }
+                            });
+                        }
+                        });
+
+                        new Chart("myChart", {
+                        type: "line",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                            fill: true,
+                            lineTension: 0.4,
+                            pointRadius: 3,
+                            pointBackgroundColor: 'rgb(244, 210, 86)',
+                            backgroundColor: 'rgb(252, 245, 217)',
+                            borderWidth: 2,
+                            borderColor: 'rgb(244, 210, 86)',
+                            data: yValues
+                            }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            scales: {
+                            xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
+                            yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 3)  + Math.abs(<%= @temperatures.min %>), fontColor: "transparent" }, gridLines: { display: false } }]
+                            }
+                        }
+                        });
+                        </script>
+                    </div>
+                    <div class="weather">
+                        <div class="inner-inner-parent">
+                            <div class="div5">
+                                <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+                                <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+                                <% @daily_temperatures.each do |date, temps| %>
+                                    <% if date.to_date == Date.today %>
+                                        <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                                    <% end %>
+                                <% end %>
+                            </div>
+                            <div class="div6">
+                                <p class="bold temp-heute"><%= @data["main"]["temp"] %>°</p>
+                                <p class="kursiv"><%= @data["weather"].first["description"] %></p>
+                                <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div3">
+                        <div class="weatherprediction">
+                        <p class="bold weather-date"><%= (Date.today + 1).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+                        <% tomorrow = Date.today + 1 %>
+                        <% @daily_weather_icons.each do |date, icon| %>
+                            <% if date.to_date == tomorrow %>
+                                <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+                                <% break %>
+                            <% end %>
+                        <% end %>
+                        <% @daily_temperatures.each do |date, temps| %>
+                            <% if date.to_date == tomorrow %>
+                                <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                                <% break %>
+                            <% end %>
+                        <% end %>
+                        </div>
+                    </div>
+                    <div class="div4">
+                        <div class="weatherprediction">
+                        <p class="bold weather-date">
+  <%= (Date.today + 2, format: :long) %>
+</p>
+                        <% day_after_tomorrow = Date.today + 2 %>
+                        <% @daily_weather_icons.each do |date, icon| %>
+                        <% if date.to_date == day_after_tomorrow %>
+                            <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+                            <% break %>
+                        <% end %>
+                        <% end %>
+                        <% @daily_temperatures.each do |date, temps| %>
+                        <% if date.to_date == day_after_tomorrow %>
+                            <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                            <% break %>
+                        <% end %>
+                        <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div3">
+                <div class="calendar">
+                    <% status2 = "Frei" %>
+                    <% @events_meetingroom.each do |event| %>
+                    <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+                        <% status2 = "Besetzt" %>
+                    <% end %>
+                    <% end %>
+
+                    <div class="title">
+                    <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+                    <% if status2 == "Besetzt" %>
+                        <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                    <% else %>
+                        <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                    <% end %>
+                    </div>
+
+                    <% @events_meetingroom.first(1).each do |event| %>
+                    <div class="calendar-content-first">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <% @events_meetingroom.drop(1).first(3).each do |event| %>
+                    <div class="calendar-content">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <div id="status" style="display: none;"><%= status2 %></div>
+                </div>
+            </div>
+            <div class="div4">
+                <div class="calendar">
+                    <% status2 = "Frei" %>
+                    <% @events_schoolroom.each do |event| %>
+                    <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+                        <% status2 = "Besetzt" %>
+                    <% end %>
+                    <% end %>
+
+                    <div class="title">
+                    <h2 class="bold">Schulungsraum - Veranstaltungen</h2>
+                    <% if status2 == "Besetzt" %>
+                        <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                    <% else %>
+                        <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                    <% end %>
+                    </div>
+
+                    <% @events_schoolroom.first(1).each do |event| %>
+                    <div class="calendar-content-first">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <% @events_schoolroom.drop(1).first(3).each do |event| %>
+                    <div class="calendar-content">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <div id="status" style="display: none;"><%= status2 %></div>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" id="daily-progress"></div>
+                </div>
+                
+              <div class="message" id="message">
+                <marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">
+                    Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+                </marquee>
+              </div>
+
+              <script>
+                function updateMessage() {
+                    var currentDate = new Date();
+                    var currentHour = currentDate.getHours();
+                    var currentMinute = currentDate.getMinutes();
+                    var currentSecond = currentDate.getSeconds();
+
+                    var messageDiv = document.getElementById("message");
+                    var status2 = document.getElementById('status').innerText;
+                    var messageContent = "";
+
+                    if (currentMinute === 0 && currentSecond === 0) {
+                        if (currentHour >= 6 && currentHour < 9) {
+                            messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                        } else if (currentHour >= 11 && currentHour < 13) {
+                            messageContent = "Guten Appetit und eine angenehme Pause!";
+                        } else if (currentHour >= 16 && currentHour < 19) {
+                            messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+                        } else {
+                            messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                        }
+                        messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+                    }
+
+                    if (status2 == "Besetzt") {
+                        messageContent = "Herzlich Willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
+                    }
+                }
+
+                // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+                updateMessage();
+
+                // Aktualisiere die Nachricht jede volle Stunde
+                setInterval(updateMessage, 1000);
+                </script>
+
+                <script>
+                function updateProgress() {
+                    const now = new Date();
+                    const startOfDay = new Date(now);
+                    startOfDay.setHours(7.30, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+                    const endOfDay = new Date(now);
+                    endOfDay.setHours(17, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+
+                    // Berechne den Fortschritt in Prozent
+                    const totalMilliseconds = endOfDay - startOfDay;
+                    const currentMilliseconds = now - startOfDay;
+                    const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+
+                    // Setze die Breite der Fortschrittsleiste entsprechend
+                    const progressBar = document.getElementById("daily-progress");
+                    progressBar.style.width = progressPercent + "%";
+                }
+
+                // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+                setInterval(updateProgress, 10000);
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    
+3:    <html lang="de">
+4:       <head>
+5:          <meta charset="UTF-8">
+6:          <meta http-equiv="refresh" content="1800">
+7:          <link href="css/Stylesheet.css" rel="Stylesheet">
+8:          
+9:            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+10:            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+11:            <link rel="icon" href="Bilder/Logo.png">
+12:            <link rel="preconnect" href="https://fonts.googleapis.com">
+13:            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+14:            <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+15:            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+16:            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+17:            <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+18:            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+19:            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+20:            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+21:            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+22:            <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+23:          <title>TVStation</title>
+24:       </head>
+25:    <body>
+26:        <div class="header">
+27:            <h1 class='bold'>Zentrale Informatik</h1>
+28:            <p class="date" id="current-time"></p>
+29:            <div class="bl-logo">
+30:            <%= image_tag("Baselland.png", size: "235x55") %>
+31:            </div>
+32:        </div>
+33:    
+34:    <script>
+35:      function updateTime() {
+36:        const currentTime = new Date();
+37:        const options = {
+38:          weekday: 'long',
+39:          month: 'long',
+40:          day: 'numeric',
+41:          hour: '2-digit',
+42:          minute: '2-digit',
+43:          hour12: false,
+44:        };
+45:    
+46:        const formattedTime = currentTime.toLocaleDateString('ch', options)
+47:          .replace(/at\s/, '- ')
+48:          .replace(/um\s/, '- ')
+49:    
+50:        document.getElementById('current-time').innerHTML = formattedTime;
+51:      }
+52:    
+53:      updateTime();
+54:      setInterval(updateTime, 1000);
+55:    </script>
+56:    
+57:    
+58:    
+59:        <div class="body">
+60:            <div class="parent">
+61:                <div class="div1">
+62:                    <div class="news">
+63:                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="8000">
+64:                            <div class="carousel-inner">
+65:                                <% @rss_news.each_with_index do |item, index| %>
+66:                                <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+67:                                    <div class="news-slide">
+68:                                    <div class="image-container">
+69:                                        <img class="newsimg" src="<%= item[:image_src] %>" alt="Description Image">
+70:                                        <h3 class="overlay"><%= item[:title] %></h3>
+71:                                        <img class="srf-image" src="<%= asset_path("srfnews.png") %>">
+72:                                    </div>
+73:                                </div>
+74:                            </div>
+75:                            <% end %>
+76:                        </div>
+77:                        </div>
+78:                    </div>
+79:                </div>
+80:                <div class="div2"> 
+81:                    <div class="inner-parent">
+82:                        <div class="div1">
+83:                            <canvas id="myChart" class="weather-chart"></canvas>
+84:                            
+85:                            <script>
+86:                            const xValues = ["<%= @times_formatted[0] %>", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
+87:                            const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
+88:                           
+89:                            Chart.plugins.register({
+90:                            afterDatasetsDraw: (chart) => {
+91:                                const ctx = chart.ctx;
+92:                                chart.data.datasets.forEach(({ data }, datasetIndex) => {
+93:                                const meta = chart.getDatasetMeta(datasetIndex);
+94:                                if (!meta.hidden) {
+95:                                    meta.data.forEach(({ _model }, index) => {
+96:                                    const value = data[index];
+97:                                    const { x, y } = _model;
+98:                                    ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+99:                                    ctx.font = '20px Arial';
+100:                                    ctx.textAlign = 'center';
+101:                                    ctx.fillText(value + "°", x, y - 12);
+102:                                    });
+103:                                }
+104:                                });
+105:                            }
+106:                            });
+107:    
+108:                            new Chart("myChart", {
+109:                            type: "line",
+110:                            data: {
+111:                                labels: xValues,
+112:                                datasets: [{
+113:                                fill: true,
+114:                                lineTension: 0.4,
+115:                                pointRadius: 3,
+116:                                pointBackgroundColor: 'rgb(244, 210, 86)',
+117:                                backgroundColor: 'rgb(252, 245, 217)',
+118:                                borderWidth: 2,
+119:                                borderColor: 'rgb(244, 210, 86)',
+120:                                data: yValues
+121:                                }]
+122:                            },
+123:                            options: {
+124:                                legend: { display: false },
+125:                                scales: {
+126:                                xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
+127:                                yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 3)  + Math.abs(<%= @temperatures.min %>), fontColor: "transparent" }, gridLines: { display: false } }]
+128:                                }
+129:                            }
+130:                            });
+131:                            </script>
+132:                        </div>
+133:                        <div class="weather">
+134:                            <div class="inner-inner-parent">
+135:                                <div class="div5">
+136:                                    <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+137:                                    <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+138:                                    <% @daily_temperatures.each do |date, temps| %>
+139:                                        <% if date.to_date == Date.today %>
+140:                                            <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+141:                                        <% end %>
+142:                                    <% end %>
+143:                                </div>
+144:                                <div class="div6">
+145:                                    <p class="bold temp-heute"><%= @data["main"]["temp"] %>°</p>
+146:                                    <p class="kursiv"><%= @data["weather"].first["description"] %></p>
+147:                                    <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+148:                                </div>
+149:                            </div>
+150:                        </div>
+151:                        <div class="div3">
+152:                            <div class="weatherprediction">
+153:                            <p class="bold weather-date"><%= (Date.today + 1).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+154:                            <% tomorrow = Date.today + 1 %>
+155:                            <% @daily_weather_icons.each do |date, icon| %>
+156:                                <% if date.to_date == tomorrow %>
+157:                                    <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+158:                                    <% break %>
+159:                                <% end %>
+160:                            <% end %>
+161:                            <% @daily_temperatures.each do |date, temps| %>
+162:                                <% if date.to_date == tomorrow %>
+163:                                    <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+164:                                    <% break %>
+165:                                <% end %>
+166:                            <% end %>
+167:                            </div>
+168:                        </div>
+169:                        <div class="div4">
+170:                            <div class="weatherprediction">
+171:                            <p class="bold weather-date">
+172:      <%= (Date.today + 2, format: :long) %>
+173:    </p>
+174:                            <% day_after_tomorrow = Date.today + 2 %>
+175:                            <% @daily_weather_icons.each do |date, icon| %>
+176:                            <% if date.to_date == day_after_tomorrow %>
+177:                                <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+178:                                <% break %>
+179:                            <% end %>
+180:                            <% end %>
+181:                            <% @daily_temperatures.each do |date, temps| %>
+182:                            <% if date.to_date == day_after_tomorrow %>
+183:                                <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+184:                                <% break %>
+185:                            <% end %>
+186:                            <% end %>
+187:                            </div>
+188:                        </div>
+189:                    </div>
+190:                </div>
+191:                <div class="div3">
+192:                    <div class="calendar">
+193:                        <% status2 = "Frei" %>
+194:                        <% @events_meetingroom.each do |event| %>
+195:                        <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+196:                            <% status2 = "Besetzt" %>
+197:                        <% end %>
+198:                        <% end %>
+199:    
+200:                        <div class="title">
+201:                        <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+202:                        <% if status2 == "Besetzt" %>
+203:                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+204:                        <% else %>
+205:                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+206:                        <% end %>
+207:                        </div>
+208:    
+209:                        <% @events_meetingroom.first(1).each do |event| %>
+210:                        <div class="calendar-content-first">
+211:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+212:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+213:                        </div>
+214:                        <% end %>
+215:    
+216:                        <% @events_meetingroom.drop(1).first(3).each do |event| %>
+217:                        <div class="calendar-content">
+218:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+219:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+220:                        </div>
+221:                        <% end %>
+222:    
+223:                        <div id="status" style="display: none;"><%= status2 %></div>
+224:                    </div>
+225:                </div>
+226:                <div class="div4">
+227:                    <div class="calendar">
+228:                        <% status2 = "Frei" %>
+229:                        <% @events_schoolroom.each do |event| %>
+230:                        <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+231:                            <% status2 = "Besetzt" %>
+232:                        <% end %>
+233:                        <% end %>
+234:    
+235:                        <div class="title">
+236:                        <h2 class="bold">Schulungsraum - Veranstaltungen</h2>
+237:                        <% if status2 == "Besetzt" %>
+238:                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+239:                        <% else %>
+240:                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+241:                        <% end %>
+242:                        </div>
+243:    
+244:                        <% @events_schoolroom.first(1).each do |event| %>
+245:                        <div class="calendar-content-first">
+246:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+247:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+248:                        </div>
+249:                        <% end %>
+250:    
+251:                        <% @events_schoolroom.drop(1).first(3).each do |event| %>
+252:                        <div class="calendar-content">
+253:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+254:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+255:                        </div>
+256:                        <% end %>
+257:    
+258:                        <div id="status" style="display: none;"><%= status2 %></div>
+259:                    </div>
+260:                </div>
+261:                <div class="div5">
+262:                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+263:                        <div class="progress-bar" id="daily-progress"></div>
+264:                    </div>
+265:                    
+266:                  <div class="message" id="message">
+267:                    <marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">
+268:                        Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+269:                    </marquee>
+270:                  </div>
+271:    
+272:                  <script>
+273:                    function updateMessage() {
+274:                        var currentDate = new Date();
+275:                        var currentHour = currentDate.getHours();
+276:                        var currentMinute = currentDate.getMinutes();
+277:                        var currentSecond = currentDate.getSeconds();
+278:    
+279:                        var messageDiv = document.getElementById("message");
+280:                        var status2 = document.getElementById('status').innerText;
+281:                        var messageContent = "";
+282:    
+283:                        if (currentMinute === 0 && currentSecond === 0) {
+284:                            if (currentHour >= 6 && currentHour < 9) {
+285:                                messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+286:                            } else if (currentHour >= 11 && currentHour < 13) {
+287:                                messageContent = "Guten Appetit und eine angenehme Pause!";
+288:                            } else if (currentHour >= 16 && currentHour < 19) {
+289:                                messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+290:                            } else {
+291:                                messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+292:                            }
+293:                            messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+294:                        }
+295:    
+296:                        if (status2 == "Besetzt") {
+297:                            messageContent = "Herzlich Willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
+298:                        }
+299:                    }
+300:    
+301:                    // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+302:                    updateMessage();
+303:    
+304:                    // Aktualisiere die Nachricht jede volle Stunde
+305:                    setInterval(updateMessage, 1000);
+306:                    </script>
+307:    
+308:                    <script>
+309:                    function updateProgress() {
+310:                        const now = new Date();
+311:                        const startOfDay = new Date(now);
+312:                        startOfDay.setHours(7.30, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+313:                        const endOfDay = new Date(now);
+314:                        endOfDay.setHours(17, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+315:    
+316:                        // Berechne den Fortschritt in Prozent
+317:                        const totalMilliseconds = endOfDay - startOfDay;
+318:                        const currentMilliseconds = now - startOfDay;
+319:                        const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+320:    
+321:                        // Setze die Breite der Fortschrittsleiste entsprechend
+322:                        const progressBar = document.getElementById("daily-progress");
+323:                        progressBar.style.width = progressPercent + "%";
+324:                    }
+325:    
+326:                    // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+327:                    setInterval(updateProgress, 10000);
+328:                    </script>
+329:    
+330:    
+331:                </div>
+332:            </div>
+333:        </div>
+334:       </body>
+335:    </html>
+  
+app/views/articles/index.html.erb:172: syntax error, unexpected ',', expecting ')'
+app/views/articles/index.html.erb:172: syntax error, unexpected ',', expecting ')'
+app/views/articles/index.html.erb:172: syntax error, unexpected ',', expecting ')'
+app/views/articles/index.html.erb:172: syntax error, unexpected ',', expecting ')'
+Started GET "/" for ::1 at 2024-01-18 14:55:36 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 5175)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 6273)
+Completed 200 OK in 424ms (Views: 9.6ms | ActiveRecord: 0.0ms | Allocations: 44064)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:55:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 14:56:00 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.8ms | Allocations: 3067)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3156)
+Completed 500 Internal Server Error in 514ms (ActiveRecord: 0.0ms | Allocations: 40929)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+
+<html lang="de">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="refresh" content="1800">
+      <link href="css/Stylesheet.css" rel="Stylesheet">
+      
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="icon" href="Bilder/Logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+      <title>TVStation</title>
+   </head>
+<body>
+    <div class="header">
+        <h1 class='bold'>Zentrale Informatik</h1>
+        <p class="date" id="current-time"></p>
+        <div class="bl-logo">
+        <%= image_tag("Baselland.png", size: "235x55") %>
+        </div>
+    </div>
+
+<script>
+  function updateTime() {
+    const currentTime = new Date();
+    const options = {
+      weekday: 'long',
+      month: 'long',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false,
+    };
+
+    const formattedTime = currentTime.toLocaleDateString('ch', options)
+      .replace(/at\s/, '- ')
+      .replace(/um\s/, '- ')
+
+    document.getElementById('current-time').innerHTML = formattedTime;
+  }
+
+  updateTime();
+  setInterval(updateTime, 1000);
+</script>
+
+
+
+    <div class="body">
+        <div class="parent">
+            <div class="div1">
+                <div class="news">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="8000">
+                        <div class="carousel-inner">
+                            <% @rss_news.each_with_index do |item, index| %>
+                            <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+                                <div class="news-slide">
+                                <div class="image-container">
+                                    <img class="newsimg" src="<%= item[:image_src] %>" alt="Description Image">
+                                    <h3 class="overlay"><%= item[:title] %></h3>
+                                    <img class="srf-image" src="<%= asset_path("srfnews.png") %>">
+                                </div>
+                            </div>
+                        </div>
+                        <% end %>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div2"> 
+                <div class="inner-parent">
+                    <div class="div1">
+                        <canvas id="myChart" class="weather-chart"></canvas>
+                        
+                        <script>
+                        const xValues = ["<%= @times_formatted[0] %>", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
+                        const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
+                       
+                        Chart.plugins.register({
+                        afterDatasetsDraw: (chart) => {
+                            const ctx = chart.ctx;
+                            chart.data.datasets.forEach(({ data }, datasetIndex) => {
+                            const meta = chart.getDatasetMeta(datasetIndex);
+                            if (!meta.hidden) {
+                                meta.data.forEach(({ _model }, index) => {
+                                const value = data[index];
+                                const { x, y } = _model;
+                                ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                                ctx.font = '20px Arial';
+                                ctx.textAlign = 'center';
+                                ctx.fillText(value + "°", x, y - 12);
+                                });
+                            }
+                            });
+                        }
+                        });
+
+                        new Chart("myChart", {
+                        type: "line",
+                        data: {
+                            labels: xValues,
+                            datasets: [{
+                            fill: true,
+                            lineTension: 0.4,
+                            pointRadius: 3,
+                            pointBackgroundColor: 'rgb(244, 210, 86)',
+                            backgroundColor: 'rgb(252, 245, 217)',
+                            borderWidth: 2,
+                            borderColor: 'rgb(244, 210, 86)',
+                            data: yValues
+                            }]
+                        },
+                        options: {
+                            legend: { display: false },
+                            scales: {
+                            xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
+                            yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 3)  + Math.abs(<%= @temperatures.min %>), fontColor: "transparent" }, gridLines: { display: false } }]
+                            }
+                        }
+                        });
+                        </script>
+                    </div>
+                    <div class="weather">
+                        <div class="inner-inner-parent">
+                            <div class="div5">
+                                <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+                                <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+                                <% @daily_temperatures.each do |date, temps| %>
+                                    <% if date.to_date == Date.today %>
+                                        <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                                    <% end %>
+                                <% end %>
+                            </div>
+                            <div class="div6">
+                                <p class="bold temp-heute"><%= @data["main"]["temp"] %>°</p>
+                                <p class="kursiv"><%= @data["weather"].first["description"] %></p>
+                                <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div3">
+                        <div class="weatherprediction">
+                        <p class="bold weather-date"><%= (Date.today + 1, format: :long).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+                        <% tomorrow = Date.today + 1 %>
+                        <% @daily_weather_icons.each do |date, icon| %>
+                            <% if date.to_date == tomorrow %>
+                                <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+                                <% break %>
+                            <% end %>
+                        <% end %>
+                        <% @daily_temperatures.each do |date, temps| %>
+                            <% if date.to_date == tomorrow %>
+                                <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                                <% break %>
+                            <% end %>
+                        <% end %>
+                        </div>
+                    </div>
+                    <div class="div4">
+                        <div class="weatherprediction">
+                        <p class="bold weather-date"><%= (Date.today + 2).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+                        <% day_after_tomorrow = Date.today + 2 %>
+                        <% @daily_weather_icons.each do |date, icon| %>
+                        <% if date.to_date == day_after_tomorrow %>
+                            <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+                            <% break %>
+                        <% end %>
+                        <% end %>
+                        <% @daily_temperatures.each do |date, temps| %>
+                        <% if date.to_date == day_after_tomorrow %>
+                            <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+                            <% break %>
+                        <% end %>
+                        <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="div3">
+                <div class="calendar">
+                    <% status2 = "Frei" %>
+                    <% @events_meetingroom.each do |event| %>
+                    <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+                        <% status2 = "Besetzt" %>
+                    <% end %>
+                    <% end %>
+
+                    <div class="title">
+                    <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+                    <% if status2 == "Besetzt" %>
+                        <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                    <% else %>
+                        <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                    <% end %>
+                    </div>
+
+                    <% @events_meetingroom.first(1).each do |event| %>
+                    <div class="calendar-content-first">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <% @events_meetingroom.drop(1).first(3).each do |event| %>
+                    <div class="calendar-content">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <div id="status" style="display: none;"><%= status2 %></div>
+                </div>
+            </div>
+            <div class="div4">
+                <div class="calendar">
+                    <% status2 = "Frei" %>
+                    <% @events_schoolroom.each do |event| %>
+                    <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+                        <% status2 = "Besetzt" %>
+                    <% end %>
+                    <% end %>
+
+                    <div class="title">
+                    <h2 class="bold">Schulungsraum - Veranstaltungen</h2>
+                    <% if status2 == "Besetzt" %>
+                        <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                    <% else %>
+                        <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                    <% end %>
+                    </div>
+
+                    <% @events_schoolroom.first(1).each do |event| %>
+                    <div class="calendar-content-first">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <% @events_schoolroom.drop(1).first(3).each do |event| %>
+                    <div class="calendar-content">
+                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+                    </div>
+                    <% end %>
+
+                    <div id="status" style="display: none;"><%= status2 %></div>
+                </div>
+            </div>
+            <div class="div5">
+                <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-bar" id="daily-progress"></div>
+                </div>
+                
+              <div class="message" id="message">
+                <marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">
+                    Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+                </marquee>
+              </div>
+
+              <script>
+                function updateMessage() {
+                    var currentDate = new Date();
+                    var currentHour = currentDate.getHours();
+                    var currentMinute = currentDate.getMinutes();
+                    var currentSecond = currentDate.getSeconds();
+
+                    var messageDiv = document.getElementById("message");
+                    var status2 = document.getElementById('status').innerText;
+                    var messageContent = "";
+
+                    if (currentMinute === 0 && currentSecond === 0) {
+                        if (currentHour >= 6 && currentHour < 9) {
+                            messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                        } else if (currentHour >= 11 && currentHour < 13) {
+                            messageContent = "Guten Appetit und eine angenehme Pause!";
+                        } else if (currentHour >= 16 && currentHour < 19) {
+                            messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+                        } else {
+                            messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                        }
+                        messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+                    }
+
+                    if (status2 == "Besetzt") {
+                        messageContent = "Herzlich Willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
+                    }
+                }
+
+                // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+                updateMessage();
+
+                // Aktualisiere die Nachricht jede volle Stunde
+                setInterval(updateMessage, 1000);
+                </script>
+
+                <script>
+                function updateProgress() {
+                    const now = new Date();
+                    const startOfDay = new Date(now);
+                    startOfDay.setHours(7.30, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+                    const endOfDay = new Date(now);
+                    endOfDay.setHours(17, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+
+                    // Berechne den Fortschritt in Prozent
+                    const totalMilliseconds = endOfDay - startOfDay;
+                    const currentMilliseconds = now - startOfDay;
+                    const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+
+                    // Setze die Breite der Fortschrittsleiste entsprechend
+                    const progressBar = document.getElementById("daily-progress");
+                    progressBar.style.width = progressPercent + "%";
+                }
+
+                // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+                setInterval(updateProgress, 10000);
+                </script>
+
+
+            </div>
+        </div>
+    </div>
+   </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    
+3:    <html lang="de">
+4:       <head>
+5:          <meta charset="UTF-8">
+6:          <meta http-equiv="refresh" content="1800">
+7:          <link href="css/Stylesheet.css" rel="Stylesheet">
+8:          
+9:            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+10:            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+11:            <link rel="icon" href="Bilder/Logo.png">
+12:            <link rel="preconnect" href="https://fonts.googleapis.com">
+13:            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+14:            <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+15:            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DotGothic16">
+16:            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+17:            <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+18:            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+19:            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+20:            <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+21:            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+22:            <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+23:          <title>TVStation</title>
+24:       </head>
+25:    <body>
+26:        <div class="header">
+27:            <h1 class='bold'>Zentrale Informatik</h1>
+28:            <p class="date" id="current-time"></p>
+29:            <div class="bl-logo">
+30:            <%= image_tag("Baselland.png", size: "235x55") %>
+31:            </div>
+32:        </div>
+33:    
+34:    <script>
+35:      function updateTime() {
+36:        const currentTime = new Date();
+37:        const options = {
+38:          weekday: 'long',
+39:          month: 'long',
+40:          day: 'numeric',
+41:          hour: '2-digit',
+42:          minute: '2-digit',
+43:          hour12: false,
+44:        };
+45:    
+46:        const formattedTime = currentTime.toLocaleDateString('ch', options)
+47:          .replace(/at\s/, '- ')
+48:          .replace(/um\s/, '- ')
+49:    
+50:        document.getElementById('current-time').innerHTML = formattedTime;
+51:      }
+52:    
+53:      updateTime();
+54:      setInterval(updateTime, 1000);
+55:    </script>
+56:    
+57:    
+58:    
+59:        <div class="body">
+60:            <div class="parent">
+61:                <div class="div1">
+62:                    <div class="news">
+63:                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="8000">
+64:                            <div class="carousel-inner">
+65:                                <% @rss_news.each_with_index do |item, index| %>
+66:                                <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+67:                                    <div class="news-slide">
+68:                                    <div class="image-container">
+69:                                        <img class="newsimg" src="<%= item[:image_src] %>" alt="Description Image">
+70:                                        <h3 class="overlay"><%= item[:title] %></h3>
+71:                                        <img class="srf-image" src="<%= asset_path("srfnews.png") %>">
+72:                                    </div>
+73:                                </div>
+74:                            </div>
+75:                            <% end %>
+76:                        </div>
+77:                        </div>
+78:                    </div>
+79:                </div>
+80:                <div class="div2"> 
+81:                    <div class="inner-parent">
+82:                        <div class="div1">
+83:                            <canvas id="myChart" class="weather-chart"></canvas>
+84:                            
+85:                            <script>
+86:                            const xValues = ["<%= @times_formatted[0] %>", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
+87:                            const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
+88:                           
+89:                            Chart.plugins.register({
+90:                            afterDatasetsDraw: (chart) => {
+91:                                const ctx = chart.ctx;
+92:                                chart.data.datasets.forEach(({ data }, datasetIndex) => {
+93:                                const meta = chart.getDatasetMeta(datasetIndex);
+94:                                if (!meta.hidden) {
+95:                                    meta.data.forEach(({ _model }, index) => {
+96:                                    const value = data[index];
+97:                                    const { x, y } = _model;
+98:                                    ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+99:                                    ctx.font = '20px Arial';
+100:                                    ctx.textAlign = 'center';
+101:                                    ctx.fillText(value + "°", x, y - 12);
+102:                                    });
+103:                                }
+104:                                });
+105:                            }
+106:                            });
+107:    
+108:                            new Chart("myChart", {
+109:                            type: "line",
+110:                            data: {
+111:                                labels: xValues,
+112:                                datasets: [{
+113:                                fill: true,
+114:                                lineTension: 0.4,
+115:                                pointRadius: 3,
+116:                                pointBackgroundColor: 'rgb(244, 210, 86)',
+117:                                backgroundColor: 'rgb(252, 245, 217)',
+118:                                borderWidth: 2,
+119:                                borderColor: 'rgb(244, 210, 86)',
+120:                                data: yValues
+121:                                }]
+122:                            },
+123:                            options: {
+124:                                legend: { display: false },
+125:                                scales: {
+126:                                xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
+127:                                yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 3)  + Math.abs(<%= @temperatures.min %>), fontColor: "transparent" }, gridLines: { display: false } }]
+128:                                }
+129:                            }
+130:                            });
+131:                            </script>
+132:                        </div>
+133:                        <div class="weather">
+134:                            <div class="inner-inner-parent">
+135:                                <div class="div5">
+136:                                    <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+137:                                    <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+138:                                    <% @daily_temperatures.each do |date, temps| %>
+139:                                        <% if date.to_date == Date.today %>
+140:                                            <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+141:                                        <% end %>
+142:                                    <% end %>
+143:                                </div>
+144:                                <div class="div6">
+145:                                    <p class="bold temp-heute"><%= @data["main"]["temp"] %>°</p>
+146:                                    <p class="kursiv"><%= @data["weather"].first["description"] %></p>
+147:                                    <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+148:                                </div>
+149:                            </div>
+150:                        </div>
+151:                        <div class="div3">
+152:                            <div class="weatherprediction">
+153:                            <p class="bold weather-date"><%= (Date.today + 1, format: :long).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+154:                            <% tomorrow = Date.today + 1 %>
+155:                            <% @daily_weather_icons.each do |date, icon| %>
+156:                                <% if date.to_date == tomorrow %>
+157:                                    <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+158:                                    <% break %>
+159:                                <% end %>
+160:                            <% end %>
+161:                            <% @daily_temperatures.each do |date, temps| %>
+162:                                <% if date.to_date == tomorrow %>
+163:                                    <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+164:                                    <% break %>
+165:                                <% end %>
+166:                            <% end %>
+167:                            </div>
+168:                        </div>
+169:                        <div class="div4">
+170:                            <div class="weatherprediction">
+171:                            <p class="bold weather-date"><%= (Date.today + 2).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+172:                            <% day_after_tomorrow = Date.today + 2 %>
+173:                            <% @daily_weather_icons.each do |date, icon| %>
+174:                            <% if date.to_date == day_after_tomorrow %>
+175:                                <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+176:                                <% break %>
+177:                            <% end %>
+178:                            <% end %>
+179:                            <% @daily_temperatures.each do |date, temps| %>
+180:                            <% if date.to_date == day_after_tomorrow %>
+181:                                <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
+182:                                <% break %>
+183:                            <% end %>
+184:                            <% end %>
+185:                            </div>
+186:                        </div>
+187:                    </div>
+188:                </div>
+189:                <div class="div3">
+190:                    <div class="calendar">
+191:                        <% status2 = "Frei" %>
+192:                        <% @events_meetingroom.each do |event| %>
+193:                        <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+194:                            <% status2 = "Besetzt" %>
+195:                        <% end %>
+196:                        <% end %>
+197:    
+198:                        <div class="title">
+199:                        <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+200:                        <% if status2 == "Besetzt" %>
+201:                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+202:                        <% else %>
+203:                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+204:                        <% end %>
+205:                        </div>
+206:    
+207:                        <% @events_meetingroom.first(1).each do |event| %>
+208:                        <div class="calendar-content-first">
+209:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+210:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+211:                        </div>
+212:                        <% end %>
+213:    
+214:                        <% @events_meetingroom.drop(1).first(3).each do |event| %>
+215:                        <div class="calendar-content">
+216:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+217:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+218:                        </div>
+219:                        <% end %>
+220:    
+221:                        <div id="status" style="display: none;"><%= status2 %></div>
+222:                    </div>
+223:                </div>
+224:                <div class="div4">
+225:                    <div class="calendar">
+226:                        <% status2 = "Frei" %>
+227:                        <% @events_schoolroom.each do |event| %>
+228:                        <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+229:                            <% status2 = "Besetzt" %>
+230:                        <% end %>
+231:                        <% end %>
+232:    
+233:                        <div class="title">
+234:                        <h2 class="bold">Schulungsraum - Veranstaltungen</h2>
+235:                        <% if status2 == "Besetzt" %>
+236:                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+237:                        <% else %>
+238:                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+239:                        <% end %>
+240:                        </div>
+241:    
+242:                        <% @events_schoolroom.first(1).each do |event| %>
+243:                        <div class="calendar-content-first">
+244:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+245:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+246:                        </div>
+247:                        <% end %>
+248:    
+249:                        <% @events_schoolroom.drop(1).first(3).each do |event| %>
+250:                        <div class="calendar-content">
+251:                            <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+252:                            <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
+253:                        </div>
+254:                        <% end %>
+255:    
+256:                        <div id="status" style="display: none;"><%= status2 %></div>
+257:                    </div>
+258:                </div>
+259:                <div class="div5">
+260:                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+261:                        <div class="progress-bar" id="daily-progress"></div>
+262:                    </div>
+263:                    
+264:                  <div class="message" id="message">
+265:                    <marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">
+266:                        Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+267:                    </marquee>
+268:                  </div>
+269:    
+270:                  <script>
+271:                    function updateMessage() {
+272:                        var currentDate = new Date();
+273:                        var currentHour = currentDate.getHours();
+274:                        var currentMinute = currentDate.getMinutes();
+275:                        var currentSecond = currentDate.getSeconds();
+276:    
+277:                        var messageDiv = document.getElementById("message");
+278:                        var status2 = document.getElementById('status').innerText;
+279:                        var messageContent = "";
+280:    
+281:                        if (currentMinute === 0 && currentSecond === 0) {
+282:                            if (currentHour >= 6 && currentHour < 9) {
+283:                                messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+284:                            } else if (currentHour >= 11 && currentHour < 13) {
+285:                                messageContent = "Guten Appetit und eine angenehme Pause!";
+286:                            } else if (currentHour >= 16 && currentHour < 19) {
+287:                                messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+288:                            } else {
+289:                                messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+290:                            }
+291:                            messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+292:                        }
+293:    
+294:                        if (status2 == "Besetzt") {
+295:                            messageContent = "Herzlich Willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
+296:                        }
+297:                    }
+298:    
+299:                    // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
+300:                    updateMessage();
+301:    
+302:                    // Aktualisiere die Nachricht jede volle Stunde
+303:                    setInterval(updateMessage, 1000);
+304:                    </script>
+305:    
+306:                    <script>
+307:                    function updateProgress() {
+308:                        const now = new Date();
+309:                        const startOfDay = new Date(now);
+310:                        startOfDay.setHours(7.30, 0, 0, 0); // Setzt die Startzeit auf 6 Uhr
+311:                        const endOfDay = new Date(now);
+312:                        endOfDay.setHours(17, 0, 0, 0); // Setzt die Endzeit auf 18 Uhr
+313:    
+314:                        // Berechne den Fortschritt in Prozent
+315:                        const totalMilliseconds = endOfDay - startOfDay;
+316:                        const currentMilliseconds = now - startOfDay;
+317:                        const progressPercent = (currentMilliseconds / totalMilliseconds) * 100;
+318:    
+319:                        // Setze die Breite der Fortschrittsleiste entsprechend
+320:                        const progressBar = document.getElementById("daily-progress");
+321:                        progressBar.style.width = progressPercent + "%";
+322:                    }
+323:    
+324:                    // Rufe die Funktion zum Aktualisieren alle 10 Sekunden auf (optional kannst du das Intervall anpassen)
+325:                    setInterval(updateProgress, 10000);
+326:                    </script>
+327:    
+328:    
+329:                </div>
+330:            </div>
+331:        </div>
+332:       </body>
+333:    </html>
+  
+app/views/articles/index.html.erb:153: syntax error, unexpected ',', expecting ')'
+app/views/articles/index.html.erb:153: syntax error, unexpected ',', expecting ')'
+app/views/articles/index.html.erb:153: syntax error, unexpected ',', expecting ')'
+app/views/articles/index.html.erb:153: syntax error, unexpected ',', expecting ')'
+Started GET "/" for ::1 at 2024-01-18 14:56:07 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 5175)
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | Allocations: 6269)
+Completed 200 OK in 414ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 44075)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 14:56:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 16:24:38 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2903)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3742)
+Completed 200 OK in 581ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 40958)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 16:24:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 16:54:39 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2904)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 3770)
+Completed 200 OK in 621ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 41018)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 16:54:39 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-18 17:33:43 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 5175)
+  Rendered layout layouts/application.html.erb (Duration: 9.3ms | Allocations: 6260)
+Completed 200 OK in 622ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 44046)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-18 17:33:44 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-19 06:11:14 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2877)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3716)
+Completed 200 OK in 787ms (Views: 6.6ms | ActiveRecord: 0.0ms | Allocations: 39874)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-19 06:11:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-19 06:41:16 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2878)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3696)
+Completed 200 OK in 605ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 39847)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-19 06:41:16 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-19 07:11:17 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2878)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 3738)
+Completed 200 OK in 896ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 39958)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-19 07:11:18 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-19 07:41:19 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2878)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 3702)
+Completed 200 OK in 1754ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 39912)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-19 07:41:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-19 08:11:23 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 30005ms (ActiveRecord: 0.0ms | Allocations: 857)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-20 15:06:37 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2813)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3673)
+Completed 200 OK in 965ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 39163)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-20 15:06:38 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-20 15:07:17 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 2814)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3659)
+Completed 200 OK in 807ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 39218)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-20 15:07:17 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-20 15:07:28 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 5538)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 8614)
+Completed 200 OK in 528ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 48942)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-20 15:07:29 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-20 15:07:39 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2814)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 3575)
+Completed 200 OK in 1835ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 39169)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-20 15:07:41 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-20 15:09:07 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 5088)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 6160)
+Completed 200 OK in 430ms (Views: 8.5ms | ActiveRecord: 0.0ms | Allocations: 42236)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-20 15:09:08 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  

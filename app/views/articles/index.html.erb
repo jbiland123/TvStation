@@ -60,7 +60,7 @@
         <div class="parent">
             <div class="div1">
                 <div class="news">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="8000">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
                         <div class="carousel-inner">
                             <% @rss_news.each_with_index do |item, index| %>
                             <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
@@ -124,7 +124,7 @@
                             legend: { display: false },
                             scales: {
                             xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
-                            yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 3)  + Math.abs(<%= @temperatures.min %>), fontColor: "transparent" }, gridLines: { display: false } }]
+                            yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 3)  + (Math.abs(<%= @temperatures.min %>) * 1.5), fontColor: "transparent" }, gridLines: { display: false } }]
                             }
                         }
                         });

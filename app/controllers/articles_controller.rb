@@ -56,7 +56,7 @@ class ArticlesController < ApplicationController
 
     @daily_weather_icons = daily_weather_icons
     
-    # Assuming your existing code to fetch and parse the RSS feed
+    
     rss_feed_url = 'https://www.srf.ch/news/bnf/rss/1646'
     rss_feed_response = HTTParty.get(rss_feed_url)
 
