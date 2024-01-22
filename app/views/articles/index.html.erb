@@ -242,14 +242,14 @@
 
                     <% @events_schoolroom.first(1).each do |event| %>
                     <div class="calendar-content-first">
-                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="left max-characters">Gebucht</p>
                         <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
                     </div>
                     <% end %>
 
                     <% @events_schoolroom.drop(1).first(3).each do |event| %>
                     <div class="calendar-content">
-                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="left max-characters">Gebucht</p>
                         <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
                     </div>
                     <% end %>
