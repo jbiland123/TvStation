@@ -83,7 +83,7 @@
                         <canvas id="myChart" class="weather-chart"></canvas>
                         
                         <script>
-                        const xValues = ["<%= @times_formatted[0] %>", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
+                        const xValues = ["Jetzt", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
                         const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
                        
                         Chart.plugins.register({
@@ -124,7 +124,7 @@
                             legend: { display: false },
                             scales: {
                             xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
-                            yAxes: [{ ticks: { min: <%= @temperatures.min %>, max: (<%= @temperatures.max %> * 3)  + (Math.abs(<%= @temperatures.min %>) * 1.5), fontColor: "transparent" }, gridLines: { display: false } }]
+                            yAxes: [{ ticks: { min: <%= @temperatures.min %> - 1, max: (<%= @temperatures.max %> * 3)  - (<%= @temperatures.min %> * 1.5) + 1, fontColor: "transparent" }, gridLines: { display: false } }]
                             }
                         }
                         });
@@ -133,7 +133,7 @@
                     <div class="weather">
                         <div class="inner-inner-parent">
                             <div class="div5">
-                                <p class="bold weather-date">Heute, <%= (Date.today).strftime('%b %d').gsub(/\w+/, &:capitalize) %></p>
+                                <p class="bold weather-date">Heute</p>
                                 <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
                                 <% @daily_temperatures.each do |date, temps| %>
                                     <% if date.to_date == Date.today %>
@@ -142,7 +142,7 @@
                                 <% end %>
                             </div>
                             <div class="div6">
-                                <p class="bold temp-heute"><%= @data["main"]["temp"] %>°</p>
+                                <p class="bold temp-heute"><%= @temperatures[0] %>°</p>
                                 <p class="kursiv"><%= @data["weather"].first["description"] %></p>
                                 <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
                             </div>
@@ -150,7 +150,7 @@
                     </div>
                     <div class="div3">
                         <div class="weatherprediction">
-                        <p class="bold weather-date"><%= (Date.today + 1).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+                        <p class="bold weather-date"><%= german_day_name (Date.today + 1) %></p>
                         <% tomorrow = Date.today + 1 %>
                         <% @daily_weather_icons.each do |date, icon| %>
                             <% if date.to_date == tomorrow %>
@@ -168,7 +168,7 @@
                     </div>
                     <div class="div4">
                         <div class="weatherprediction">
-                        <p class="bold weather-date"><%= (Date.today + 2).strftime('%A, %b %d').gsub(/\w+/, &:capitalize) %></p>
+                        <p class="bold weather-date"><%= german_day_name (Date.today + 2) %></p>
                         <% day_after_tomorrow = Date.today + 2 %>
                         <% @daily_weather_icons.each do |date, icon| %>
                         <% if date.to_date == day_after_tomorrow %>
@@ -206,14 +206,14 @@
 
                     <% @events_meetingroom.first(1).each do |event| %>
                     <div class="calendar-content-first">
-                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="left max-characters">Gebucht</p>
                         <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
                     </div>
                     <% end %>
 
                     <% @events_meetingroom.drop(1).first(3).each do |event| %>
                     <div class="calendar-content">
-                        <p class="left max-characters"><%= event[:summary].split("/").first.strip %></p>
+                        <p class="left max-characters">Gebucht</p>
                         <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
                     </div>
                     <% end %>

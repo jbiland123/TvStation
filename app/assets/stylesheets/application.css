@@ -90,7 +90,7 @@ body {
       
       .inner-inner-parent .div5 { grid-area: 1 / 1 / 2 / 2;
       text-align: center;
-      background-color: rgb(232, 242, 242);
+      background-color: rgb(207, 232, 232);
       border-top-left-radius: 8px;
       border-top-right-radius: 0;
       border-bottom-left-radius: 8px;
@@ -146,7 +146,7 @@ body {
   position: absolute;
   top: 10px; /* Adjust the top position as needed */
   right: 50px; /* Adjust the right position as needed */
-  max-width: 20%;
+  max-width: 10%;
 }
 
 .newsimg {
@@ -177,7 +177,7 @@ body {
 }
 
 .div5 {
-  background-color: rgb(207, 232, 232);
+  background-color: rgb(245, 245, 245);
 }
 
 .weatherprediction {
@@ -191,12 +191,12 @@ body {
 }
 
 .weatherImage {
-  margin-top: -10px;
+  margin-top: -15px;
   margin-bottom: 5px;
 }
 
 .weather-date {
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .temp-min-max {
@@ -229,7 +229,7 @@ body {
 }
 
 .calendar-content-first {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   display: flex;
   justify-content: space-between;
@@ -240,7 +240,7 @@ body {
 }
 
 .calendar-content {
-  font-size: 18px;
+  font-size: 21px;
   color: grey;
   display: flex;
   justify-content: space-between;
@@ -260,22 +260,13 @@ body {
 .message {
   font-size: 50px;
   white-space: nowrap;
+  background-color: rgb(245, 245, 245);
 }
 
 /* Set the background color of the progress bar */
 .progress-bar {
-  background-color: rgb(229, 231, 231); /* Change this to the desired background color */
-}
-
-/* Set the text color of the progress bar */
-.progress-bar {
-  color: #ffffff; /* Change this to the desired text color */
-}
-
-/* Set the progress bar's color at different stages */
-.progress-bar {
-  /* Color when width is less than or equal to 25% */
-  background-color: #ff0000; /* Change this to the desired color */
+  color: #ffffff; 
+  background-color: #ff0000; 
 }
 
 .max-characters {
