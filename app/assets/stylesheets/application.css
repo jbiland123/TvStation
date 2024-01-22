@@ -327,12 +327,6 @@ h3 {
   .verlauf {
     width: 100%;
   }
-
-  .weather-chart {
-    max-width: 900px;
-    top: -170px; /* Adjust the top position as needed */
-    right: 30px; /* Adjust the right position as needed */
-    }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1700px){
