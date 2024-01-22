@@ -142,9 +142,10 @@
                                 <% end %>
                             </div>
                             <div class="div6">
-                                <p class="bold temp-heute"><%= @temperatures[0] %>°</p>
-                                <p class="kursiv"><%= @data["weather"].first["description"] %></p>
-                                <p class="weatherinfo">Luftfeuchtigkeit: <%= @data["main"]["humidity"] %>%<br>Windstärke: <%= @data["wind"]["speed"] %> km/h</p>
+                                <p class="bold temp-heute"><%= @temperatures[0] %>° - <%= @data["weather"].first["description"] %></p>
+                                <img class="weatherinfo-icons-size" src="<%= asset_path("wind.png") %>" alt="">
+                                <img class="weatherinfo-icons-size" src="<%= asset_path("feuchtigkeit.png") %>" alt="">
+                                <p class="weatherinfo"><%= @data["wind"]["speed"] %> km/h &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= @data["main"]["humidity"] %>%</p>
                             </div>
                         </div>
                     </div>

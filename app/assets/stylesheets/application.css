@@ -88,19 +88,22 @@ body {
       grid-row-gap: 0px;
       }
       
-      .inner-inner-parent .div5 { grid-area: 1 / 1 / 2 / 2;
+      .inner-inner-parent .div5 { 
+      grid-area: 1 / 1 / 2 / 2;
       text-align: center;
       background-color: rgb(207, 232, 232);
       border-top-left-radius: 8px;
       border-top-right-radius: 0;
       border-bottom-left-radius: 8px;
       border-bottom-right-radius: 0; 
+      border-right: 2px solid rgb(207, 232, 232);
       padding-top: 5px;
-      width: 110%;
-      border-right: 2px solid rgb(207, 232, 232);}
-      .inner-inner-parent .div6 { grid-area: 1 / 2 / 2 / 4; 
+    }
+      .inner-inner-parent .div6 { 
+      grid-area: 1 / 2 / 2 / 4; 
       text-align: center;
-      font-size: 18px;}
+      padding-top: 5px;
+    }
 
 .div2,
 .news,
@@ -184,34 +187,38 @@ body {
   white-space: nowrap;
   border-radius: 10px;
   background-color:rgb(232, 242, 242) ;
-  padding: 5px 20px 5px 20px;
   margin-left: 15px;
   text-align: center;
   border: 2px solid rgb(207, 232, 232);
+  padding-top: 5px;
+}
+
+.weatherinfo-icons-size {
+  width: 20%;
+  margin-right: 20px;
+  margin-left: 30px;
+  margin-top: -10px;
+}
+
+.weatherinfo {
+  font-size: 20px;
+  margin-top: 15px;
 }
 
 .weatherImage {
-  margin-top: -15px;
-  margin-bottom: 5px;
+  margin-top: -20px;
 }
 
 .weather-date {
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .temp-min-max {
-  font-size: 19px;
-  margin-bottom: 0px;
+  font-size: 20px;
 }
 
 .temp-heute {
   font-size: 25px;
-}
-
-.kursiv {
-  font-style: italic;
-  font-size: 20px;
-  margin-top: -5px;
 }
 
 .calendar {
