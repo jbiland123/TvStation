@@ -55425,3 +55425,30 @@ Started GET "/css/Stylesheet.css" for ::1 at 2024-01-22 15:12:30 +0100
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started GET "/" for ::1 at 2024-01-22 15:19:37 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.4ms | Allocations: 2735)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 3572)
+Completed 200 OK in 862ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 38785)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-22 15:19:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-22 15:19:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 5384)
+  Rendered layout layouts/application.html.erb (Duration: 9.1ms | Allocations: 8463)
+Completed 200 OK in 453ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 48502)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-22 15:19:47 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
