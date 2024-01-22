@@ -169,7 +169,7 @@ body {
 .weather-chart {
   max-width: 900px;
   position: absolute;
-  top: -200px; /* Adjust the top position as needed */
+  top: -199px; /* Adjust the top position as needed */
   right: 30px; /* Adjust the right position as needed */
   }
 
@@ -330,7 +330,6 @@ h3 {
 
   .weather-chart {
     max-width: 900px;
-    position: absolute;
     top: -170px; /* Adjust the top position as needed */
     right: 30px; /* Adjust the right position as needed */
     }
