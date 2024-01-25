@@ -55999,3 +55999,182 @@ Started GET "/css/Stylesheet.css" for ::1 at 2024-01-25 14:29:51 +0100
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started GET "/" for ::1 at 2024-01-25 14:51:59 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.3ms | Allocations: 5493)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 8572)
+Completed 200 OK in 434ms (Views: 22.2ms | ActiveRecord: 0.0ms | Allocations: 50984)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-25 14:51:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-25 14:52:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.8ms | Allocations: 5493)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 8563)
+Completed 200 OK in 478ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 50951)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-25 14:52:10 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-25 15:22:10 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2860)
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | Allocations: 3712)
+Completed 200 OK in 847ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 41230)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-25 15:22:11 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-25 15:49:58 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2184)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:00 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 774)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:01 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 772)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:02 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 772)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:03 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 772)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:23 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2183)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:24 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 774)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:48 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 772)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:49 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 772)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:50 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 771)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:51 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 771)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:52 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 772)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 15:50:59 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 5493)
+  Rendered layout layouts/application.html.erb (Duration: 12.0ms | Allocations: 8578)
+Completed 200 OK in 425ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 50948)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-25 15:50:59 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-25 15:53:50 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 5493)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 8563)
+Completed 200 OK in 394ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 50925)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-25 15:53:51 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
