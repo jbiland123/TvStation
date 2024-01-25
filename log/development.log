@@ -56178,3 +56178,68 @@ Started GET "/css/Stylesheet.css" for ::1 at 2024-01-25 15:53:51 +0100
   
 ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
   
+Started GET "/" for ::1 at 2024-01-25 16:00:18 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.3ms | Allocations: 5494)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 8570)
+Completed 200 OK in 1871ms (Views: 9.0ms | ActiveRecord: 0.0ms | Allocations: 50953)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-25 16:00:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-25 16:00:32 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+Started GET "/" for ::1 at 2024-01-25 16:00:40 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 11.0ms | Allocations: 5494)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 8573)
+Completed 200 OK in 7489ms (Views: 15.7ms | ActiveRecord: 0.0ms | Allocations: 49605)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-25 16:00:48 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Completed 500 Internal Server Error in 60007ms (ActiveRecord: 0.0ms | Allocations: 106409)
+
+
+  
+Net::OpenTimeout (Failed to open TCP connection to api.openweathermap.org:443 (execution expired)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-01-25 16:01:36 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.2ms | Allocations: 5493)
+  Rendered layout layouts/application.html.erb (Duration: 9.6ms | Allocations: 8563)
+Completed 200 OK in 567ms (Views: 12.0ms | ActiveRecord: 0.0ms | Allocations: 50924)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-25 16:01:37 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
+Started GET "/" for ::1 at 2024-01-25 16:02:18 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.1ms | Allocations: 5493)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 8569)
+Completed 200 OK in 640ms (Views: 21.5ms | ActiveRecord: 0.0ms | Allocations: 50938)
+
+
+Started GET "/css/Stylesheet.css" for ::1 at 2024-01-25 16:02:19 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/css/Stylesheet.css"):
+  
