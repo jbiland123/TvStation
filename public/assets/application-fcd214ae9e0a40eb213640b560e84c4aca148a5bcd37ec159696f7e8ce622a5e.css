@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'Roboto';
-  src: url('/assets/fonts/Roboto-Regular.ttf') format('ttf'),
-       url('/public/assets/fonts/Roboto-Regular.ttf') format('ttf');
+  src: url(/assets/fonts/Roboto-Regular.ttf) format('ttf'),
+       url(/public/assets/fonts/Roboto-Regular.ttf) format('ttf');
   font-weight: normal;
   font-style: normal;
 }
@@ -169,7 +169,7 @@ body {
 .weather-chart {
   max-width: 900px;
   position: absolute;
-  top: -200px; /* Adjust the top position as needed */
+  top: -250px; /* Adjust the top position as needed */
   right: 30px; /* Adjust the right position as needed */
   }
 
@@ -208,6 +208,7 @@ body {
 
 .weatherImage {
   margin-top: -20px;
+  width: 70%;
 }
 
 .weather-date {
@@ -328,6 +329,19 @@ h3 {
   .verlauf {
     width: 100%;
   }
+
+  .div2 {
+    padding: 60px 20px 0px 20px;   /*chart verschieben*/
+  }
+  
+  .weather-chart {
+    top: -170px; /* Adjust the top position as needed */
+    right: 30px; /* Adjust the right position as needed */
+  }
+
+  .srf-image {
+    right: 50px; /* Adjust the right position as needed */
+  }
 }
 
 @media only screen and (min-width: 1600px) and (max-width: 1700px){
@@ -345,20 +359,6 @@ h3 {
 
   .verlauf {
     width: 100%;
-  }
-
-
-  .div2 {
-    padding: 60px 20px 0px 20px;   /*chart verschieben*/
-  }
-  
-  .weather-chart {
-    top: -170px; /* Adjust the top position as needed */
-    right: 30px; /* Adjust the right position as needed */
-  }
-
-  .srf-image {
-    right: 50px; /* Adjust the right position as needed */
   }
 }
 
