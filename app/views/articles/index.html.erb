@@ -20,7 +20,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
-      <title>TVStation</title>
+        <title>TVStation</title>
    </head>
 <body>
     <div class="header">
@@ -78,8 +78,7 @@
                 </div>
             </div>
             <div class="div2"> 
-                <div class="inner-parent">
-                    <div class="div1">
+                
                         <canvas id="myChart" class="weather-chart"></canvas>
                         
                         <script>
@@ -129,7 +128,7 @@
                         }
                         });
                         </script>
-                    </div>
+                <div class="inner-parent">
                     <div class="weather">
                         <div class="inner-inner-parent">
                             <div class="div5">
@@ -142,7 +141,7 @@
                                 <% end %>
                             </div>
                             <div class="div6">
-                                <p class="bold temp-heute"><%= @temperatures[0] %>° - <%= @data["weather"].first["description"] %></p>
+                                <p class="bold temp-heute"><%= @temperatures[0] %>°</p>
                                 <img class="weatherinfo-icons-size" src="<%= asset_path("wind.png") %>" alt="">
                                 <img class="weatherinfo-icons-size" src="<%= asset_path("feuchtigkeit.png") %>" alt="">
                                 <p class="weatherinfo"><%= @data["wind"]["speed"] %> km/h &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= @data["main"]["humidity"] %>%</p>
