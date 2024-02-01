@@ -8,7 +8,7 @@
 
 body {
   margin: 10px;
-  margin-top: 110px;
+  padding-top: 110px;
   background-color: rgb(245, 245, 245);
   font-family: 'Roboto', sans-serif;
 }
@@ -133,8 +133,11 @@ body {
 .div2 {
   background-color: white;
   border-radius: 10px;
-  padding: 75px 20px 15px 20px;   /*chart verschieben*/
-}
+  padding-top: 70px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;   /*chart verschieben*/
+  }
 
 .weather-chart {
   max-width: 900px;
@@ -178,7 +181,6 @@ body {
 
 .weatherinfo-icon {
   transform: scale(1);
-  margin-left: -10px;
 }
 
 .weatherinfo-font {
@@ -248,13 +250,11 @@ body {
 .message {
   font-size: 50px;
   white-space: nowrap;
-  background-color: rgb(245, 245, 245);
 }
 
-/* Set the background color of the progress bar */
 .progress-bar {
   color: #ffffff; 
-  background-color: #ff0000; 
+  background-color: #ff0000 !important;
 }
 
 .max-characters {
