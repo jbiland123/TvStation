@@ -60,80 +60,83 @@
         <div class="parent">
             <div class="div1">
                 <div class="news">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
-                        <div class="carousel-inner">
-                            <% @rss_news.each_with_index do |item, index| %>
-                            <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
-                                <div class="news-slide">
-                                <div class="image-container">
-                                    <img class="newsimg" src="<%= item[:image_src] %>" alt="Description Image">
-                                    <h3 class="overlay"><%= item[:title] %></h3>
-                                    <img class="srf-image" src="<%= asset_path("srfnews.png") %>">
+                    <% if Time.now.hour >= 20 %>
+                        <iframe src="https://free.oevplus.ch/monitor/?viewType=singleView&layout=1&showClock=true&showPerron=true&stationGroup1Title=Frenkendorf-F%C3%BCllinsdorf&station_1_id=85%3A22&station_1_name=Frenkendorf-F%C3%BCllinsdorf&station_1_quantity=5&station_1_group=1" width="100%" height="200%"></iframe>
+                    <% else %>
+                        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
+                            <div class="carousel-inner">
+                                <% @rss_news.each_with_index do |item, index| %>
+                                <div class="carousel-item <%= index == 0 ? 'active' : '' %>">
+                                    <div class="news-slide">
+                                    <div class="image-container">
+                                        <img class="newsimg" src="<%= item[:image_src] %>" alt="Description Image">
+                                        <h3 class="overlay"><%= item[:title] %></h3>
+                                        <img class="srf-image" src="<%= asset_path("srfnews.png") %>">
+                                    </div>
                                 </div>
                             </div>
+                            <% end %>
                         </div>
-                        <% end %>
-                    </div>
+                    <% end %>
                     </div>
                 </div>
             </div>
             <div class="div2"> 
+                <canvas id="myChart" class="weather-chart"></canvas>
                 
-                        <canvas id="myChart" class="weather-chart"></canvas>
-                        
-                        <script>
-                        const xValues = ["Jetzt", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
-                        const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
-                       
-                        Chart.plugins.register({
-                        afterDatasetsDraw: (chart) => {
-                            const ctx = chart.ctx;
-                            chart.data.datasets.forEach(({ data }, datasetIndex) => {
-                            const meta = chart.getDatasetMeta(datasetIndex);
-                            if (!meta.hidden) {
-                                meta.data.forEach(({ _model }, index) => {
-                                const value = data[index];
-                                const { x, y } = _model;
-                                ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
-                                ctx.font = '20px Arial';
-                                ctx.textAlign = 'center';
-                                ctx.fillText(value + "°", x, y - 12);
-                                });
-                            }
-                            });
-                        }
+                <script>
+                const xValues = ["Jetzt", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
+                const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
+                
+                Chart.plugins.register({
+                afterDatasetsDraw: (chart) => {
+                    const ctx = chart.ctx;
+                    chart.data.datasets.forEach(({ data }, datasetIndex) => {
+                    const meta = chart.getDatasetMeta(datasetIndex);
+                    if (!meta.hidden) {
+                        meta.data.forEach(({ _model }, index) => {
+                        const value = data[index];
+                        const { x, y } = _model;
+                        ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                        ctx.font = '20px Arial';
+                        ctx.textAlign = 'center';
+                        ctx.fillText(value + "°", x, y - 12);
                         });
+                    }
+                    });
+                }
+                });
 
-                        new Chart("myChart", {
-                        type: "line",
-                        data: {
-                            labels: xValues,
-                            datasets: [{
-                            fill: true,
-                            lineTension: 0.4,
-                            pointRadius: 3,
-                            pointBackgroundColor: 'rgb(244, 210, 86)',
-                            backgroundColor: 'rgb(252, 245, 217)',
-                            borderWidth: 2,
-                            borderColor: 'rgb(244, 210, 86)',
-                            data: yValues
-                            }]
-                        },
-                        options: {
-                            legend: { display: false },
-                            scales: {
-                            xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
-                            yAxes: [{ ticks: { min: <%= @temperatures.min %> - 1, max: (<%= @temperatures.max %> * 3)  - (<%= @temperatures.min %> * 1.5) + 1, fontColor: "transparent" }, gridLines: { display: false } }]
-                            }
-                        }
-                        });
-                        </script>
+                new Chart("myChart", {
+                type: "line",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                    fill: true,
+                    lineTension: 0.4,
+                    pointRadius: 3,
+                    pointBackgroundColor: 'rgb(244, 210, 86)',
+                    backgroundColor: 'rgb(252, 245, 217)',
+                    borderWidth: 2,
+                    borderColor: 'rgb(244, 210, 86)',
+                    data: yValues
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    scales: {
+                    xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
+                    yAxes: [{ ticks: { min: <%= @temperatures.min %> - 1, max: (<%= @temperatures.max %> * 3)  - (<%= @temperatures.min %> * 1.5) + 1, fontColor: "transparent" }, gridLines: { display: false } }]
+                    }
+                }
+                });
+                </script>
                 <div class="inner-parent">
                     <div class="weather">
                         <div class="inner-inner-parent">
                             <div class="div5">
                                 <p class="bold weather-date">Heute</p>
-                                <img class="weatherImage" src="<%= asset_path(@data["weather"].first["icon"] + ".png") %>" alt="">
+                                <img class="weatherImage" src="<%= asset_path("weathericons/" + @data["weather"].first["icon"] + ".svg") %>" alt="">
                                 <% @daily_temperatures.each do |date, temps| %>
                                     <% if date.to_date == Date.today %>
                                         <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
@@ -142,8 +145,8 @@
                             </div>
                             <div class="div6">
                                 <p class="bold temp-heute"><%= @temperatures[0] %>°</p>
-                                <img class="weatherinfo-icons-size" src="<%= asset_path("wind.png") %>" alt="">
-                                <img class="weatherinfo-icons-size" src="<%= asset_path("feuchtigkeit.png") %>" alt="">
+                                <img class="weatherinfo-icons-size" src="<%= asset_path("weathericons/humidity.svg") %>" alt="">
+                                <img class="weatherinfo-icons-size" src="<%= asset_path("weathericons/windstrength.svg") %>" alt="">
                                 <p class="weatherinfo"><%= @data["wind"]["speed"] %> km/h &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= @data["main"]["humidity"] %>%</p>
                             </div>
                         </div>
@@ -154,7 +157,7 @@
                         <% tomorrow = Date.today + 1 %>
                         <% @daily_weather_icons.each do |date, icon| %>
                             <% if date.to_date == tomorrow %>
-                                <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+                                <img class="weatherImage" src="<%= asset_path("weathericons/" + icon + ".svg") %>" alt="">
                                 <% break %>
                             <% end %>
                         <% end %>
@@ -172,7 +175,7 @@
                         <% day_after_tomorrow = Date.today + 2 %>
                         <% @daily_weather_icons.each do |date, icon| %>
                         <% if date.to_date == day_after_tomorrow %>
-                            <img class="weatherImage" src="<%= asset_path(icon + ".png") %>" alt="">
+                            <img class="weatherImage" src="<%= asset_path("weathericons/" + icon + ".svg")  %>" alt="">
                             <% break %>
                         <% end %>
                         <% end %>
@@ -190,7 +193,7 @@
                 <div class="calendar">
                     <% status2 = "Frei" %>
                     <% @events_meetingroom.each do |event| %>
-                    <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+                    <% if event[:dtstart] >= Time.now && Time.now <= event[:dtend] %>
                         <% status2 = "Besetzt" %>
                     <% end %>
                     <% end %>
@@ -225,7 +228,7 @@
                 <div class="calendar">
                     <% status2 = "Frei" %>
                     <% @events_schoolroom.each do |event| %>
-                    <% if event[:dtstart] <= Time.now && Time.now <= event[:dtend] %>
+                    <% if event[:dtstart] >= Time.now && Time.now <= event[:dtend] %>
                         <% status2 = "Besetzt" %>
                     <% end %>
                     <% end %>

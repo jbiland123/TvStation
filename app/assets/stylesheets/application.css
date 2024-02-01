@@ -116,7 +116,7 @@ body {
 .news {
   background-color: white;
   border-radius: 10px;
-  padding: 5px 20px 5px 20px;
+  padding: 15px 20px 5px 20px;
   margin: auto;
   width: 100%;
   height: 100%;
@@ -163,18 +163,18 @@ body {
 .div2 {
   background-color: white;
   border-radius: 10px;
-  padding: 60px 20px 10px 20px;   /*chart verschieben*/
+  padding: 75px 20px 15px 20px;   /*chart verschieben*/
 }
 
 .weather-chart {
   max-width: 900px;
   position: absolute;
-  top: -210px; /* Adjust the top position as needed */
+  top: -200px; /* Adjust the top position as needed */
   right: 30px; /* Adjust the right position as needed */
   }
 
 .weather {
-  background-color: rgb(232, 242, 242);
+  background-color: rgb(207, 232, 232);
   border-radius: 10px;
   border: 2px solid rgb(207, 232, 232);
 }
@@ -194,7 +194,7 @@ body {
 }
 
 .weatherinfo-icons-size {
-  width: 21%;
+  transform: scale(1.5);
   margin-right: 20px;
   margin-left: 30px;
   margin-top: -10px;
@@ -346,14 +346,9 @@ h3 {
   .verlauf {
     width: 100%;
   }
-
-
-  .div2 {
-    padding: 60px 20px 0px 20px;   /*chart verschieben*/
-  }
   
   .weather-chart {
-    top: -170px; /* Adjust the top position as needed */
+    top: -160px; /* Adjust the top position as needed */
     right: 30px; /* Adjust the right position as needed */
   }
 
