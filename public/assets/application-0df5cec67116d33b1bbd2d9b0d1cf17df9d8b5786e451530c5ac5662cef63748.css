@@ -189,12 +189,6 @@ body {
   border: 2px solid rgb(207, 232, 232);
 }
 
-.weatherinfo-icons-size {
-  width: 20%;
-  margin-right: 30px;
-  margin-left: 20px;
-}
-
 .weatherinfo {
   font-size: 20px;
   margin-right: 20px;

@@ -133,23 +133,28 @@
                 });
                 </script>
                 <div class="inner-parent">
-                    <div class="weather">
-                        <div class="inner-inner-parent">
-                            <div class="div5">
-                                <p class="bold weather-date">Heute</p>
-                                <img class="weatherImage" src="<%= asset_path("weathericons/" + @data["weather"].first["icon"] + ".svg") %>" alt="">
-                                <% @daily_temperatures.each do |date, temps| %>
-                                    <% if date.to_date == Date.today %>
-                                        <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
-                                    <% end %>
+                    <div class="divweather">
+                        <div class="section1">
+                            <p class="bold weather-date">Heute</p>
+                            <img class="weatherImage" src="<%= asset_path("weathericons/" + @data["weather"].first["icon"] + ".svg") %>" alt="">
+                            <% @daily_temperatures.each do |date, temps| %>
+                                <% if date.to_date == Date.today %>
+                                    <p class="temp-min-max"><%= temps[:max] %>° | <%= temps[:min] %>°</p>
                                 <% end %>
+                            <% end %>
+                        </div>
+                        <div class="section2">
+                            <div class="weather-info">
+                                <img class="weatherinfo-icon" src="<%= asset_path("weathericons/humidity.svg") %>" alt="">
+                                <p class="weatherinfo-font"><%= @data["main"]["humidity"] %> %</p>
                             </div>
-                            <div class="div6">
-                                <p class="bold temp-heute"><%= @temperatures[0] %>°</p>
-                                <img class="weatherinfo-icons-size" src="<%= asset_path("weathericons/humidity.svg") %>" alt="">
-                                <img class="weatherinfo-icons-size" src="<%= asset_path("weathericons/windstrength.svg") %>" alt="">
-                                <p class="weatherinfo"><%= @data["wind"]["speed"] %> km/h &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= @data["main"]["humidity"] %>%</p>
+                            <div class="weather-info">
+                                <img class="weatherinfo-icon" src="<%= asset_path("weathericons/windstrength.svg") %>" alt="">
+                                <p class="weatherinfo-font"><%= @data["wind"]["speed"] %> km/h</p>
                             </div>
+                        </div>
+                        <div class="section3">
+                            <p class="bold temp-heute"><%= @temperatures[0] %>°</p>
                         </div>
                     </div>
                     <div class="div3">
