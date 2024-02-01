@@ -60492,3 +60492,149 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 563ms (Views: 13.1ms | ActiveRecord: 0.0ms | Allocations: 49870)
 
 
+Started GET "/" for ::1 at 2024-02-01 15:33:03 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2695)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 3534)
+Completed 200 OK in 568ms (Views: 3.1ms | ActiveRecord: 0.0ms | Allocations: 40093)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:38:48 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.5ms | Allocations: 3237)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 4316)
+Completed 200 OK in 455ms (Views: 8.0ms | ActiveRecord: 0.0ms | Allocations: 41397)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:40:32 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3679)
+  Rendered layout layouts/application.html.erb (Duration: 8.1ms | Allocations: 6755)
+Completed 200 OK in 547ms (Views: 10.8ms | ActiveRecord: 0.0ms | Allocations: 48159)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:43:02 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 3236)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 4341)
+Completed 200 OK in 465ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 41476)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:44:53 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 3236)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 4330)
+Completed 200 OK in 580ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 41474)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:45:07 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 3238)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 4323)
+Completed 200 OK in 607ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 41452)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:45:14 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3243)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 4322)
+Completed 200 OK in 492ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 41483)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:45:19 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 3241)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 4358)
+Completed 200 OK in 554ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 41521)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:45:24 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 3235)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4310)
+Completed 200 OK in 437ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 41459)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:45:34 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 984)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 1823)
+Completed 200 OK in 421ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 38330)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:45:36 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 984)
+  Rendered layout layouts/application.html.erb (Duration: 1.3ms | Allocations: 1805)
+Completed 200 OK in 506ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 38375)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:46:27 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.0ms | Allocations: 3680)
+  Rendered layout layouts/application.html.erb (Duration: 7.9ms | Allocations: 6747)
+Completed 200 OK in 401ms (Views: 10.4ms | ActiveRecord: 0.0ms | Allocations: 48065)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:47:17 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3217)
+  Rendered layout layouts/application.html.erb (Duration: 5.6ms | Allocations: 4304)
+Completed 200 OK in 508ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 41429)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:47:24 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.2ms | Allocations: 3223)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4341)
+Completed 200 OK in 429ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 41482)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:47:31 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3237)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 4310)
+Completed 200 OK in 463ms (Views: 6.5ms | ActiveRecord: 0.0ms | Allocations: 41455)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:48:14 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.1ms | Allocations: 4941)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 6023)
+Completed 200 OK in 438ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 43161)
+
+
