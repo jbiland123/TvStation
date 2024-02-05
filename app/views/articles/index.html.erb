@@ -59,7 +59,7 @@
             <div class="div1">
                 <div class="news">
                     <% if Time.now.hour >= 16 && Time.now.hour < 20 %>
-                        <iframe class="iframe" src="https://free.oevplus.ch/monitor/?viewType=singleView&layout=1&showClock=false&showPerron=true&stationGroup1Title=Frenkendorf-F%C3%BCllinsdorf&station_1_id=85%3A22&station_1_name=Frenkendorf-F%C3%BCllinsdorf&station_1_quantity=5&station_1_group=1" width="100%" height="415px"></iframe>
+                        <iframe class="iframe" src="https://free.oevplus.ch/monitor/?viewType=singleView&layout=1&showClock=false&showPerron=true&stationGroup1Title=Frenkendorf-F%C3%BCllinsdorf%2C%20Bhf&station_1_id=85%3A89401&station_1_name=Frenkendorf-F%C3%BCllinsdorf%2C%20Bhf&station_1_quantity=5&station_1_group=1&station_2_id=85%3A22&station_2_name=Frenkendorf-F%C3%BCllinsdorf&station_2_quantity=5&station_2_group=1" width="100%" height="415px"></iframe>
                     <% else %>
                         <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel" data-interval="10000">
                             <div class="carousel-inner">
@@ -194,16 +194,16 @@
             </div>
             <div class="div3">
                 <div class="calendar">
-                    <% status2 = "Frei" %>
+                    <% status1 = "Frei" %>
                     <% @events_meetingroom.each do |event| %>
                     <% if event[:dtstart] >= Time.now && Time.now <= event[:dtend] %>
-                        <% status2 = "Besetzt" %>
+                        <% status1 = "Besetzt" %>
                     <% end %>
                     <% end %>
 
                     <div class="title">
                     <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
-                    <% if status2 == "Besetzt" %>
+                    <% if status1 == "Besetzt" %>
                         <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
                     <% else %>
                         <img class="size" src="<%= asset_path("free.png") %>" alt="">
@@ -223,8 +223,6 @@
                         <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
                     </div>
                     <% end %>
-
-                    <div id="status" style="display: none;"><%= status2 %></div>
                 </div>
             </div>
             <div class="div4">
@@ -258,8 +256,6 @@
                         <p class="right"><%= german_day_name(event[:dtstart]) %>, <%= event[:dtstart].strftime("%d") %>. <%= german_month_name(event[:dtstart]) %> | <%= event[:dtstart].strftime("%H:%M") %> - <%= event[:dtend].strftime("%H:%M") %></p>
                     </div>
                     <% end %>
-
-                    <div id="status" style="display: none;"><%= status2 %></div>
                 </div>
             </div>
             <div class="div5">
