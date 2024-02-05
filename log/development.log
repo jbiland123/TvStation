@@ -60638,3 +60638,86 @@ Processing by ArticlesController#index as HTML
 Completed 200 OK in 438ms (Views: 6.7ms | ActiveRecord: 0.0ms | Allocations: 43161)
 
 
+Started GET "/" for ::1 at 2024-02-01 15:49:24 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 3539)
+Completed 200 OK in 480ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 40034)
+
+
+Started GET "/" for ::1 at 2024-02-01 15:49:27 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 2694)
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | Allocations: 3524)
+Completed 200 OK in 525ms (Views: 2.6ms | ActiveRecord: 0.0ms | Allocations: 40084)
+
+
+Started GET "/" for ::1 at 2024-02-01 18:38:30 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 3.2ms | Allocations: 3238)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 4328)
+Completed 200 OK in 675ms (Views: 6.0ms | ActiveRecord: 0.0ms | Allocations: 41036)
+
+
+Started GET "/" for ::1 at 2024-02-01 18:54:18 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 984)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1838)
+Completed 200 OK in 599ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 37965)
+
+
+Started GET "/" for ::1 at 2024-02-01 19:09:19 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 984)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1838)
+Completed 200 OK in 487ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 37953)
+
+
+Started GET "/" for ::1 at 2024-02-01 19:33:51 +0100
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 984)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1817)
+Completed 200 OK in 581ms (Views: 3.6ms | ActiveRecord: 0.0ms | Allocations: 37939)
+
+
+Started GET "/" for ::1 at 2024-02-02 07:45:54 +0100
+Processing by ArticlesController#index as HTML
+Completed 500 Internal Server Error in 2701ms (ActiveRecord: 0.0ms | Allocations: 810)
+
+
+  
+Socket::ResolutionError (Failed to open TCP connection to api.openweathermap.org:443 (getaddrinfo: nodename nor servname provided, or not known)):
+  
+app/controllers/articles_controller.rb:13:in `index'
+Started GET "/" for ::1 at 2024-02-05 11:07:58 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 5489)
+  Rendered layout layouts/application.html.erb (Duration: 8.8ms | Allocations: 8664)
+Completed 200 OK in 549ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 51403)
+
+
+Started GET "/" for ::1 at 2024-02-05 11:08:37 +0100
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ArticlesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering articles/index.html.erb within layouts/application
+  Rendered articles/index.html.erb within layouts/application (Duration: 5.0ms | Allocations: 5488)
+  Rendered layout layouts/application.html.erb (Duration: 9.0ms | Allocations: 8660)
+Completed 200 OK in 574ms (Views: 11.6ms | ActiveRecord: 0.0ms | Allocations: 51401)
+
+
