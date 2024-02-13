@@ -196,18 +196,20 @@
                 <div class="calendar">
                     <% status1 = "Frei" %>
                     <% @events_meetingroom.each do |event| %>
-                    <% if event[:dtstart] >= Time.now && Time.now <= event[:dtend] %>
-                        <% status1 = "Besetzt" %>
-                    <% end %>
+                        <% if event[:dtstart] <= Time.now + 1.hour  && Time.now + 1.hour  <= event[:dtend] %>
+                            <% status1 = "Besetzt" %>
+                            <% puts "Raum besetzt" %>
+                        <% end %>
+                        <% puts  event[:dtstart], event[:dtend] %>
                     <% end %>
 
                     <div class="title">
-                    <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
-                    <% if status1 == "Besetzt" %>
-                        <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
-                    <% else %>
-                        <img class="size" src="<%= asset_path("free.png") %>" alt="">
-                    <% end %>
+                        <h2 class="bold">Sitzungszimmer 310 - Konferenzen</h2>
+                        <% if status1 == "Besetzt" %>
+                            <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
+                        <% else %>
+                            <img class="size" src="<%= asset_path("free.png") %>" alt="">
+                        <% end %>
                     </div>
 
                     <% @events_meetingroom.first(1).each do |event| %>
@@ -229,13 +231,14 @@
                 <div class="calendar">
                     <% status2 = "Frei" %>
                     <% @events_schoolroom.each do |event| %>
-                    <% if event[:dtstart] >= Time.now && Time.now <= event[:dtend] %>
-                        <% status2 = "Besetzt" %>
-                    <% end %>
+                        <% if event[:dtstart] <= Time.now + 1.hour  && Time.now + 1.hour <= event[:dtend] %>
+                            <% status2 = "Besetzt" %>
+                        <% end %>
                     <% end %>
 
                     <div class="title">
                     <h2 class="bold">Schulungsraum - Veranstaltungen</h2>
+                    <div id="status" data-status="<%= status2 %>"></div>
                     <% if status2 == "Besetzt" %>
                         <img class="size" src="<%= asset_path("occupied.png") %>" alt="">
                     <% else %>
@@ -277,10 +280,12 @@
                     var currentSecond = currentDate.getSeconds();
 
                     var messageDiv = document.getElementById("message");
-                    var status2 = document.getElementById('status').innerText;
                     var messageContent = "";
+                    var status2 = document.getElementById('status').getAttribute('data-status');
 
-                    if (currentMinute === 0 && currentSecond === 0) {
+                     if (status2 == "Besetzt") {
+                        messageContent = "Herzlich Willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
+                    } else if (currentMinute === 0 && currentSecond === 0) {
                         if (currentHour >= 6 && currentHour < 9) {
                             messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
                         } else if (currentHour >= 11 && currentHour < 13) {
@@ -291,10 +296,6 @@
                             messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
                         }
                         messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
-                    }
-
-                    if (status2 == "Besetzt") {
-                        messageContent = "Herzlich Willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
                     }
                 }
 
