@@ -81,54 +81,6 @@
             </div>
             <div class="div2"> 
                 <canvas id="myChart" class="weather-chart"></canvas>
-                
-                <script>
-                const xValues = ["Jetzt", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
-                const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
-                
-                Chart.plugins.register({
-                afterDatasetsDraw: (chart) => {
-                    const ctx = chart.ctx;
-                    chart.data.datasets.forEach(({ data }, datasetIndex) => {
-                    const meta = chart.getDatasetMeta(datasetIndex);
-                    if (!meta.hidden) {
-                        meta.data.forEach(({ _model }, index) => {
-                        const value = data[index];
-                        const { x, y } = _model;
-                        ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
-                        ctx.font = '20px Arial';
-                        ctx.textAlign = 'center';
-                        ctx.fillText(value + "°", x, y - 12);
-                        });
-                    }
-                    });
-                }
-                });
-
-                new Chart("myChart", {
-                type: "line",
-                data: {
-                    labels: xValues,
-                    datasets: [{
-                    fill: true,
-                    lineTension: 0.4,
-                    pointRadius: 3,
-                    pointBackgroundColor: 'rgb(244, 210, 86)',
-                    backgroundColor: 'rgb(252, 245, 217)',
-                    borderWidth: 2,
-                    borderColor: 'rgb(244, 210, 86)',
-                    data: yValues
-                    }]
-                },
-                options: {
-                    legend: { display: false },
-                    scales: {
-                    xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
-                    yAxes: [{ ticks: { min: <%= @temperatures.min %> - 1, max: (<%= @temperatures.max %> * 3)  - (<%= @temperatures.min %> * 1.5) + 1, fontColor: "transparent" }, gridLines: { display: false } }]
-                    }
-                }
-                });
-                </script>
                 <div class="inner-parent">
                     <div class="divweather">
                         <div class="section1">
@@ -198,9 +150,7 @@
                     <% @events_meetingroom.each do |event| %>
                         <% if event[:dtstart] <= Time.now + 1.hour  && Time.now + 1.hour  <= event[:dtend] %>
                             <% status1 = "Besetzt" %>
-                            <% puts "Raum besetzt" %>
                         <% end %>
-                        <% puts  event[:dtstart], event[:dtend] %>
                     <% end %>
 
                     <div class="title">
@@ -267,44 +217,41 @@
                 </div>
                 
               <div class="message" id="message">
-                <marquee behavior="scroll" direction="left" scrollamount="5" onfinish="updateMessage()">
-                    Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!
+                <marquee behavior="scroll" direction="left" scrollamount="5">
+                    Herzlich willkommen bei der Zentralen Informatik an der Frenkendörferstrasse 17 in Liestal!
                 </marquee>
               </div>
+              
+                <script>
+                    function updateMessage() {
+                        var messageElement = document.getElementById("message");
+                        var currentDate = new Date();
+                        var currentDay = currentDate.getDay();
+                        var currentWeek = Math.ceil(currentDate.getDate() / 7); // Welche Woche im Monat?
+                        var messageContent;
 
-              <script>
-                function updateMessage() {
-                    var currentDate = new Date();
-                    var currentHour = currentDate.getHours();
-                    var currentMinute = currentDate.getMinutes();
-                    var currentSecond = currentDate.getSeconds();
-
-                    var messageDiv = document.getElementById("message");
-                    var messageContent = "";
-                    var status2 = document.getElementById('status').getAttribute('data-status');
-
-                     if (status2 == "Besetzt") {
-                        messageContent = "Herzlich Willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
-                    } else if (currentMinute === 0 && currentSecond === 0) {
-                        if (currentHour >= 6 && currentHour < 9) {
-                            messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
-                        } else if (currentHour >= 11 && currentHour < 13) {
-                            messageContent = "Guten Appetit und eine angenehme Pause!";
-                        } else if (currentHour >= 16 && currentHour < 19) {
-                            messageContent = "Einen schönen Feierabend! Erhole dich gut und bis morgen!";
+                        if (currentDay === 5 && (currentWeek === 1 || currentWeek === 3)) { // 5 entspricht Freitag
+                            messageContent = "Herzlich Willkommen bei der Zentralen Informatik an der Frenkendörferstrasse 17 in Liestal! Bitte nehmen Sie Platz und warten Sie hier für Ihre Theorieprüfung. Sie werden in Kürze abgeholt. Vielen Dank und viel Glück!";
                         } else {
-                            messageContent = "Herzlich willkommen bei der Zentralen Informatik, Frenkendörferstrasse 17 in Liestal!";
+                            var currentTime = currentDate.getHours();
+
+                            if (currentTime >= 6 && currentTime < 9) {
+                                messageContent = "Guten Morgen und herzlich willkommen bei der Zentralen Informatik an der Frenkendörferstrasse 17 in Liestal!";
+                            } else if (currentTime >= 11 && currentTime < 13) {
+                                messageContent = "Guten Appetit und eine angenehme Pause!";
+                            } else if (currentTime >= 16 && currentTime < 18) {
+                                messageContent = "Einen schönen Feierabend! Erhole dich gut!";
+                            } else {
+                                messageContent = "Herzlich willkommen bei der Zentralen Informatik an der Frenkendörferstrasse 17 in Liestal!";
+                            }
                         }
-                        messageDiv.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
+
+                        messageElement.innerHTML = '<marquee behavior="scroll" direction="left" scrollamount="5">' + messageContent + '</marquee>';
                     }
-                }
-
-                // Rufe die Funktion einmal auf, um die Nachricht zu initialisieren
-                updateMessage();
-
-                // Aktualisiere die Nachricht jede volle Stunde
-                setInterval(updateMessage, 1000);
+                    updateMessage();
+                    setInterval(updateMessage, 1800000); 
                 </script>
+
 
                 <script>
                 function updateProgress() {
@@ -329,6 +276,53 @@
                 </script>
 
 
+                <script>
+                const xValues = ["Jetzt", "<%= @times_formatted[1] %>", "<%= @times_formatted[2] %>", "<%= @times_formatted[3] %>", "<%= @times_formatted[4] %>"];
+                const yValues = ["<%= @temperatures[0] %>", "<%= @temperatures[1] %>", "<%= @temperatures[2] %>", "<%= @temperatures[3] %>", "<%= @temperatures[4] %>"];
+                
+                Chart.plugins.register({
+                afterDatasetsDraw: (chart) => {
+                    const ctx = chart.ctx;
+                    chart.data.datasets.forEach(({ data }, datasetIndex) => {
+                    const meta = chart.getDatasetMeta(datasetIndex);
+                    if (!meta.hidden) {
+                        meta.data.forEach(({ _model }, index) => {
+                        const value = data[index];
+                        const { x, y } = _model;
+                        ctx.fillStyle = 'rgba(0, 0, 0, 0.7)';
+                        ctx.font = '20px Arial';
+                        ctx.textAlign = 'center';
+                        ctx.fillText(value + "°", x, y - 12);
+                        });
+                    }
+                    });
+                }
+                });
+
+                new Chart("myChart", {
+                type: "line",
+                data: {
+                    labels: xValues,
+                    datasets: [{
+                    fill: true,
+                    lineTension: 0.4,
+                    pointRadius: 3,
+                    pointBackgroundColor: 'rgb(244, 210, 86)',
+                    backgroundColor: 'rgb(252, 245, 217)',
+                    borderWidth: 2,
+                    borderColor: 'rgb(244, 210, 86)',
+                    data: yValues
+                    }]
+                },
+                options: {
+                    legend: { display: false },
+                    scales: {
+                    xAxes: [{ gridLines: { display: false }, ticks: { fontSize: 20}}],
+                    yAxes: [{ ticks: { min: <%= @temperatures.min %> - 1, max: (<%= @temperatures.max %> * 3)  - (<%= @temperatures.min %> * 1.5) + 1, fontColor: "transparent" }, gridLines: { display: false } }]
+                    }
+                }
+                });
+                </script>
             </div>
         </div>
     </div>
