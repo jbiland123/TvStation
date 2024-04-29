@@ -1,0 +1,39 @@
+W, [2024-04-29T08:12:26.618001 #13635]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2024-04-29T08:12:26.663091 #13635]  INFO -- : Migrating to CreateUploadedFiles (20240108134400)
+W, [2024-04-29T08:16:19.858125 #14157]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+E, [2024-04-29T08:16:21.732896 #14157] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 0.0.0.0:3000
+E, [2024-04-29T08:16:21.774918 #14157] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 0.0.0.0:3000
+W, [2024-04-29T08:17:23.665814 #14332]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+W, [2024-04-29T08:17:48.893384 #14423]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+W, [2024-04-29T08:21:53.737221 #15011]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+W, [2024-04-29T08:22:11.972547 #15064]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+E, [2024-04-29T08:22:22.900065 #15064] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 127.0.0.1:3000
+E, [2024-04-29T08:22:22.938018 #15064] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 127.0.0.1:3000
+E, [2024-04-29T08:22:28.117201 #15064] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 127.0.0.1:3000
+E, [2024-04-29T08:22:28.635721 #15064] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 127.0.0.1:3000
+E, [2024-04-29T08:22:28.799455 #15064] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 127.0.0.1:3000
+E, [2024-04-29T08:22:29.004177 #15064] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 127.0.0.1:3000
+E, [2024-04-29T08:22:29.226233 #15064] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 127.0.0.1:3000
+E, [2024-04-29T08:22:35.764678 #15064] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: localhost:3000
+E, [2024-04-29T08:22:35.801400 #15064] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: localhost:3000
+E, [2024-04-29T08:22:45.258538 #15064] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 0.0.0.0:3000
+E, [2024-04-29T08:22:50.970801 #15064] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: 0.0.0.0:3000
+W, [2024-04-29T08:23:42.917220 #15488]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+E, [2024-04-29T08:23:49.855201 #15488] ERROR -- : [ActionDispatch::HostAuthorization::DefaultResponseApp] Blocked hosts: localhost:3000
+W, [2024-04-29T08:25:11.275052 #15756]  WARN -- : You are running SQLite in production, this is generally not recommended. You can disable this warning by setting "config.active_record.sqlite3_production_warning=false".
+I, [2024-04-29T08:25:17.701305 #15756]  INFO -- : [dc5ddab0-9ca7-4dd8-bc2b-6a7f0dd522e1] Started GET "/" for 127.0.0.1 at 2024-04-29 08:25:17 +0200
+I, [2024-04-29T08:25:17.702568 #15756]  INFO -- : [dc5ddab0-9ca7-4dd8-bc2b-6a7f0dd522e1] Processing by ArticlesController#index as HTML
+I, [2024-04-29T08:25:18.631845 #15756]  INFO -- : [dc5ddab0-9ca7-4dd8-bc2b-6a7f0dd522e1]   Rendered articles/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 5465)
+I, [2024-04-29T08:25:18.632051 #15756]  INFO -- : [dc5ddab0-9ca7-4dd8-bc2b-6a7f0dd522e1]   Rendered layout layouts/application.html.erb (Duration: 4.1ms | Allocations: 5619)
+I, [2024-04-29T08:25:18.632191 #15756]  INFO -- : [dc5ddab0-9ca7-4dd8-bc2b-6a7f0dd522e1] Completed 200 OK in 930ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 41239)
+I, [2024-04-29T08:25:18.684207 #15756]  INFO -- : [a0e083b4-db21-4f37-9114-45aa0e3db37d] Started GET "/assets/application-a6faeca55474a9a69601adbc24b569769e7bbf640cb37aa534fc25cf29cc215b.css" for 127.0.0.1 at 2024-04-29 08:25:18 +0200
+I, [2024-04-29T08:25:19.096039 #15756]  INFO -- : [81f6e0be-c8e0-4a71-9197-e6cda225830f] Started GET "/assets/Baselland-1f4d42e16cad3f460d38126c1edd373c39082195d3ae567336d0ead90789730e.png" for 127.0.0.1 at 2024-04-29 08:25:19 +0200
+I, [2024-04-29T08:25:19.097303 #15756]  INFO -- : [ec38d738-1826-4c96-9481-df07f723b1b8] Started GET "/assets/weathericons/windstrength-4dfe1a992df5502fab98e3b91a0e54b830e66e958af615a4fd857e66bb0d1c96.svg" for 127.0.0.1 at 2024-04-29 08:25:19 +0200
+I, [2024-04-29T08:25:19.098013 #15756]  INFO -- : [3baabedf-a944-48c1-b04c-26cfab908c35] Started GET "/assets/free-a4d4018b46266fa678982c49d270b058e71be42ef27c336c3c91020a2f8e8812.png" for 127.0.0.1 at 2024-04-29 08:25:19 +0200
+I, [2024-04-29T08:25:19.098656 #15756]  INFO -- : [55c871fd-545e-43ab-9960-541820b72455] Started GET "/assets/weathericons/humidity-98242b2470a76373df26b49412b5ceaceda4ce937245867e0ddf043013561283.svg" for 127.0.0.1 at 2024-04-29 08:25:19 +0200
+I, [2024-04-29T08:25:19.099437 #15756]  INFO -- : [26a5803a-79dd-4160-93e4-e0deacb304d7] Started GET "/assets/weathericons/04d-b90da7d7b6803557f55a36fefbf08b96ae2427b4ac20349aa7e02bca6d554b56.svg" for 127.0.0.1 at 2024-04-29 08:25:19 +0200
+I, [2024-04-29T08:25:19.304438 #15756]  INFO -- : [eaee2f8f-56f0-40de-9c48-f899c40176d7] Started GET "/assets/srfnews-b0646157d337181f5a3ef9b98df1b64df8efda6bc2b528b2ee2f31d0dac2af7d.png" for 127.0.0.1 at 2024-04-29 08:25:19 +0200
+I, [2024-04-29T08:25:19.387205 #15756]  INFO -- : [6530aeb8-f002-4866-b56a-147b3f3fcd21] Started GET "/Bilder/Logo.png" for 127.0.0.1 at 2024-04-29 08:25:19 +0200
+F, [2024-04-29T08:25:19.387637 #15756] FATAL -- : [6530aeb8-f002-4866-b56a-147b3f3fcd21]   
+[6530aeb8-f002-4866-b56a-147b3f3fcd21] ActionController::RoutingError (No route matches [GET] "/Bilder/Logo.png"):
+[6530aeb8-f002-4866-b56a-147b3f3fcd21]   
