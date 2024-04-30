@@ -13,7 +13,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Full error reports are disabled and caching is turned on.
-  config.consider_all_requests_local       = false
+  config.consider_all_requests_local       = :debug
   config.action_controller.perform_caching = true
 
   # Ensures that a master key has been made available in either ENV["RAILS_MASTER_KEY"]
@@ -93,4 +93,7 @@ Rails.application.configure do
   
   config.hosts << "tvstation.bb.bl.ch"
   config.hosts << "localhost"
+  config.hosts << "xfzibbdoc01.dmz.bb.bl.ch"
+
+ config.action_dispatch.trusted_proxies = IPAddr.new('172.17.0.0/16')
 end
