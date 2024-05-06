@@ -92,8 +92,6 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
   
   config.hosts << "tvstation.bb.bl.ch"
-  config.hosts << "localhost"
   config.hosts << "xfzibbdoc01.dmz.bb.bl.ch"
 
- config.action_dispatch.trusted_proxies = IPAddr.new('172.17.0.0/16')
 end
